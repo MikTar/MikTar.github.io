@@ -6,77 +6,48 @@
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-<div id="header">
-    <span id="name">Mykhailo </span> <span id="surname">Taranenko</span> <span id="age"> 25 ans</span>
-    <br>
-    <div id="profession-links">
-        <span id="profession"> Électricien / câbleur  </span>
-    <div id="links">
-        <a id="link-main" href="index.html" target="_self">Principal</a>
-        <a id="link-cv" href="html/cv.html" target="_self">CV</a>
-        <a id="link-work" href="html/work.html" target="_self">Mes travaux</a>
-        <a id="link-contact" href="html/contact.html" target="_self">Me contacter</a>
-    </div>
-    </div>
-</div>
-
-<div id="intro">
- <div id="my-photo"></div>
-    <div id="motivation">
-        <div id="years-and-experience" >
-        <span id="years-of-experience"> 5 ans </span>
-        <br>
-        <span id="experience">d'experience</span>
-        <br>
+<header>
+    <div id="header">
+        <div id="name-surname-age"> <span id="name">Mykhailo </span> <span id="surname">Taranenko</span> <span id="age"> 25 ans</span>
         </div>
-        <div id = text-motivation>
-        dans le domaine électrique. J'ai réalisé de nombreuses missions en intérim depuis la fin de ma formation (CAP Elec en 2015)
-            et ai développé de grandes compétences en réalisation de canalisation électriques, pose de câblage, câblage d'armoires, mise en place des appareillages et de management d'équipe restreinte.
-            Je me tiens toujous au courant des dernières nouveautés dans le domaine et en termes de sécurité.
-        </div>
-        <div id="link-cv-motivation" >
-            <a href="html/cv.html" target="_self"> Mon CV</a>
-        </div>
-    </div>
-
-    <div id="right-block">
-        <div id="sectors"><span class="right-block-main">Secteurs d'activité:</span> <br> Électricité générale <br> Électricité tertiaire<br> Électricité domestique <br> Câblage d'armoires</div>
-        <div id="tel"> <span class="right-block-main">Mon numéro:</span> <br>07 53 51 52 21</div>
-        <div id="email"><span class="right-block-main">Mon e-mail:</span> <br> mikael.tar@outlook.com</div>
-        <div id="social">
-            <span class="right-block-main">Réseaux sociaux:</span> <br>
-            <div id="img-social">
-            <div id="link-linkedin"> <a href="https://www.linkedin.com/in/mikaeltar/"> <img id="img-linkedin" src="images/linkedin.png" alt="linkedin"> </a> </div>
-            <div id="link-twitter">  <a href="https://twitter.com/Mike67553859"> <img id="img-twitter" src="images/twitter.png" alt="twitter">   </a> </div>
+        <div id="profession-links">
+            <span id="profession">Électricien / câbleur </span>
+            <div id="links">
+                 <a class="links-header" href="index.html" target="_self">Principal</a>
+                 <a class="links-header" href="html/cv.html" target="_self">CV</a>
+                 <a class="links-header" href="html/work.html" target="_self">Mes travaux</a>
+                 <a class="links-header" href="html/contact.html" target="_self">Me contacter</a>
             </div>
         </div>
-
+    </div>
+</header>
+<article>
+    <div id="intro">
+    <img src="images/photo2.png" alt="my-photo">
+    <div id="intro-text">
+        <span id="5-ans" style="color: #72ab00; font-size: 6vh; font-weight: bold">5 ans</span>
+        <span id="dexperience" style="color: #72ab00; font-weight: bold; font-size: 3vh">d'éxperience</span>
+        <span id="intro-normal-text"> dans le domaine électrique. J'ai réalisé de nombreuses missions en intérim depuis la fin de
+            ma formation(CAP Elec en 2015) et ai développé de grandes compétences en réalisation de canalisation électriques, pose de câblage,
+            câblage d'armoires, mise en place des appareillages et de management d'équipe restreinte.
+            Je me tiens toujous au courant des dernières nouveautés dans le domaine et en termes de sécurité.</span>
+    </div>
+        <span id="intro-link-cv-text"> <a href="html/cv.html" target="_self"> Mon CV</a></span>
+        <div id="intro-right-bar">
+            <div class="intro-right-bar-main"> Secteurs d'activité:</div>  <div class="intro-right-bar-normal-text"> Électricité générale <br>Électricité tertiaire <br>Électricité domestique <br> Câblage d'armoires</div>
+            <div class="intro-right-bar-main">Mon numéro:</div><div class="intro-right-bar-normal-text">07 53 51 52 21</div>
+            <div class="intro-right-bar-main">Mon e-mail:</div> <div class="intro-right-bar-normal-text">mikael.tar@outlook.com</div>
+            <div class="intro-right-bar-main">Réseaux sociaux:</div>
+        </div>
+        <div id="intro-img-links">
+            <a href="https://www.linkedin.com/in/mikaeltar/" target="_blank"><img id="img-linkedin" src="images/linkedin.png" alt="linkedin"></a>
+            <a href="https://twitter.com/Mike67553859" target="_blank"><img id="img-twitter" src="images/twitter.png" alt="twitter"></a>
+        </div>
 
     </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="footer">
-© 2021 Mykhailo Taranenko
-</div>
-<script src="scripts/main.js"> </script>
+</article>
+<footer>
+    <div id="footer"><span style="font-size: 1.2vh">© 2021 Mykhailo Taranenko</span></div>
+</footer>
 </body>
 </html>
