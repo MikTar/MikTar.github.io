@@ -9,13 +9,13 @@ html, body {
 
 
 #mobile-computer{
-     width: 5vw;
+     width: 3.5vw;
     height: 5vh;
     margin-bottom: 0.5vh;
 }
 
 #mobile-phone{
-    width: 3vw;
+    width: 1.9vw;
     height: 5vh;
     margin-left: 5vw;
     margin-bottom: 0.5vh;
@@ -102,7 +102,7 @@ html, body {
     border-radius: 1vh;
 }
 #mobile-index-intro>img {
-    width: 23vw;
+    width: 17.7vw;
     height: 43vh;
     margin-top: 2vh;
     margin-left: 7vw;
@@ -152,12 +152,12 @@ html, body {
 }
 
 #mobile-img-linkedin{
-    width: 7vw;
-    height: 3.7vh;
+    width: 5.2vw;
+    height: 3.3vh;
 }
 #mobile-img-twitter {
-     width: 5vw;
-    height: 3.7vh;
+     width: 3.7vw;
+    height: 2.9vh;
 }
 #mobile-intro-link-cv{
     margin-top: 4vh;
