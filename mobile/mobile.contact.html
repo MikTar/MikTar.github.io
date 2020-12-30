@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Me contacter</title>
+   <link rel="stylesheet" media="all and (orientation:portrait)" href="../styles/styles-mobile-portrait.css">
+<link rel="stylesheet" media="all and (orientation:landscape)" href="../styles/styles-mobile-lanscape.css">
+</head>
+<body>
+<a href="../html/contact.html" target="_self"><img id="mobile-computer" src="../images/computer.png" alt="imgcomputer"></a>
+<a href="mobile.contact.html" target="_self"><img id="mobile-phone" src="../images/phone.png" alt="imgphone"></a>
+<div id="mobile-header">
+    <div id="mobile-name-surname"> <span id="mobile-name">Mykhailo</span> <span id="mobile-surname">Taranenko</span>  </div>
+    <div id="mobile-profession">Électricien / câbleur</div>
+    <div id="mobile-age">25 ans</div>
+    <div id="block-header-links"><div class="links-header"><a href="mobile-index.html" target="_self">Principal</a> </div>
+                           <div class="links-header"><a href="mobile-cv.html" target="_self"> CV</a></div>
+                             <div class="links-header"><a href="mobile-work.html" target="_self">Mes travaux</a></div>
+                             <div class="links-header"><a href="mobile.contact.html" target="_self">Me contacter</a></div>
+    </div>
+</div>
+
+<div id="contacts-first-block">
+<div id="mobile-contacts-main">Contacts</div>
+        <div id="mobile-cv-contacts-name-surname">Mykhailo Taranenko</div>
+        <div id="mobile-cv-contacts-adress"> 2 rue Charles de Foucauld, <br> 37200, Tours</div>
+        <div id="mobile-cv-contacts-mail-text">E-mail: mikael.tar@outlook.com <br>Tel: 07 53 51 52 21</div>
+        <div id="mobile-contacts-images-links">
+            <a href="https://www.linkedin.com/in/mikaeltar/"> <img id="mobile-img-linkedin" src="../images/linkedin.png" alt="linkedin"> </a>
+            <a href="https://twitter.com/Mike67553859"> <img id="mobile-img-twitter" src="../images/twitter.png" alt="twitter">   </a>
+        </div>
+</div>
+<div id="mobile-form">
+
+    <form action="../php/send.php" method="post">
+            <label for="mobile-name-contact"></label>
+            <input type="text"   id="mobile-name-contact" name = 'name-contact'  maxlength="50" value="" placeholder="Entrez votre nom/prénom" required> <br><br>
+            <label for="mobile-contact"></label>
+            <input type="text"  id="mobile-contact" name = 'mail-or-tel-contact'  maxlength="50" value="" placeholder="Entrez votre numéro de tel. ou e-mail" required> <br><br>
+             <label for="mobile-comment"></label>
+            <textarea  id="mobile-comment" name="comment" cols="15" rows="10" placeholder="Commentaire:" required></textarea> <br><br>
+            <input id="mobile-submit" type="submit" name="submit" value="Envoyer">
+        </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="mobile-footer"><span style="font-size: 1.2vh">© 2021 Mykhailo Taranenko</span></div>
+</body>
+</html>
