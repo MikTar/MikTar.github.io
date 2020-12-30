@@ -2,7 +2,6 @@ html, body {
     margin: 0;
     font-family: Arial,sans-serif;
 }
-
 #footer {
    position: fixed;
     left: 0;
@@ -18,11 +17,25 @@ html, body {
 }
 
 /*---------------HEADER--------------*/
+
+#computer{
+    width: 3vw;
+    height: 4vh;
+    margin-left: 0.5vw;
+}
+#phone{
+    width: 1vw;
+    height: 4vh;
+    margin-left: 1vw;
+}
+
+
+
 #header {
     background-color: black;
     width: 100vw;
     height: 13vh;
-    margin-top: 5vh;
+    margin-top: 1vh;
     position: absolute;
     min-width: 500px;
     border-bottom: 2px solid #72ab00;
@@ -97,7 +110,7 @@ padding-top: 3.5vh;
 #intro>img {
     position: relative;
     width: 16vw;
-    height: 42vh;
+    height: 38.5vh;
     margin-top: 4vh;
     margin-left: 1.5vw;
 }
@@ -107,7 +120,7 @@ padding-top: 3.5vh;
     width: 19vw;
     height: 37vh;
     margin-left: 18vw;
-    margin-top: -43.7vh;
+    margin-top: -40vh;
     overflow: hidden;
 }
 /*--Css in html 5 ans and experience*/
@@ -146,7 +159,7 @@ padding-top: 3.5vh;
     height: 25vh;
     position: absolute;
     margin-left: 37.5vw;
-    margin-top: -42.5vh;
+    margin-top: -38.8vh;
 }
 
 .intro-right-bar-main{
@@ -164,7 +177,7 @@ padding-top: 3.5vh;
     width: 12vw;
     height: 8vh;
     margin-left: 37.5vw;
-    margin-top: -17vh;
+    margin-top: -13vh;
     display: flex;
 }
 #img-linkedin{
@@ -628,9 +641,9 @@ textarea{
 }
 #cv-intro-photo{
     margin-top: 4.5vh;
-    width: 15vw;
-    height: 37vh;
-    margin-left: 8.5vw;
+    width: 14vw;
+    height: 33.8vh;
+    margin-left: 9.5vw;
     border: 1px solid #B0B0B0;
 }
 /*--------Lists--------------------*/
@@ -724,14 +737,4 @@ textarea{
     transition-duration: 0.8s;
     opacity: 80%;
 }
-
-
-
-
-
-
-
-
-
-
 
