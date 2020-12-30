@@ -17,7 +17,7 @@ html, body {
 #mobile-phone{
     width: 1.9vw;
     height: 5vh;
-    margin-left: 5vw;
+    margin-left: 3vw;
     margin-bottom: 0.5vh;
 }
 
@@ -152,12 +152,12 @@ html, body {
 }
 
 #mobile-img-linkedin{
-    width: 5.2vw;
-    height: 3.3vh;
+    width: 3.5vw;
+    height: 3.7vh;
 }
 #mobile-img-twitter {
-     width: 3.7vw;
-    height: 2.9vh;
+     width: 2vw;
+    height: 3.5vh;
 }
 #mobile-intro-link-cv{
     margin-top: 4vh;
@@ -262,7 +262,7 @@ margin-left: 22vw;
 
 
 #mobile-cv-intro-photo {
-    width: 30vw;
+    width: 21vw;
     height: 43vh;
     margin-top: 4vh;
     margin-left: 7vw;
