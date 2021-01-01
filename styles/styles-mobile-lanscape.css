@@ -94,7 +94,7 @@
     #mobile-index-intro {
         width: 85vw;
         border: 3px solid #B0B0B0;
-        height: 128.5vh;
+        height: auto;
         margin-top: 16vh;
         position: absolute;
         margin-left: 7.5vw;
@@ -102,8 +102,8 @@
     }
 
     #mobile-index-intro > img {
-        width: 17.7vw;
-        height: 43vh;
+        width: 200px;
+        height: 250px;
         margin-top: 2vh;
         margin-left: 7vw;
     }
@@ -156,13 +156,14 @@
     }
 
     #mobile-img-linkedin {
-        width: 2.7vw;
-        height: 3.7vh;
+        width: 90px;
+        height: 40px;
     }
 
     #mobile-img-twitter {
-        width: 1.7vw;
-        height: 3.5vh;
+       width: 70px;
+        height: 40px;
+        margin-left: 2vw;
     }
 
     #mobile-intro-link-cv {
@@ -171,6 +172,7 @@ margin-left: 7vw;
         background-color: #72ab00;
         width: 30vw;
         height: 5vh;
+        margin-bottom: 3vh;
 
     }
 
@@ -252,7 +254,16 @@ margin-left: 7vw;
     #mobile-cv-images-links {
         margin-top: 2vh;
     }
+#mobile-cv-img-linkedin{
+         width: 80px;
+        height: 40px;
+    }
+    #mobile-cv-img-twitter{
+         width: 60px;
+        height: 40px;
+        margin-left: 2vw;
 
+    }
     #mobile-cv-link-pdf-top {
         width: 27vw;
         height: auto;
@@ -273,8 +284,8 @@ margin-left: 7vw;
 
 
     #mobile-cv-intro-photo {
-        width: 17.7vw;
-        height: 43vh;
+        width: 180px;
+        height: 230px;
         margin-top: -34vh;
         margin-left: 65vw;
         position: absolute;
