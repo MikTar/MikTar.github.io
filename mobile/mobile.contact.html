@@ -9,17 +9,19 @@
 <body>
 <a href="../html/contact.html" target="_self"><img id="mobile-computer" src="../images/computer.png" alt="imgcomputer"></a>
 <a href="mobile.contact.html" target="_self"><img id="mobile-phone" src="../images/phone.png" alt="imgphone"></a>
-<div id="mobile-header">
+<header><div id="mobile-header">
     <div id="mobile-name-surname"> <span id="mobile-name">Mykhailo</span> <span id="mobile-surname">Taranenko</span>  </div>
     <div id="mobile-profession">Électricien / câbleur</div>
     <div id="mobile-age">25 ans</div>
-    <div id="block-header-links"><div class="links-header"><a href="mobile-index.html" target="_self">Principal</a> </div>
+    <nav><div id="block-header-links"><div class="links-header"><a href="mobile-index.html" target="_self">Principal</a> </div>
                            <div class="links-header"><a href="mobile-cv.html" target="_self"> CV</a></div>
                              <div class="links-header"><a href="mobile-work.html" target="_self">Mes travaux</a></div>
                              <div class="links-header"><a href="mobile.contact.html" target="_self">Me contacter</a></div>
     </div>
+    </nav>
 </div>
-
+</header>
+<main>
 <div id="contacts-first-block">
 <div id="mobile-contacts-main">Contacts</div>
         <div id="mobile-cv-contacts-name-surname">Mykhailo Taranenko</div>
@@ -39,11 +41,12 @@
             <input type="text"  id="mobile-contact" name = 'mail-or-tel-contact'  maxlength="50" value="" placeholder="Entrez votre numéro de tel. ou e-mail" required> <br><br>
              <label for="mobile-comment"></label>
             <textarea  id="mobile-comment" name="comment" cols="15" rows="10" placeholder="Commentaire:" required></textarea> <br><br>
-        <input type="hidden" name="_language" value="fr" />
+         <input type="hidden" name="_language" value="fr" />
             <input id="mobile-submit" type="submit" name="submit" value="Envoyer">
         </form>
 </div>
 
+</main>
 
 
 
@@ -51,8 +54,8 @@
 
 
 
-
-
+<footer>
 <div id="mobile-footer"><span style="font-size: 1.2vh">© 2021 Mykhailo Taranenko</span></div>
+</footer>
 </body>
 </html>
