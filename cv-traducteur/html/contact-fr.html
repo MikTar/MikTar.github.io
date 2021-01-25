@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Contacts</title>
+      <link href="../styles/index.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <div class="container-contact">
+         <div class="up-header">
+            <ul>
+               <li> <a href="contact.html"> Українська</a></li>
+               <li><a href="contact-rus.html"> Русский</a></li>
+               <li><a href="contact-fr.html"> Français</a></li>
+            </ul>
+         </div>
+         <div class="header">
+            <div class="name">Mykhailo</div>
+            <div class="surname">Taranenko</div>
+            <div class="age">25 ans</div>
+            <div class="profession">Traducteur français</div>
+            <div class="links">  <a href="index-fr.html" target="_self">Principal</a>
+               <a href="contact-fr.html" target="_self">Contacts</a>
+            </div>
+         </div>
+         <div class="content-contact">
+            <div class="contact-info">
+               <div>Contacts</div>
+               <div>Mykhailo Taranenko</div>
+               <div>Kherson</div>
+               <div><span class="contact-info-color">Email: </span> taranenko.mykhailo@gmail.com</div>
+               <div><span class="contact-info-color">Tel: </span> (+380)99 430 20 93 <br> (+380)73 445 86 67(Viber)</div>
+               <div><a href="https://www.linkedin.com/" target="_blank"><img  id="link-linkedin" src="../images/linkedin.png" alt="linkedin"></a> <a href="https://twitter.com/Mike67553859" target="_blank"><img id="link-twitter" src="../images/twitter.png" alt="twitter"></a></div>
+            </div>
+            <div class="contact-form">
+               <div>Me contacter:</div>
+               <form action="" method="post">
+                  <label for="name-contact"></label>
+                  <input type="text"   id="name-contact" name = 'name-contact'  maxlength="50" value="" placeholder="Entrez votre nom/prénom:" required> <br><br>
+                  <label for="contact"></label>
+                  <input type="text"  id="contact" name = 'mail-or-tel-contact'  maxlength="50" value="" placeholder="Entrez votre numéro de tel. ou e-mail:" required> <br><br>
+                  <label for="comment"></label>
+                  <textarea  style="font-family: Arial,sans-serif " id="comment" name="comment" cols="15" rows="10" placeholder="Commentaire:" required></textarea> <br><br>
+                  <input type="hidden" name="_language" value="fr" />
+                  <input id="submit" type="submit" name="submit" value="Envoyer">
+               </form>
+            </div>
+         </div>
+         <div class="footer" > © 2021 Mykhailo Taranenko</div>
+      </div>
+   </body>
+</html>
