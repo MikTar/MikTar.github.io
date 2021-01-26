@@ -49,7 +49,8 @@ body {
 
 .up-header a {
 	text-decoration: none;
-	margin-left: 1vh;
+	margin-left: 1.5rem;
+        margin-right: 1.5rem;
 	color: var(--third-color);
 }
 
@@ -125,7 +126,6 @@ body {
 	padding-left: 3px;
 	text-transform: uppercase;
 	margin-left: 1rem;
-        margin-right: 1rem;
 }
 
 .links>a:hover {
