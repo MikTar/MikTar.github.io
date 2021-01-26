@@ -125,6 +125,7 @@ body {
 	padding-left: 3px;
 	text-transform: uppercase;
 	margin-left: 1rem;
+        margin-right: 1rem;
 }
 
 .links>a:hover {
