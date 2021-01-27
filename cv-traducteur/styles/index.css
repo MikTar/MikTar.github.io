@@ -49,7 +49,7 @@ body {
 
 .up-header a {
 	text-decoration: none;
-	margin-left: 1rem;
+	margin-left: 1vh;
 	color: var(--third-color);
 }
 
@@ -61,7 +61,7 @@ body {
 .up-header>ul {
 	list-style-type: none;
 	margin-left: auto;
-	margin-right: 1.5rem;
+	margin-right: 1vw;
 	display: flex;
 }
 
@@ -515,5 +515,11 @@ textarea {
 	height: 3rem;
 	}
 
+    input{
+        border: 2px solid var(--second-color);
+    }
+    textarea{
+        border: 2px solid var(--second-color);
+    }
 }
 
