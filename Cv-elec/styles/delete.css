@@ -1,0 +1,26 @@
+
+@media (min-width:320px)  { #mobile-header {background-color: black}/* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { #mobile-header {background-color: purple}/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { #mobile-header {background-color: #72ab00}/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { #mobile-header {background-color: aqua}/* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { #mobile-header {background-color: yellow}/* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { #mobile-header {background-color: crimson  }/* hi-res laptops and desktops */ }
+
+
+ #mobile-index-intro > img {
+        width: 72vw;
+        height: 48vh;
+        margin-top: 2vh;
+        margin-left: 7vw;
+    }
+
+
+#mobile-img-linkedin {
+        width: 13vw;
+        height: 3.7vh;
+    }
+
+    #mobile-img-twitter {
+        width: 10vw;
+        height: 3.7vh;
+    }
