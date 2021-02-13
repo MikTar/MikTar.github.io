@@ -1040,7 +1040,7 @@ html,body{
   
   .about-us>div:nth-child(1)>p {
     margin-top: -2rem;
-    margin-left: 0px;
+    margin-left: 10px;
   }
   
   .about-us>div:nth-child(2) {
