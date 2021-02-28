@@ -132,15 +132,16 @@ main .sectors .sectors-heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .sectors .sectors-heading p {
   font-size: 3.5rem;
   text-transform: uppercase;
-  margin-right: 10%;
+  margin-left: 10%;
+  color: #00305b;
 }
 
 main .sectors .sectors-sections {
@@ -206,5 +207,37 @@ main .sectors .sectors-sections .second-section h2 {
 main .sectors .sectors-sections .second-section p {
   font-size: 1.3rem;
   margin-top: 2rem;
+}
+
+main .about-us {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  background-color: #00305b;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main .about-us h3 {
+  font-size: 3.5rem;
+}
+
+main .about-us p {
+  font-size: 1.3rem;
+}
+
+main .about-us h3, main .about-us p {
+  display: block;
+  width: 70%;
 }
 /*# sourceMappingURL=index.css.map */

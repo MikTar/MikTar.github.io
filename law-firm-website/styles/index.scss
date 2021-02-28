@@ -1,4 +1,4 @@
-
+$main-color: rgb(0, 48, 91);
 
 
 html{
@@ -103,12 +103,13 @@ p{
 .sectors-heading{
     width: 40%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   
     p{
         font-size: 3.5rem;
     text-transform: uppercase;
-    margin-right: 10%;
+    margin-left: 10%;
+    color: $main-color;
     
     }
     
@@ -163,29 +164,39 @@ p{
 
        }
     
+}
+
+}
+
+.about-us{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    background-color: $main-color;
+    color: white;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   text-align: center;
+    h3{
+        font-size: 3.5rem;
+    }
+    p{
+        font-size:1.3rem;
+    }
 
 
+
+
+   h3 , p {
+    display: block;
+    width: 70%;
+
+   }
 
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
 
 
 
