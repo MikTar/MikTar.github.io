@@ -1,0 +1,210 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 120px;
+  width: 100vw;
+  background-color: #ce9393;
+  z-index: 3;
+}
+
+main {
+  margin-top: 120px;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12 1fr);
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7 1fr);
+      grid-template-areas: " m " " s " " a " " i " " o " " c " " t ";
+}
+
+main .main-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: m;
+  max-width: 100%;
+  height: 900px;
+}
+
+main .sectors {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: s;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+main .about-us {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+main .secondary-image {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: i;
+}
+
+main .our-lawyers {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: o;
+}
+
+main .contact {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: c;
+}
+
+main .to-up {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: t;
+}
+
+main .main-image {
+  background-image: url("../images/1.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center;
+}
+
+main .main-image .color-name {
+  width: 40%;
+  height: 100%;
+  background-color: rgba(0, 48, 91, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .main-image .color-name h1 {
+  color: white;
+  font-size: 3.5rem;
+  width: 50%;
+  margin-right: 3rem;
+}
+
+main .main-image .color-name p {
+  color: white;
+  font-size: 1.5rem;
+  width: 50%;
+  margin-right: 3rem;
+}
+
+main .sectors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+}
+
+main .sectors .sectors-heading {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .sectors .sectors-heading p {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-right: 10%;
+}
+
+main .sectors .sectors-sections {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .sectors .sectors-sections .material-icons {
+  color: #41b7c4;
+  display: inline;
+}
+
+main .sectors .sectors-sections .first-section {
+  width: 49%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .sectors .sectors-sections .first-section div {
+  margin-top: 2rem;
+  margin-right: 2%;
+}
+
+main .sectors .sectors-sections .first-section h2 {
+  font-size: 1.6rem;
+  display: inline;
+  font-weight: 500;
+}
+
+main .sectors .sectors-sections .first-section p {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+main .sectors .sectors-sections .second-section {
+  width: 49%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .sectors .sectors-sections .second-section div {
+  margin-top: 2rem;
+}
+
+main .sectors .sectors-sections .second-section h2 {
+  font-size: 1.6rem;
+  display: inline;
+  font-weight: 500;
+}
+
+main .sectors .sectors-sections .second-section p {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=index.css.map */

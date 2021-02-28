@@ -1,0 +1,214 @@
+
+
+
+html{
+    padding: 0;
+    margin: 0;
+   
+}
+
+body{
+    font-family: 'Roboto', Arial ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+   
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 120px;
+    width: 100vw;
+    background-color: rgb(206, 147, 147);
+    z-index: 3;
+}
+
+main{
+   margin-top: 120px;
+    display: grid;
+    width: 100%;
+    
+    grid-template-columns: repeat(12 1fr);
+    grid-template-rows: repeat(7 1fr);
+    grid-template-areas: 
+    " m "
+    " s "
+    " a "
+    " i "
+    " o "
+    " c "
+    " t ";
+.main-image{
+    grid-area: m;
+    max-width: 100%;
+    height: 900px;
+}
+.sectors{
+grid-area: s;
+max-width: 100%;
+width: 100%;
+height: auto;
+
+}
+.about-us{
+    grid-area: a;
+}
+.secondary-image{
+    grid-area: i;
+}
+.our-lawyers{
+    grid-area: o;
+}
+.contact{
+    grid-area: c;
+}
+.to-up{
+    grid-area: t;
+}
+
+.main-image{
+    
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    display: flex;
+    background-position: center;
+
+.color-name{
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 48, 91, 0.5);
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;  
+h1{
+    color: white;
+    font-size: 3.5rem;
+    width: 50%;
+    margin-right: 3rem;
+}
+p{
+    color: white;
+    font-size: 1.5rem;
+    width: 50%;
+    margin-right: 3rem;
+}
+}
+}
+
+.sectors{
+    display: flex;
+    margin-top: 100px;
+  
+.sectors-heading{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+  
+    p{
+        font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-right: 10%;
+    
+    }
+    
+}
+.sectors-sections{
+    width: 40%;
+    display: flex;
+    .material-icons{
+        color: #41b7c4;
+        display: inline;
+    }
+
+    
+    
+       .first-section{
+           width: 49%;
+           display: flex;
+           flex-direction: column;
+           div{
+               
+               margin-top: 2rem;
+               margin-right: 2%;
+           }
+           h2{
+               font-size: 1.6rem;
+               display: inline;
+               font-weight: 500;
+           }
+           p{
+               font-size: 1.4rem;
+               margin-top: 2rem;
+           }
+       }
+       .second-section{
+           width: 49%;
+           display: flex;
+           flex-direction: column;
+           div{
+            
+            margin-top: 2rem;
+        }
+        h2{
+            font-size: 1.6rem;
+            display: inline;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.3rem;
+            margin-top: 2rem;
+        }
+
+
+       }
+    
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
