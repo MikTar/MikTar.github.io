@@ -12,18 +12,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-
-    <title>Document</title>
+        <script src="https://kit.fontawesome.com/9e9fe7acb9.js" crossorigin="anonymous"></script>
+    <title>SCSS</title>
 </head>
 
 <body>
-    <header></header>
+    <header ></header>
     <main>
         <section class="main-image">
-            <div class="color-name">
+            <div id="color-name" class="color-name">
                 <h1>САНИН И ПАРТНЕРЫ</h1>
                 <p>Ведение уголовных дел (защита на стадии дознания, следствия, судебная защита)</p>
             </div>
+            <div class="main-transparent"></div>
         </section>
         <section class="sectors">
             <div class="sectors-heading">
@@ -123,12 +124,49 @@
 
         </section>
         <section class="contact"> 
-            <div class="background-one"><div class="background-two"> <p>Свяжитесь <br> с нами</p> </div></div>
+            <div class="background-one"><div class="background-two"> <p>Свяжитесь <br> с нами</p> </div>
+        <div class="background-text"><p class="adress-heading">НАШ АДРЕС</p>
+        <p class="adress">
+            ул. Арбат, 1а, Москва, 119019, Россия​ <br>
+            Email:  <a href="mailto:info@mysite.ru">info@mysite.ru</a> <br>
+            Телефон:  <a href="tel:+74950000000"> +7 (495) 000-00-00</a>
+        </p>
+        <p class="form-heading"> Напишите нам, и мы свяжимся с вами в самое ближайшее время:</p>
+        <form action="https://formspree.io/f/mwkwyjrz" method="post">
+            <label for="name-contact"></label>
+            <input type="text"   id="name-contact" name = 'name-contact'  maxlength="50" value="" placeholder="Имя/Фамилия" required> <br><br>
+            <label for="contact"></label>
+            <input type="text"  id="contact" name = 'mail-or-tel-contact'  maxlength="50" value="" placeholder="Номер тел. и/или e-mail" required> <br><br>
+            <label for="comment"></label>
+            <textarea  style="font-family: Arial,sans-serif " id="comment" name="comment" cols="15" rows="10" placeholder="Комментарий" required></textarea> <br><br>
+            <input type="hidden" name="_language" value="rus" />
+            <input id="submit" type="submit" name="submit" value="Отправить">
+         </form>
+
+
+    </div>
+        
+        
+        
+        
+        
+        
+        </div>
             
         </section>
-        <section class="to-up"></section>
+        <section class="to-up">
+            <span class="material-icons">
+                keyboard_arrow_up
+                </span>
+            <p> <a href="#color-name">Наверх</a></p>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>© 2023 Санин и партнеры. </p>
+         <a href="https://vk.com/"><i class="fab fa-vk"></i></a>  
+         <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>  
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>  
+    </footer>
 </body>
 
 </html>
