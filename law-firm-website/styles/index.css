@@ -146,10 +146,15 @@ main .sectors .sectors-heading p {
 }
 
 main .sectors .sectors-sections {
-  width: 40%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main .sectors .sectors-sections .material-icons {
@@ -282,6 +287,18 @@ main .our-lawyers .lawyer {
           box-sizing: border-box;
 }
 
+main .our-lawyers .lawyer a {
+  text-decoration: none;
+  color: #03325d;
+  font-style: italic;
+}
+
+main .our-lawyers .lawyer a:hover {
+  opacity: 50%;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
 main .our-lawyers .lawyer img {
   width: 100%;
   height: 50%;
@@ -322,6 +339,39 @@ main .our-lawyers .lawyer .lawyer-email {
 
 main .contact {
   width: 100%;
-  height: 800px;
+  height: 600px;
+  background-image: url("../images/6.jpg");
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main .contact .background-one {
+  background-color: rgba(0, 48, 91, 0.5);
+  height: 100%;
+  width: 100%;
+}
+
+main .contact .background-one .background-two {
+  height: 100%;
+  width: 40%;
+  background-color: rgba(0, 48, 91, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .contact .background-one .background-two p {
+  text-transform: uppercase;
+  display: block;
+  font-size: 3rem;
+  color: white;
+  margin-right: 3rem;
 }
 /*# sourceMappingURL=index.css.map */
