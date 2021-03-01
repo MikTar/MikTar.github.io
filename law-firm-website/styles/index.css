@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', Arial ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -125,6 +125,7 @@ main .sectors {
   display: -ms-flexbox;
   display: flex;
   margin-top: 100px;
+  padding-bottom: 3.5rem;
 }
 
 main .sectors .sectors-heading {
@@ -165,6 +166,7 @@ main .sectors .sectors-sections .first-section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: 1rem;
 }
 
 main .sectors .sectors-sections .first-section div {
@@ -222,10 +224,13 @@ main .about-us {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding-bottom: 3.5rem;
 }
 
 main .about-us h3 {
@@ -236,8 +241,87 @@ main .about-us p {
   font-size: 1.3rem;
 }
 
-main .about-us h3, main .about-us p {
+main .about-us h3,
+main .about-us p {
   display: block;
   width: 70%;
+}
+
+main .secondary-image {
+  width: 100%;
+  max-width: 100%;
+  height: 700px;
+  background-image: url("../images/2.jpg");
+  background-size: cover;
+}
+
+main .our-lawyers {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .our-lawyers h4 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #00305b;
+}
+
+main .our-lawyers .lawyer {
+  width: 230px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main .our-lawyers .lawyer img {
+  width: 100%;
+  height: 50%;
+}
+
+main .our-lawyers .lawyer p {
+  margin: 1rem;
+  text-align: center;
+}
+
+main .our-lawyers .lawyer .lawyer-name {
+  color: #03325d;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+main .our-lawyers .lawyer .lawyer-fonction {
+  text-transform: uppercase;
+  color: #3f82c0;
+  font-size: 1.3rem;
+}
+
+main .our-lawyers .lawyer hr {
+  background-color: #3f82c0;
+  height: 1px;
+  border: none;
+}
+
+main .our-lawyers .lawyer .lawyer-tel {
+  color: #03325d;
+  font-size: 1.1rem;
+}
+
+main .our-lawyers .lawyer .lawyer-email {
+  color: #03325d;
+  font-size: 1.1rem;
+}
+
+main .contact {
+  width: 100%;
+  height: 800px;
 }
 /*# sourceMappingURL=index.css.map */
