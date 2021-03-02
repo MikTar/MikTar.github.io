@@ -1,15 +1,17 @@
 $main-color: rgb(0, 48, 91);
-$second-color:rgb(65,183,196);
+$second-color:rgb(65, 183, 196);
 $third-color:rgb(3, 50, 93);
 
-@mixin large-text{
+@mixin large-text {
     font-size: 3.5rem;
 }
-@mixin hover-opacity{
+
+@mixin hover-opacity {
     opacity: 50%;
     transition-duration: 0.5s;
 }
-@mixin hover-opacity-light{
+
+@mixin hover-opacity-light {
     opacity: 80%;
     transition-duration: 0.5s;
 }
@@ -36,14 +38,69 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    height: 120px;
-    width: 100vw;
-    background-color: rgb(206, 147, 147);
-    z-index: 3;
+    height: 50px;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+   
+    display: flex;
+    box-sizing: border-box;
+   a{
+       text-decoration: none;
+       color: $main-color;
+   }
+   a:hover{
+    @include hover-opacity();
+   }
+    
+    
+    .header-name{
+        width: 40%;
+        height: 100%;
+    
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        a{
+            margin-right: 8rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+        i{
+            color: $second-color;
+        }
+
+       
+
+    }
+
+nav{
+    
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    a{
+       flex-basis: 30%;
+       text-align: center;
+       
+        
+    }
+    i{
+        margin-right: 0.3rem;
+        color: $second-color;
+    }
+}
+
+
+
+    
+
+
 }
 
 main {
-    margin-top: 120px;
+    margin-top: 50px;
     display: grid;
     width: 100%;
 
@@ -99,7 +156,7 @@ main {
         background-size: cover;
         display: flex;
         background-position: center;
-        
+
 
         .color-name {
             flex-basis: 40%;
@@ -108,10 +165,10 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center;
-           align-items:flex-end;
-           flex-shrink: 1;
-        flex-grow: 3;
-            
+            align-items: flex-end;
+            flex-shrink: 1;
+            flex-grow: 3;
+
 
             h1 {
                 display: block;
@@ -119,7 +176,7 @@ main {
                 @include large-text();
                 width: 50%;
                 margin-right: 8rem;
-               word-wrap:normal;
+                word-wrap: normal;
             }
 
             p {
@@ -131,12 +188,12 @@ main {
             }
         }
 
-.main-transparent{
-    flex-basis: 60%;
-    background-color: transparent;
-    flex-shrink: 3;
-        flex-grow: 1;
-}
+        .main-transparent {
+            flex-basis: 60%;
+            background-color: transparent;
+            flex-shrink: 3;
+            flex-grow: 1;
+        }
 
 
 
@@ -167,8 +224,8 @@ main {
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
-            
-           
+
+
 
             .material-icons {
                 color: #41b7c4;
@@ -181,7 +238,7 @@ main {
                 width: 49%;
                 display: flex;
                 flex-direction: column;
-               
+
                 margin-right: 1rem;
 
                 div {
@@ -206,7 +263,7 @@ main {
                 width: 49%;
                 display: flex;
                 flex-direction: column;
-               
+
 
                 div {
 
@@ -296,14 +353,15 @@ main {
             height: auto;
             box-sizing: border-box;
 
-            a{
+            a {
                 text-decoration: none;
                 color: $third-color;
                 font-style: italic;
-               
+
             }
-            a:hover{
-               @include hover-opacity();
+
+            a:hover {
+                @include hover-opacity();
             }
 
             img {
@@ -352,201 +410,201 @@ main {
         }
 
     }
-.contact{
-    width: 100%;
-    height: auto;
-    background-image: url("../images/6.jpg");
-    background-size: cover;
-    box-sizing: border-box;
-.background-one{
-    background-color: rgba(0, 48, 91, 0.5);
-    height: 100%;
-    width: 100%;
-    display: flex;
+
+    .contact {
+        width: 100%;
+        height: auto;
+        background-image: url("../images/6.jpg");
+        background-size: cover;
+        box-sizing: border-box;
+
+        .background-one {
+            background-color: rgba(0, 48, 91, 0.5);
+            height: 100%;
+            width: 100%;
+            display: flex;
 
 
-    .background-two{
-        height: 100%;
-        
-        background-color: rgba(0, 48, 91, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        flex-basis: 40%;
-        flex-shrink: 1;
-        flex-grow: 2;
+            .background-two {
+                height: 100%;
 
-      >p{
-          text-transform: uppercase;
-          display: block;
-          @include large-text();
-          color: white;
-          margin-right: 3rem;
-          word-break: normal;
-      }
-    
+                background-color: rgba(0, 48, 91, 0.5);
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                flex-basis: 40%;
+                flex-shrink: 1;
+                flex-grow: 2;
+
+                >p {
+                    text-transform: uppercase;
+                    display: block;
+                    @include large-text();
+                    color: white;
+                    margin-right: 3rem;
+                    word-break: normal;
+                }
+
+            }
+
+            .background-text {
+                flex-basis: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 3rem;
+                flex-shrink: 2;
+                flex-grow: 1;
+
+                .adress-heading {
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                }
+
+                .adress {
+                    font-size: 1.3rem;
+                }
+
+                .form-heading {
+                    font-size: 1.3rem;
+                }
+
+                form {
+                    width: 40%;
+                    margin-bottom: 3rem;
+
+                    #name-contact {
+                        height: 1.5rem;
+                        width: 100%;
+                        font-size: 1rem;
+
+                    }
+
+                    #contact {
+                        font-size: 1rem;
+                        height: 1.5rem;
+                        width: 100%;
+
+                    }
+
+                    #comment {
+                        font-size: 1rem;
+                        width: 100%;
+                    }
+
+                    #submit {
+                        padding: 0.5rem 1rem;
+                        font-size: 1.1rem;
+                        background-color: $second-color;
+                        border: none;
+                        color: white;
+                    }
+
+                    #submit:hover {
+                        @include hover-opacity-light();
+                        cursor: pointer;
+                    }
+                }
+
+
+                >p {
+                    color: white;
+                    display: block;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-style: italic;
+                }
+
+                a:hover {
+                    @include hover-opacity();
+
+                }
+
+
+
+            }
+
+        }
+
+
+
     }
-    
-    .background-text{
-       flex-basis: 60%;
+
+
+    .to-up {
+        width: 100%;
+        max-width: 100%;
+        background-color: $main-color;
+        color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 3rem;
-        flex-shrink: 2;
-        flex-grow: 1;
+        align-items: center;
 
-        .adress-heading{
-            font-size: 1.5rem;
+        a {
+            color: white;
             text-transform: uppercase;
-        }
-        .adress{
-            font-size: 1.3rem;
-        }
-        .form-heading{
-            font-size: 1.3rem;
-        }
-        form{
-            width: 40%;
-           margin-bottom: 3rem;
-
-            #name-contact{
-                height: 1.5rem;
-                width: 100%;
-                font-size: 1rem;
-                
-            }
-            #contact{
-                font-size: 1rem;
-                height: 1.5rem;
-                width: 100%;
-                
-            }
-            #comment{
-                font-size: 1rem;
-               width: 100%;
-            }
-            #submit{
-                padding: 0.5rem 1rem;
-                font-size: 1.1rem;
-                background-color: $second-color;
-                border: none;
-                color: white;
-            }
-            #submit:hover{
-                @include hover-opacity-light();
-                cursor: pointer;
-            }
-        }
-
-
-        >p{
-            color: white;
-            display: block;
-        }
-        a{
-            color: white;
             text-decoration: none;
-            font-style: italic;
-        }
-        a:hover{
-            @include hover-opacity();
-            
         }
 
-   
+        span {
+            margin-top: 0.5rem;
+            display: block;
+            font-size: 3rem;
+        }
 
+        P {
+            display: block;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            padding: 0 auto;
+            margin: 0 auto 1.5rem auto;
+        }
     }
 
 }
 
 
-
-}
-
-
-.to-up{
-    width: 100%;
-    max-width: 100%;
-    background-color: $main-color;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-a{
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-    
-    span{
-       margin-top: 0.5rem;
-        display: block;
-        font-size: 3rem;
-    }
-    P{
-        display: block;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-       padding: 0 auto;
-       margin: 0 auto 1.5rem auto;
-    }
-}
-
-}
-
-
-footer{
+footer {
     width: 100%;
     max-width: 100%;
     height: auto;
     color: $third-color;
-  
-   
 
-p{
-    
-    float: left;
-    font-size: 1rem;
-    margin-top: 1rem;
-    margin-left: 3%;
+
+
+    p {
+
+        float: left;
+        font-size: 0.9rem;
+        margin-top: 0.8rem;
+        margin-left: 3%;
+    }
+
+    i {
+
+        float: right;
+        font-size: 1.5rem;
+
+        margin: 1rem;
+    }
+
+    i:hover {
+        @include hover-opacity-light();
+        cursor: pointer;
+    }
+
+    a {
+        color: black;
+    }
+
+
+
+
+
 }
-i{
-    
-    float: right;
-    font-size: 2.1rem;
-    
-    margin: 1rem;
-}
-i:hover{
-    @include hover-opacity-light();
-    cursor: pointer;
-}
-a{
-    color: black;
-}
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
