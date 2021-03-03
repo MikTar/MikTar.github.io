@@ -22,7 +22,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header a {
@@ -33,7 +33,7 @@ header a {
 header a:hover {
   opacity: 50%;
   -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 header .header-name {
@@ -43,11 +43,11 @@ header .header-name {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .header-name a {
@@ -66,16 +66,16 @@ header nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 header nav a {
   -ms-flex-preferred-size: 30%;
-  flex-basis: 30%;
+      flex-basis: 30%;
   text-align: center;
 }
 
@@ -89,21 +89,16 @@ main {
   display: -ms-grid;
   display: grid;
   width: 100%;
-
-  grid-template-columns: repeat(12 1fr);
-
-  grid-template-rows: repeat(7 1fr);
-  grid-template-areas: " m "
-    " s "
-    " a "
-    " i "
-    " o "
-    " c "
-    " t ";
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12 1fr);
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7 1fr);
+      grid-template-areas: " m " " s " " a " " i " " o " " c " " t ";
 }
 
 main .main-image {
-
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: m;
   max-width: 100%;
   height: auto;
@@ -111,7 +106,8 @@ main .main-image {
 }
 
 main .sectors {
-
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: s;
   max-width: 100%;
   width: 100%;
@@ -119,27 +115,32 @@ main .sectors {
 }
 
 main .about-us {
-
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: a;
 }
 
 main .secondary-image {
-
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: i;
 }
 
 main .our-lawyers {
-
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: o;
 }
 
 main .contact {
-
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
   grid-area: c;
 }
 
 main .to-up {
-
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
   grid-area: t;
 }
 
@@ -154,7 +155,7 @@ main .main-image {
 
 main .main-image .color-name {
   -ms-flex-preferred-size: 40%;
-  flex-basis: 40%;
+      flex-basis: 40%;
   height: 100%;
   background-color: rgba(0, 48, 91, 0.5);
   display: -webkit-box;
@@ -162,19 +163,19 @@ main .main-image .color-name {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -ms-flex-negative: 1;
-  flex-shrink: 1;
+      flex-shrink: 1;
   -webkit-box-flex: 3;
-  -ms-flex-positive: 3;
-  flex-grow: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
 }
 
 main .main-image .color-name h1 {
@@ -196,13 +197,13 @@ main .main-image .color-name p {
 
 main .main-image .main-transparent {
   -ms-flex-preferred-size: 60%;
-  flex-basis: 60%;
+      flex-basis: 60%;
   background-color: transparent;
   -ms-flex-negative: 3;
-  flex-shrink: 3;
+      flex-shrink: 3;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 main .sectors {
@@ -219,8 +220,8 @@ main .sectors .sectors-heading {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .sectors .sectors-heading p {
@@ -236,10 +237,10 @@ main .sectors .sectors-sections {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main .sectors .sectors-sections .material-icons {
@@ -254,8 +255,8 @@ main .sectors .sectors-sections .first-section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-right: 1rem;
 }
 
@@ -282,8 +283,8 @@ main .sectors .sectors-sections .second-section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .sectors .sectors-sections .second-section div {
@@ -312,13 +313,13 @@ main .about-us {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding-bottom: 3.5rem;
 }
@@ -351,10 +352,10 @@ main .our-lawyers {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 main .our-lawyers h4 {
@@ -369,7 +370,7 @@ main .our-lawyers .lawyer {
   width: 230px;
   height: auto;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 main .our-lawyers .lawyer a {
@@ -381,7 +382,7 @@ main .our-lawyers .lawyer a {
 main .our-lawyers .lawyer a:hover {
   opacity: 50%;
   -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 main .our-lawyers .lawyer img {
@@ -428,7 +429,7 @@ main .contact {
   background-image: url("../images/6.jpg");
   background-size: cover;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 main .contact .background-one {
@@ -447,23 +448,23 @@ main .contact .background-one .background-two {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-preferred-size: 40%;
-  flex-basis: 40%;
+      flex-basis: 40%;
   -ms-flex-negative: 1;
-  flex-shrink: 1;
+      flex-shrink: 1;
   -webkit-box-flex: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
-main .contact .background-one .background-two>p {
+main .contact .background-one .background-two > p {
   text-transform: uppercase;
   display: block;
   font-size: 3.5rem;
@@ -474,23 +475,23 @@ main .contact .background-one .background-two>p {
 
 main .contact .background-one .background-text {
   -ms-flex-preferred-size: 60%;
-  flex-basis: 60%;
+      flex-basis: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 3rem;
   -ms-flex-negative: 2;
-  flex-shrink: 2;
+      flex-shrink: 2;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 main .contact .background-one .background-text .adress-heading {
@@ -539,11 +540,11 @@ main .contact .background-one .background-text form #submit {
 main .contact .background-one .background-text form #submit:hover {
   opacity: 80%;
   -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+          transition-duration: 0.5s;
   cursor: pointer;
 }
 
-main .contact .background-one .background-text>p {
+main .contact .background-one .background-text > p {
   color: white;
   display: block;
 }
@@ -557,7 +558,7 @@ main .contact .background-one .background-text a {
 main .contact .background-one .background-text a:hover {
   opacity: 50%;
   -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 main .to-up {
@@ -570,14 +571,14 @@ main .to-up {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .to-up a {
@@ -623,7 +624,7 @@ footer i {
 footer i:hover {
   opacity: 80%;
   -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+          transition-duration: 0.5s;
   cursor: pointer;
 }
 
@@ -631,7 +632,566 @@ footer a {
   color: black;
 }
 
-@media screen and (min-width: 1px) and (max-width: 600px) {
+@media screen and (min-width: 1px) and (max-width: 386px) {
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 25px;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header a {
+    text-decoration: none;
+    color: #00305b;
+  }
+  header a:hover {
+    opacity: 50%;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  header .header-name {
+    width: 100%;
+    height: 100%;
+    display: inline;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  header .header-name a {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  header .header-name i {
+    color: #41b7c4;
+  }
+  header nav {
+    display: none;
+  }
+  main {
+    margin-top: 25px;
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12 1fr);
+    -ms-grid-rows: (1fr)[7];
+        grid-template-rows: repeat(7 1fr);
+        grid-template-areas: " m " " s " " a " " i " " o " " c " " t ";
+  }
+  main .main-image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: m;
+    max-width: 100%;
+    height: auto;
+    min-height: 900px;
+  }
+  main .sectors {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: s;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  main .about-us {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: a;
+  }
+  main .secondary-image {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: i;
+  }
+  main .our-lawyers {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: o;
+  }
+  main .contact {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: c;
+  }
+  main .to-up {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: t;
+  }
+  main .main-image {
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position: center;
+  }
+  main .main-image .color-name {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 50%;
+    background-color: rgba(0, 48, 91, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+  }
+  main .main-image .color-name h1 {
+    display: block;
+    color: white;
+    font-size: 2rem;
+    width: 60%;
+    margin: 0.5rem auto;
+    word-wrap: normal;
+  }
+  main .main-image .color-name p {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    width: 60%;
+    margin: 2rem auto;
+  }
+  main .main-image .main-transparent {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 50%;
+    background-color: transparent;
+    -ms-flex-negative: 3;
+        flex-shrink: 3;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  main .sectors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+    padding-bottom: 3.5rem;
+  }
+  main .sectors .sectors-heading {
+    width: 100%;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  main .sectors .sectors-heading p {
+    font-size: 2rem;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: #00305b;
+  }
+  main .sectors .sectors-sections {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  main .sectors .sectors-sections .material-icons {
+    color: #41b7c4;
+    display: inline;
+  }
+  main .sectors .sectors-sections .first-section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0;
+  }
+  main .sectors .sectors-sections .first-section div {
+    margin-top: 2rem;
+    margin-right: 2%;
+  }
+  main .sectors .sectors-sections .first-section h2 {
+    font-size: 1.3rem;
+    display: inline;
+    font-weight: 500;
+  }
+  main .sectors .sectors-sections .first-section p {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+  main .sectors .sectors-sections .second-section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .sectors .sectors-sections .second-section div {
+    margin-top: 2rem;
+  }
+  main .sectors .sectors-sections .second-section h2 {
+    font-size: 1.3rem;
+    display: inline;
+    font-weight: 500;
+  }
+  main .sectors .sectors-sections .second-section p {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+  main .about-us {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    background-color: #00305b;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-bottom: 3.5rem;
+  }
+  main .about-us h3 {
+    font-size: 2rem;
+  }
+  main .about-us p {
+    font-size: 1.3rem;
+  }
+  main .about-us h3,
+  main .about-us p {
+    display: block;
+    width: 70%;
+  }
+  main .secondary-image {
+    width: 100%;
+    max-width: 100%;
+    height: 700px;
+    background-image: url("../images/2.jpg");
+    background-size: cover;
+  }
+  main .our-lawyers {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main .our-lawyers h4 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 2rem;
+    color: #00305b;
+  }
+  main .our-lawyers .lawyer {
+    width: 230px;
+    height: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  main .our-lawyers .lawyer a {
+    text-decoration: none;
+    color: #03325d;
+    font-style: italic;
+  }
+  main .our-lawyers .lawyer a:hover {
+    opacity: 50%;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  main .our-lawyers .lawyer img {
+    width: 100%;
+    height: 50%;
+  }
+  main .our-lawyers .lawyer p {
+    margin: 1rem;
+    text-align: center;
+  }
+  main .our-lawyers .lawyer .lawyer-name {
+    color: #03325d;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+  }
+  main .our-lawyers .lawyer .lawyer-fonction {
+    text-transform: uppercase;
+    color: #41b7c4;
+    font-size: 1.3rem;
+  }
+  main .our-lawyers .lawyer hr {
+    background-color: #41b7c4;
+    height: 1px;
+    border: none;
+  }
+  main .our-lawyers .lawyer .lawyer-tel {
+    color: #03325d;
+    font-size: 1.1rem;
+  }
+  main .our-lawyers .lawyer .lawyer-email {
+    color: #03325d;
+    font-size: 1.1rem;
+  }
+  main .contact {
+    width: 100%;
+    height: auto;
+    background-image: url("../images/6.jpg");
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  main .contact .background-one {
+    background-color: rgba(0, 48, 91, 0.5);
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .contact .background-one .background-two {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 48, 91, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  main .contact .background-one .background-two > p {
+    text-transform: uppercase;
+    display: block;
+    font-size: 2rem;
+    color: white;
+    margin-right: 3rem;
+    word-break: normal;
+  }
+  main .contact .background-one .background-text {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 3rem;
+    -ms-flex-negative: 2;
+        flex-shrink: 2;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: left;
+  }
+  main .contact .background-one .background-text .adress-heading {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  main .contact .background-one .background-text .adress {
+    font-size: 1.3rem;
+  }
+  main .contact .background-one .background-text .form-heading {
+    font-size: 1.3rem;
+  }
+  main .contact .background-one .background-text form {
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+  main .contact .background-one .background-text form #name-contact {
+    height: 1.5rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+  main .contact .background-one .background-text form #contact {
+    font-size: 1rem;
+    height: 1.5rem;
+    width: 100%;
+  }
+  main .contact .background-one .background-text form #comment {
+    font-size: 1rem;
+    width: 100%;
+  }
+  main .contact .background-one .background-text form #submit {
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    background-color: #41b7c4;
+    border: none;
+    color: white;
+  }
+  main .contact .background-one .background-text form #submit:hover {
+    opacity: 80%;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    cursor: pointer;
+  }
+  main .contact .background-one .background-text > p {
+    color: white;
+    display: block;
+  }
+  main .contact .background-one .background-text a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+  }
+  main .contact .background-one .background-text a:hover {
+    opacity: 50%;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  main .to-up {
+    width: 100%;
+    max-width: 100%;
+    background-color: #00305b;
+    color: white;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .to-up a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  main .to-up span {
+    margin-top: 0.5rem;
+    display: block;
+    font-size: 1.3rem;
+  }
+  main .to-up P {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding: 0 auto;
+    margin: 0 auto 1.5rem auto;
+  }
+  footer {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    color: #03325d;
+  }
+  footer p {
+    float: left;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+    margin-left: 3%;
+  }
+  footer i {
+    float: right;
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  footer i:hover {
+    opacity: 80%;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    cursor: pointer;
+  }
+  footer a {
+    color: black;
+  }
+}
+
+@media screen and (min-width: 386px) and (max-width: 600px) {
   header {
     position: fixed;
     left: 0;
@@ -644,24 +1204,21 @@ footer a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   header a {
     text-decoration: none;
     color: #00305b;
   }
-
   header a:hover {
     opacity: 50%;
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+            transition-duration: 0.5s;
   }
-
   header .header-name {
     width: 100%;
     height: 50%;
@@ -669,16 +1226,15 @@ footer a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
-
   header .header-name a {
     margin: 0 auto;
     display: inline-block;
@@ -686,98 +1242,86 @@ footer a {
     font-size: 1.5rem;
     text-transform: uppercase;
   }
-
   header .header-name i {
     color: #41b7c4;
   }
-
   header nav {
     width: 100%;
     height: 50%;
     display: block;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     text-align: center;
   }
-
   header nav a {
     display: inline-block;
     -ms-flex-preferred-size: none;
-    flex-basis: none;
+        flex-basis: none;
     text-align: center;
     margin-top: 0;
     padding-top: 0;
     margin-right: 20px;
   }
-
   header nav i {
     margin-right: 0.3rem;
     color: #41b7c4;
   }
-
   main {
     margin-top: 75px;
     display: -ms-grid;
     display: grid;
     width: 100%;
-
-    grid-template-columns: repeat(12 1fr);
-
-    grid-template-rows: repeat(7 1fr);
-    grid-template-areas: " m "
-      " s "
-      " a "
-      " i "
-      " o "
-      " c "
-      " t ";
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12 1fr);
+    -ms-grid-rows: (1fr)[7];
+        grid-template-rows: repeat(7 1fr);
+        grid-template-areas: " m " " s " " a " " i " " o " " c " " t ";
   }
-
   main .main-image {
-
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: m;
     max-width: 100%;
     height: auto;
     min-height: 900px;
   }
-
   main .sectors {
-
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: s;
     max-width: 100%;
     width: 100%;
     height: auto;
   }
-
   main .about-us {
-
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: a;
   }
-
   main .secondary-image {
-
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: i;
   }
-
   main .our-lawyers {
-
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: o;
   }
-
   main .contact {
-
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
     grid-area: c;
   }
-
   main .to-up {
-
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
     grid-area: t;
   }
-
   main .main-image {
     background-image: url("../images/1.jpg");
     background-size: cover;
@@ -786,14 +1330,13 @@ footer a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-position: center;
   }
-
   main .main-image .color-name {
     -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+        flex-basis: 100%;
     height: 50%;
     background-color: rgba(0, 48, 91, 0.5);
     display: -webkit-box;
@@ -801,21 +1344,20 @@ footer a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-negative: 1;
-    flex-shrink: 1;
+        flex-shrink: 1;
     -webkit-box-flex: 3;
-    -ms-flex-positive: 3;
-    flex-grow: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
   }
-
   main .main-image .color-name h1 {
     display: block;
     color: white;
@@ -824,7 +1366,6 @@ footer a {
     margin: 0 auto;
     word-wrap: normal;
   }
-
   main .main-image .color-name p {
     display: block;
     color: white;
@@ -832,40 +1373,36 @@ footer a {
     width: 60%;
     margin: 2rem auto;
   }
-
   main .main-image .main-transparent {
     -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+        flex-basis: 100%;
     height: 50%;
     background-color: transparent;
     -ms-flex-negative: 3;
-    flex-shrink: 3;
+        flex-shrink: 3;
     -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
-
   main .sectors {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 10px;
     padding-bottom: 3.5rem;
   }
-
   main .sectors .sectors-heading {
     width: 100%;
     display: block;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
   }
-
   main .sectors .sectors-heading p {
     font-size: 3rem;
     display: inline-block;
@@ -873,25 +1410,22 @@ footer a {
     margin: 0 auto;
     color: #00305b;
   }
-
   main .sectors .sectors-sections {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     text-align: center;
   }
-
   main .sectors .sectors-sections .material-icons {
     color: #41b7c4;
     display: inline;
   }
-
   main .sectors .sectors-sections .first-section {
     width: 100%;
     display: -webkit-box;
@@ -899,27 +1433,23 @@ footer a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-right: 0;
   }
-
   main .sectors .sectors-sections .first-section div {
     margin-top: 2rem;
     margin-right: 2%;
   }
-
   main .sectors .sectors-sections .first-section h2 {
     font-size: 1.3rem;
     display: inline;
     font-weight: 500;
   }
-
   main .sectors .sectors-sections .first-section p {
     font-size: 1.4rem;
     margin-top: 2rem;
   }
-
   main .sectors .sectors-sections .second-section {
     width: 100%;
     display: -webkit-box;
@@ -927,25 +1457,21 @@ footer a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   main .sectors .sectors-sections .second-section div {
     margin-top: 2rem;
   }
-
   main .sectors .sectors-sections .second-section h2 {
     font-size: 1.3rem;
     display: inline;
     font-weight: 500;
   }
-
   main .sectors .sectors-sections .second-section p {
     font-size: 1.3rem;
     margin-top: 2rem;
   }
-
   main .about-us {
     max-width: 100%;
     width: 100%;
@@ -957,31 +1483,27 @@ footer a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     padding-bottom: 3.5rem;
   }
-
   main .about-us h3 {
     font-size: 3rem;
   }
-
   main .about-us p {
     font-size: 1.3rem;
   }
-
   main .about-us h3,
   main .about-us p {
     display: block;
     width: 70%;
   }
-
   main .secondary-image {
     width: 100%;
     max-width: 100%;
@@ -989,19 +1511,17 @@ footer a {
     background-image: url("../images/2.jpg");
     background-size: cover;
   }
-
   main .our-lawyers {
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-
   main .our-lawyers h4 {
     width: 100%;
     height: auto;
@@ -1009,73 +1529,61 @@ footer a {
     font-size: 3rem;
     color: #00305b;
   }
-
   main .our-lawyers .lawyer {
     width: 230px;
     height: auto;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
   }
-
   main .our-lawyers .lawyer a {
     text-decoration: none;
     color: #03325d;
     font-style: italic;
   }
-
   main .our-lawyers .lawyer a:hover {
     opacity: 50%;
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+            transition-duration: 0.5s;
   }
-
   main .our-lawyers .lawyer img {
     width: 100%;
     height: 50%;
   }
-
   main .our-lawyers .lawyer p {
     margin: 1rem;
     text-align: center;
   }
-
   main .our-lawyers .lawyer .lawyer-name {
     color: #03325d;
     text-transform: uppercase;
     font-size: 1.4rem;
   }
-
   main .our-lawyers .lawyer .lawyer-fonction {
     text-transform: uppercase;
     color: #41b7c4;
     font-size: 1.3rem;
   }
-
   main .our-lawyers .lawyer hr {
     background-color: #41b7c4;
     height: 1px;
     border: none;
   }
-
   main .our-lawyers .lawyer .lawyer-tel {
     color: #03325d;
     font-size: 1.1rem;
   }
-
   main .our-lawyers .lawyer .lawyer-email {
     color: #03325d;
     font-size: 1.1rem;
   }
-
   main .contact {
     width: 100%;
     height: auto;
     background-image: url("../images/6.jpg");
     background-size: cover;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
   }
-
   main .contact .background-one {
     background-color: rgba(0, 48, 91, 0.5);
     height: 100%;
@@ -1085,10 +1593,9 @@ footer a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   main .contact .background-one .background-two {
     width: 100%;
     height: 50%;
@@ -1097,23 +1604,22 @@ footer a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
+        flex-basis: 40%;
     -ms-flex-negative: 1;
-    flex-shrink: 1;
+        flex-shrink: 1;
     -webkit-box-flex: 2;
-    -ms-flex-positive: 2;
-    flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
   }
-
-  main .contact .background-one .background-two>p {
+  main .contact .background-one .background-two > p {
     text-transform: uppercase;
     display: block;
     font-size: 3rem;
@@ -1121,68 +1627,59 @@ footer a {
     margin-right: 3rem;
     word-break: normal;
   }
-
   main .contact .background-one .background-text {
     padding-top: 2rem;
     padding-bottom: 2rem;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+        flex-basis: 100%;
     height: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: 3rem;
     -ms-flex-negative: 2;
-    flex-shrink: 2;
+        flex-shrink: 2;
     -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
-
   main .contact .background-one .background-text .adress-heading {
     font-size: 1.5rem;
     text-transform: uppercase;
   }
-
   main .contact .background-one .background-text .adress {
     font-size: 1.3rem;
   }
-
   main .contact .background-one .background-text .form-heading {
     font-size: 1.3rem;
   }
-
   main .contact .background-one .background-text form {
     width: 80%;
     margin-bottom: 3rem;
   }
-
   main .contact .background-one .background-text form #name-contact {
     height: 1.5rem;
     width: 100%;
     font-size: 1rem;
   }
-
   main .contact .background-one .background-text form #contact {
     font-size: 1rem;
     height: 1.5rem;
     width: 100%;
   }
-
   main .contact .background-one .background-text form #comment {
     font-size: 1rem;
     width: 100%;
   }
-
   main .contact .background-one .background-text form #submit {
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
@@ -1190,31 +1687,26 @@ footer a {
     border: none;
     color: white;
   }
-
   main .contact .background-one .background-text form #submit:hover {
     opacity: 80%;
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+            transition-duration: 0.5s;
     cursor: pointer;
   }
-
-  main .contact .background-one .background-text>p {
+  main .contact .background-one .background-text > p {
     color: white;
     display: block;
   }
-
   main .contact .background-one .background-text a {
     color: white;
     text-decoration: none;
     font-style: italic;
   }
-
   main .contact .background-one .background-text a:hover {
     opacity: 50%;
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+            transition-duration: 0.5s;
   }
-
   main .to-up {
     width: 100%;
     max-width: 100%;
@@ -1226,28 +1718,25 @@ footer a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   main .to-up a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
   }
-
   main .to-up span {
     margin-top: 0.5rem;
     display: block;
     font-size: 1.5rem;
   }
-
   main .to-up P {
     display: block;
     text-transform: uppercase;
@@ -1255,34 +1744,29 @@ footer a {
     padding: 0 auto;
     margin: 0 auto 1.5rem auto;
   }
-
   footer {
     width: 100%;
     max-width: 100%;
     height: auto;
     color: #03325d;
   }
-
   footer p {
     float: left;
     font-size: 0.9rem;
     margin-top: 0.8rem;
     margin-left: 3%;
   }
-
   footer i {
     float: right;
     font-size: 1.5rem;
     margin: 1rem;
   }
-
   footer i:hover {
     opacity: 80%;
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+            transition-duration: 0.5s;
     cursor: pointer;
   }
-
   footer a {
     color: black;
   }
@@ -1294,13 +1778,11 @@ footer a {
     margin: 0;
     scroll-behavior: smooth;
   }
-
   body {
     font-family: 'Roboto', Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
   }
-
   header {
     position: fixed;
     left: 0;
@@ -1313,24 +1795,21 @@ footer a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   header a {
     text-decoration: none;
     color: #00305b;
   }
-
   header a:hover {
     opacity: 50%;
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+            transition-duration: 0.5s;
   }
-
   header .header-name {
     width: 100%;
     height: 50%;
@@ -1338,16 +1817,15 @@ footer a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
-
   header .header-name a {
     margin: 0 auto;
     display: inline-block;
@@ -1355,99 +1833,86 @@ footer a {
     font-size: 1.5rem;
     text-transform: uppercase;
   }
-
   header .header-name i {
     color: #41b7c4;
   }
-
   header nav {
     width: 100%;
     height: 50%;
     display: block;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     text-align: center;
   }
-
   header nav a {
     display: inline-block;
     -ms-flex-preferred-size: none;
-    flex-basis: none;
+        flex-basis: none;
     text-align: center;
     margin-top: 0;
     padding-top: 0;
     margin-right: 20px;
   }
-
   header nav i {
     margin-right: 0.3rem;
     color: #41b7c4;
   }
-
   main {
     margin-top: 50px;
     display: -ms-grid;
     display: grid;
     width: 100%;
-
-    grid-template-columns: repeat(12 1fr);
-
-    grid-template-rows: repeat(7 1fr);
-    grid-template-areas: " m "
-      " s "
-      " a "
-      " i "
-      " o "
-      " c "
-      " t ";
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12 1fr);
+    -ms-grid-rows: (1fr)[7];
+        grid-template-rows: repeat(7 1fr);
+        grid-template-areas: " m " " s " " a " " i " " o " " c " " t ";
   }
-
   main .main-image {
-
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: m;
     max-width: 100%;
     height: auto;
     min-height: 900px;
   }
-
   main .sectors {
-
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: s;
     max-width: 100%;
     width: 100%;
     height: auto;
   }
-
   main .about-us {
-
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: a;
   }
-
   main .secondary-image {
-
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: i;
   }
-
   main .our-lawyers {
-
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: o;
   }
-
   main .contact {
-
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
     grid-area: c;
   }
-
   main .to-up {
-
-
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
     grid-area: t;
   }
-
   main .main-image {
     background-image: url("../images/1.jpg");
     background-size: cover;
@@ -1456,10 +1921,9 @@ footer a {
     display: flex;
     background-position: center;
   }
-
   main .main-image .color-name {
     -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
+        flex-basis: 40%;
     height: 100%;
     background-color: rgba(0, 48, 91, 0.5);
     display: -webkit-box;
@@ -1467,21 +1931,20 @@ footer a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -ms-flex-negative: 1;
-    flex-shrink: 1;
+        flex-shrink: 1;
     -webkit-box-flex: 3;
-    -ms-flex-positive: 3;
-    flex-grow: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
   }
-
   main .main-image .color-name h1 {
     display: block;
     color: white;
@@ -1490,7 +1953,6 @@ footer a {
     margin-right: 8rem;
     word-wrap: normal;
   }
-
   main .main-image .color-name p {
     display: block;
     color: white;
@@ -1498,39 +1960,35 @@ footer a {
     width: 50%;
     margin-right: 8rem;
   }
-
   main .main-image .main-transparent {
     -ms-flex-preferred-size: 60%;
-    flex-basis: 60%;
+        flex-basis: 60%;
     background-color: transparent;
     -ms-flex-negative: 3;
-    flex-shrink: 3;
+        flex-shrink: 3;
     -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
-
   main .sectors {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 10px;
     padding-bottom: 3.5rem;
   }
-
   main .sectors .sectors-heading {
     width: 100%;
     display: block;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
   }
-
   main .sectors .sectors-heading p {
     font-size: 3.5rem;
     display: inline-block;
@@ -1538,25 +1996,22 @@ footer a {
     margin: 0 auto;
     color: #00305b;
   }
-
   main .sectors .sectors-sections {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     text-align: center;
   }
-
   main .sectors .sectors-sections .material-icons {
     color: #41b7c4;
     display: inline;
   }
-
   main .sectors .sectors-sections .first-section {
     width: 48%;
     display: -webkit-box;
@@ -1564,27 +2019,23 @@ footer a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-right: 0;
   }
-
   main .sectors .sectors-sections .first-section div {
     margin-top: 2rem;
     margin-right: 2%;
   }
-
   main .sectors .sectors-sections .first-section h2 {
     font-size: 1.3rem;
     display: inline;
     font-weight: 500;
   }
-
   main .sectors .sectors-sections .first-section p {
     font-size: 1.4rem;
     margin-top: 2rem;
   }
-
   main .sectors .sectors-sections .second-section {
     width: 48%;
     display: -webkit-box;
@@ -1592,25 +2043,21 @@ footer a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   main .sectors .sectors-sections .second-section div {
     margin-top: 2rem;
   }
-
   main .sectors .sectors-sections .second-section h2 {
     font-size: 1.3rem;
     display: inline;
     font-weight: 500;
   }
-
   main .sectors .sectors-sections .second-section p {
     font-size: 1.3rem;
     margin-top: 2rem;
   }
-
   main .about-us {
     max-width: 100%;
     width: 100%;
@@ -1622,31 +2069,27 @@ footer a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     padding-bottom: 3.5rem;
   }
-
   main .about-us h3 {
     font-size: 3.5rem;
   }
-
   main .about-us p {
     font-size: 1.3rem;
   }
-
   main .about-us h3,
   main .about-us p {
     display: block;
     width: 70%;
   }
-
   main .secondary-image {
     width: 100%;
     max-width: 100%;
@@ -1654,19 +2097,17 @@ footer a {
     background-image: url("../images/2.jpg");
     background-size: cover;
   }
-
   main .our-lawyers {
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-
   main .our-lawyers h4 {
     width: 100%;
     height: auto;
@@ -1674,73 +2115,61 @@ footer a {
     font-size: 3.5rem;
     color: #00305b;
   }
-
   main .our-lawyers .lawyer {
     width: 230px;
     height: auto;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
   }
-
   main .our-lawyers .lawyer a {
     text-decoration: none;
     color: #03325d;
     font-style: italic;
   }
-
   main .our-lawyers .lawyer a:hover {
     opacity: 50%;
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+            transition-duration: 0.5s;
   }
-
   main .our-lawyers .lawyer img {
     width: 100%;
     height: 50%;
   }
-
   main .our-lawyers .lawyer p {
     margin: 1rem;
     text-align: center;
   }
-
   main .our-lawyers .lawyer .lawyer-name {
     color: #03325d;
     text-transform: uppercase;
     font-size: 1.4rem;
   }
-
   main .our-lawyers .lawyer .lawyer-fonction {
     text-transform: uppercase;
     color: #41b7c4;
     font-size: 1.3rem;
   }
-
   main .our-lawyers .lawyer hr {
     background-color: #41b7c4;
     height: 1px;
     border: none;
   }
-
   main .our-lawyers .lawyer .lawyer-tel {
     color: #03325d;
     font-size: 1.1rem;
   }
-
   main .our-lawyers .lawyer .lawyer-email {
     color: #03325d;
     font-size: 1.1rem;
   }
-
   main .contact {
     width: 100%;
     height: auto;
     background-image: url("../images/6.jpg");
     background-size: cover;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
   }
-
   main .contact .background-one {
     background-color: rgba(0, 48, 91, 0.5);
     height: 100%;
@@ -1749,7 +2178,6 @@ footer a {
     display: -ms-flexbox;
     display: flex;
   }
-
   main .contact .background-one .background-two {
     height: 100%;
     background-color: rgba(0, 48, 91, 0.5);
@@ -1757,23 +2185,22 @@ footer a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
+        flex-basis: 40%;
     -ms-flex-negative: 1;
-    flex-shrink: 1;
+        flex-shrink: 1;
     -webkit-box-flex: 2;
-    -ms-flex-positive: 2;
-    flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
   }
-
-  main .contact .background-one .background-two>p {
+  main .contact .background-one .background-two > p {
     text-transform: uppercase;
     display: block;
     font-size: 3.5rem;
@@ -1781,63 +2208,54 @@ footer a {
     margin-right: 3rem;
     word-break: normal;
   }
-
   main .contact .background-one .background-text {
     -ms-flex-preferred-size: 60%;
-    flex-basis: 60%;
+        flex-basis: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: 3rem;
     -ms-flex-negative: 2;
-    flex-shrink: 2;
+        flex-shrink: 2;
     -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
-
   main .contact .background-one .background-text .adress-heading {
     font-size: 1.5rem;
     text-transform: uppercase;
   }
-
   main .contact .background-one .background-text .adress {
     font-size: 1.3rem;
   }
-
   main .contact .background-one .background-text .form-heading {
     font-size: 1.3rem;
   }
-
   main .contact .background-one .background-text form {
     width: 80%;
     margin-bottom: 3rem;
   }
-
   main .contact .background-one .background-text form #name-contact {
     height: 1.5rem;
     width: 100%;
     font-size: 1rem;
   }
-
   main .contact .background-one .background-text form #contact {
     font-size: 1rem;
     height: 1.5rem;
     width: 100%;
   }
-
   main .contact .background-one .background-text form #comment {
     font-size: 1rem;
     width: 100%;
   }
-
   main .contact .background-one .background-text form #submit {
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
@@ -1845,31 +2263,26 @@ footer a {
     border: none;
     color: white;
   }
-
   main .contact .background-one .background-text form #submit:hover {
     opacity: 80%;
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+            transition-duration: 0.5s;
     cursor: pointer;
   }
-
-  main .contact .background-one .background-text>p {
+  main .contact .background-one .background-text > p {
     color: white;
     display: block;
   }
-
   main .contact .background-one .background-text a {
     color: white;
     text-decoration: none;
     font-style: italic;
   }
-
   main .contact .background-one .background-text a:hover {
     opacity: 50%;
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+            transition-duration: 0.5s;
   }
-
   main .to-up {
     width: 100%;
     max-width: 100%;
@@ -1881,28 +2294,25 @@ footer a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   main .to-up a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
   }
-
   main .to-up span {
     margin-top: 0.5rem;
     display: block;
     font-size: 3rem;
   }
-
   main .to-up P {
     display: block;
     text-transform: uppercase;
@@ -1910,36 +2320,31 @@ footer a {
     padding: 0 auto;
     margin: 0 auto 1.5rem auto;
   }
-
   footer {
     width: 100%;
     max-width: 100%;
     height: auto;
     color: #03325d;
   }
-
   footer p {
     float: left;
     font-size: 0.9rem;
     margin-top: 0.8rem;
     margin-left: 3%;
   }
-
   footer i {
     float: right;
     font-size: 1.5rem;
     margin: 1rem;
   }
-
   footer i:hover {
     opacity: 80%;
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+            transition-duration: 0.5s;
     cursor: pointer;
   }
-
   footer a {
     color: black;
   }
 }
-
+/*# sourceMappingURL=index.css.map */

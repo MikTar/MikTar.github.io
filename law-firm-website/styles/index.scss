@@ -610,9 +610,611 @@ footer {
 }
 
 
+@media screen and (min-width: 1px) and (max-width: 386px) {
+    @mixin large-text {
+        font-size: 2rem;
+    }
+
+    header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 25px;
+        width: 100%;
+        max-width: 100%;
+        background-color: white;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+
+        a {
+            text-decoration: none;
+            color: $main-color;
+        }
+
+        a:hover {
+            @include hover-opacity();
+        }
+
+        .header-name {
+            width: 100%;
+            height: 100%;
 
 
-@media screen and (min-width: 1px) and (max-width: 600px) {
+
+            display: inline;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+
+            a {
+                margin: 0 auto;
+                display: inline-block;
+                padding: 0;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
+
+            i {
+                color: $second-color;
+            }
+
+        }
+
+        nav {
+            display: none;
+        }
+    }
+
+
+    main {
+        margin-top: 25px;
+        display: grid;
+        width: 100%;
+
+        grid-template-columns: repeat(12 1fr);
+        grid-template-rows: repeat(7 1fr);
+        grid-template-areas:
+            " m "
+            " s "
+            " a "
+            " i "
+            " o "
+            " c "
+            " t ";
+
+        .main-image {
+            grid-area: m;
+            max-width: 100%;
+            height: auto;
+            min-height: 900px;
+        }
+
+        .sectors {
+            grid-area: s;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+
+        }
+
+        .about-us {
+            grid-area: a;
+        }
+
+        .secondary-image {
+            grid-area: i;
+        }
+
+        .our-lawyers {
+            grid-area: o;
+        }
+
+        .contact {
+            grid-area: c;
+        }
+
+        .to-up {
+            grid-area: t;
+        }
+
+        .main-image {
+
+            background-image: url("../images/1.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            background-position: center;
+
+
+            .color-name {
+                flex-basis: 100%;
+                height: 50%;
+                background-color: rgba(0, 48, 91, 0.5);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-align: left;
+                flex-shrink: 1;
+                flex-grow: 3;
+
+
+                h1 {
+                    display: block;
+                    color: white;
+                    @include large-text();
+                    width: 60%;
+                    // margin-right: 0rem;
+                    // margin-left: 0rem;
+                    margin: 0.5rem auto;
+                    word-wrap: normal;
+                }
+
+                p {
+                    display: block;
+                    color: white;
+                    font-size: 1.5rem;
+                    width: 60%;
+                    // margin-right: 0rem;
+                    margin: 2rem auto;
+                }
+            }
+
+            .main-transparent {
+                flex-basis: 100%;
+                height: 50%;
+                background-color: transparent;
+                flex-shrink: 3;
+                flex-grow: 1;
+            }
+
+
+
+        }
+
+        .sectors {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            padding-bottom: 3.5rem;
+
+            .sectors-heading {
+                width: 100%;
+                display: block;
+                justify-content: center;
+                text-align: center;
+
+                p {
+                    @include large-text();
+                    display: inline-block;
+
+                    text-transform: uppercase;
+                    margin: 0 auto;
+                    color: $main-color;
+
+                }
+
+            }
+
+            .sectors-sections {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                text-align: center;
+
+
+
+                .material-icons {
+                    color: #41b7c4;
+                    display: inline;
+                }
+
+
+
+                .first-section {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+
+                    margin-right: 0;
+
+                    div {
+
+                        margin-top: 2rem;
+                        margin-right: 2%;
+                    }
+
+                    h2 {
+                        font-size: 1.3rem;
+                        display: inline;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        font-size: 1.4rem;
+                        margin-top: 2rem;
+                    }
+                }
+
+                .second-section {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+
+                    div {
+
+                        margin-top: 2rem;
+                    }
+
+                    h2 {
+                        font-size: 1.3rem;
+                        display: inline;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        font-size: 1.3rem;
+                        margin-top: 2rem;
+                    }
+
+
+                }
+
+            }
+
+        }
+
+        .about-us {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            background-color: $main-color;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 3.5rem;
+
+            h3 {
+                @include large-text();
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
+
+
+
+
+            h3,
+            p {
+                display: block;
+                width: 70%;
+            }
+
+
+        }
+
+
+        .secondary-image {
+            width: 100%;
+            max-width: 100%;
+            height: 700px;
+            background-image: url("../images/2.jpg");
+            background-size: cover;
+        }
+
+        .our-lawyers {
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+
+
+            h4 {
+
+                width: 100%;
+                height: auto;
+                text-align: center;
+                @include large-text();
+                color: $main-color;
+            }
+
+
+            .lawyer {
+                width: 230px;
+                height: auto;
+                box-sizing: border-box;
+
+                a {
+                    text-decoration: none;
+                    color: $third-color;
+                    font-style: italic;
+
+                }
+
+                a:hover {
+                    @include hover-opacity();
+                }
+
+                img {
+                    width: 100%;
+                    height: 50%;
+                }
+
+
+
+
+                p {
+                    margin: 1rem;
+                    text-align: center;
+
+                }
+
+                .lawyer-name {
+                    color: $third-color;
+
+                    text-transform: uppercase;
+                    font-size: 1.4rem;
+                }
+
+                .lawyer-fonction {
+
+                    text-transform: uppercase;
+                    color: $second-color;
+                    font-size: 1.3rem;
+                }
+
+                hr {
+                    background-color: $second-color;
+                    height: 1px;
+                    border: none;
+                }
+
+                .lawyer-tel {
+                    color: $third-color;
+                    font-size: 1.1rem;
+                }
+
+                .lawyer-email {
+                    color: $third-color;
+                    font-size: 1.1rem;
+                }
+            }
+
+        }
+
+        .contact {
+            width: 100%;
+            height: auto;
+            background-image: url("../images/6.jpg");
+            background-size: cover;
+            box-sizing: border-box;
+
+
+            .background-one {
+                background-color: rgba(0, 48, 91, 0.5);
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+
+                .background-two {
+                    width: 100%;
+                    height: 50%;
+                    background-color: rgba(0, 48, 91, 0.5);
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    flex-wrap: wrap;
+                    flex-basis: 40%;
+                    flex-shrink: 1;
+                    flex-grow: 2;
+
+                    >p {
+                        text-transform: uppercase;
+                        display: block;
+                        @include large-text();
+                        color: white;
+                        margin-right: 3rem;
+                        word-break: normal;
+                    }
+
+                }
+
+                .background-text {
+                    padding-top: 4rem;
+                    padding-bottom: 2rem;
+                    box-sizing: border-box;
+                    flex-basis: 100%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 3rem;
+                    flex-shrink: 2;
+                    flex-grow: 1;
+                    text-align: left;
+
+                    .adress-heading {
+                        
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                    }
+
+                    .adress {
+                        font-size: 1.3rem;
+                    }
+
+                    .form-heading {
+                        font-size: 1.3rem;
+                    }
+
+                    form {
+                        width: 80%;
+                        margin-bottom: 3rem;
+
+                        #name-contact {
+                            height: 1.5rem;
+                            width: 100%;
+                            font-size: 1rem;
+
+                        }
+
+                        #contact {
+                            font-size: 1rem;
+                            height: 1.5rem;
+                            width: 100%;
+
+                        }
+
+                        #comment {
+                            font-size: 1rem;
+                            width: 100%;
+                        }
+
+                        #submit {
+                            padding: 0.3rem 0.7rem;
+                            font-size: 1rem;
+                            background-color: $second-color;
+                            border: none;
+                            color: white;
+                        }
+
+                        #submit:hover {
+                           
+                            @include hover-opacity-light();
+                            cursor: pointer;
+                        }
+                    }
+
+
+                    >p {
+                        color: white;
+                        display: block;
+                    }
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-style: italic;
+                    }
+
+                    a:hover {
+                        @include hover-opacity();
+
+                    }
+
+
+
+                }
+
+            }
+
+
+
+        }
+
+
+        .to-up {
+            width: 100%;
+            max-width: 100%;
+            background-color: $main-color;
+            color: white;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+            span {
+                margin-top: 0.5rem;
+                display: block;
+                font-size: 1.3rem;
+            }
+
+            P {
+                display: block;
+                text-transform: uppercase;
+                font-size: 0.7rem;
+                padding: 0 auto;
+                margin: 0 auto 1.5rem auto;
+            }
+        }
+
+    }
+
+
+    footer {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        color: $third-color;
+
+
+
+        p {
+
+            float: left;
+            font-size: 0.9rem;
+            margin-top: 0.8rem;
+            margin-left: 3%;
+        }
+
+        i {
+
+            float: right;
+            font-size: 1.5rem;
+
+            margin: 1rem;
+        }
+
+        i:hover {
+            @include hover-opacity-light();
+            cursor: pointer;
+        }
+
+        a {
+            color: black;
+        }
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 386px) and (max-width: 600px) {
     @mixin large-text {
         font-size: 3rem;
     }
