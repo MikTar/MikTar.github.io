@@ -12,22 +12,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-        <script src="https://kit.fontawesome.com/9e9fe7acb9.js" crossorigin="anonymous"></script>
-    <title>SCSS</title>
+    <script src="https://kit.fontawesome.com/9e9fe7acb9.js" crossorigin="anonymous"></script>
+    <title>Law firm site</title>
+
+    <meta property="og:title" content="Law firm site" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://miktar.github.io/law-firm-website" />
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
+    <meta property="og:description" content="Юридическая фирма" />
+    <meta property="og:site_name" content="Профессионалы" />
+
+    <link rel="icon" href="images/icon.jpg">
 </head>
 
 <body>
-    <header >
-         <div class="header-name">  <a href="index.html"> <i class="fas fa-layer-group"></i> Юридическая компания</a>  </div> 
-         <nav> 
-             <a href="#color-name"> <i class="fas fa-home"></i>ГЛАВНАЯ</a> 
-              <a href="#sectors"> <i class="fas fa-clone"></i>СФЕРЫ РАБОТЫ</a>   
-             <a href="#about-us"> <i class="fas fa-align-center"></i> О НАС</a> 
-             <a href="#our-lawyers"> <i class="fas fa-address-card"></i>ЮРИСТЫ</a> 
-              <a href="#contact"> <i class="fas fa-phone-square-alt"></i>КОНТАКТЫ</a> 
-           
-          <nav>  
-</header>
+    <header>
+        <div class="header-name"> <a href="index.html"> <i class="fas fa-layer-group"></i> Санин и партнеры</a>
+        </div>
+        <nav>
+            <a href="#color-name"> <i class="fas fa-home"></i>ГЛАВНАЯ</a>
+            <a href="#sectors"> <i class="fas fa-clone"></i>СФЕРЫ РАБОТЫ</a>
+            <a href="#about-us"> <i class="fas fa-align-center"></i> О НАС</a>
+            <a href="#our-lawyers"> <i class="fas fa-address-card"></i>ЮРИСТЫ</a>
+            <a href="#contact"> <i class="fas fa-phone-square-alt"></i>КОНТАКТЫ</a>
+
+            <nav>
+    </header>
     <main>
         <section class="main-image">
             <div id="color-name" class="color-name">
@@ -106,7 +117,7 @@
         <section class="our-lawyers" id="our-lawyers">
             <h4> Наши юристы</h4>
 
-            <div class="lawyer"> <img src="images/3.jpg" alt="first"> 
+            <div class="lawyer"> <img src="images/3.jpg" alt="first">
                 <p class="lawyer-name">СЕРГЕЙ САНИН</p>
                 <p class="lawyer-fonction">ПАРТНЕР</p>
                 <hr>
@@ -133,44 +144,51 @@
 
 
         </section>
-        <section class="contact" id="contact"> 
-            <div class="background-one"><div class="background-two"> <p>Свяжитесь <br> с нами</p> </div>
-        <div class="background-text"><p class="adress-heading">НАШ АДРЕС</p>
-        <p class="adress">
-            ул. Арбат, 1а, Москва, 119019, Россия​ <br>
-            Email:  <a href="mailto:info@mysite.ru">info@mysite.ru</a> <br>
-            Телефон:  <a href="tel:+74950000000"> +7 (495) 000-00-00</a>
-        </p>
-        <p class="form-heading"> Напишите нам, и мы свяжимся с вами в самое ближайшее время:</p>
-        <form action="https://formspree.io/f/mwkwyjrz" method="post">
-            <label for="name-contact"></label>
-            <input type="text"   id="name-contact" name = 'name-contact'  maxlength="50" value="" placeholder="Имя/Фамилия" required> <br><br>
-            <label for="contact"></label>
-            <input type="text"  id="contact" name = 'mail-or-tel-contact'  maxlength="50" value="" placeholder="Номер тел. и/или e-mail" required> <br><br>
-            <label for="comment"></label>
-            <textarea  style="font-family: Arial,sans-serif " id="comment" name="comment" cols="15" rows="10" placeholder="Комментарий" required></textarea> <br><br>
-            <input type="hidden" name="_language" value="rus" />
-            <input id="submit" type="submit" name="submit" value="Отправить">
-         </form>
+        <section class="contact" id="contact">
+            <div class="background-one">
+                <div class="background-two">
+                    <p>Свяжитесь <br> с нами</p>
+                </div>
+                <div class="background-text">
+                    <p class="adress-heading">НАШ АДРЕС</p>
+                    <p class="adress">
+                        ул. Арбат, 1а, Москва, 119019, Россия​ <br>
+                        Email: <a href="mailto:info@mysite.ru">info@mysite.ru</a> <br>
+                        Телефон: <a href="tel:+74950000000"> +7 (495) 000-00-00</a>
+                    </p>
+                    <p class="form-heading"> Напишите нам, и мы свяжимся с вами в самое ближайшее время:</p>
+                    <form action="https://formspree.io/f/mwkwyjrz" method="post">
+                        <label for="name-contact"></label>
+                        <input type="text" id="name-contact" name='name-contact' maxlength="50" value=""
+                            placeholder="Имя/Фамилия" required> <br><br>
+                        <label for="contact"></label>
+                        <input type="text" id="contact" name='mail-or-tel-contact' maxlength="50" value=""
+                            placeholder="Номер тел. и/или e-mail" required> <br><br>
+                        <label for="comment"></label>
+                        <textarea style="font-family: Arial,sans-serif " id="comment" name="comment" cols="15" rows="10"
+                            placeholder="Комментарий" required></textarea> <br><br>
+                        <input type="hidden" name="_language" value="rus" />
+                        <input id="submit" type="submit" name="submit" value="Отправить">
+                    </form>
 
 
-    </div>
-        
-        </div>
-            
+                </div>
+
+            </div>
+
         </section>
         <section class="to-up">
             <span class="material-icons">
                 keyboard_arrow_up
-                </span>
+            </span>
             <p> <a href="#color-name">Наверх</a></p>
         </section>
     </main>
     <footer>
         <p>© 2023 Санин и партнеры </p>
-         <a href="https://vk.com/"><i class="fab fa-vk"></i></a>  
-         <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>  
-        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>  
+        <a href="https://vk.com/"><i class="fab fa-vk"></i></a>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
     </footer>
 </body>
 
