@@ -738,3 +738,12 @@ textarea{
     opacity: 80%;
 }
 
+#contact-contact a {
+    color: inherit;
+    font-style: italic;
+
+}
+#intro-right-bar a {
+    color: inherit;
+    font-style: italic;
+}
