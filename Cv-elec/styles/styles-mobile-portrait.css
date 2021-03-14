@@ -615,3 +615,11 @@
 
     }
 
+#mobile-cv-contacts-mail-text a {
+    color: inherit;
+    font-style: italic;
+}
+#mobile-secteurs-etc a {
+    color: inherit;
+    font-style: italic;
+}
