@@ -13,24 +13,25 @@ while(firstQuestion !== 'quit'){
             console.log(`${add} added to list`)
         };
         
-    };
+    }
 
-    if(firstQuestion === 'list'){
+    else if(firstQuestion === 'list'){
         console.log(` *******************`);
         for(let i =0 ; i<TodoList.length; i++){
             console.log(` ${i}       : ${TodoList[i]}`);
         };
         console.log('********************')
-        firstQuestion = prompt('What would you like to do?');
-    };
-
-    if(firstQuestion === 'delete'){
+       
+    } 
+    
+    else if(firstQuestion === 'delete'){
         let del = prompt('Index of todo item to delete?');
         console.log(`Deleted ${TodoList[del]}`);
         TodoList.splice(del,1);
-        firstQuestion = prompt('What would you like to do?');
+        
     }
 
+    
 }
 
 while(firstQuestion === 'quit'){
