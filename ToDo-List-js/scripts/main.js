@@ -6,24 +6,25 @@ let firstQuestion = prompt('What would you like to do? Type something to start o
 while(firstQuestion !== 'quit'){
     firstQuestion = prompt('What would you like to do?');
 
-     while(firstQuestion === 'new'){
+     if(firstQuestion === 'new'){
         let add = prompt('Enter new todo');
         if(add){
             TodoList.push(add);
             console.log(`${add} added to list`)
         };
-        firstQuestion = prompt('What would you like to do?')
+        
     };
 
-    while(firstQuestion === 'list'){
-        console.log(`Here your todo list :`);
+    if(firstQuestion === 'list'){
+        console.log(` *******************`);
         for(let i =0 ; i<TodoList.length; i++){
             console.log(` ${i}       : ${TodoList[i]}`);
         };
+        console.log('********************')
         firstQuestion = prompt('What would you like to do?');
     };
 
-    while(firstQuestion === 'delete'){
+    if(firstQuestion === 'delete'){
         let del = prompt('Index of todo item to delete?');
         console.log(`Deleted ${TodoList[del]}`);
         TodoList.splice(del,1);
