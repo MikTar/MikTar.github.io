@@ -1,0 +1,30 @@
+main {
+    h1{
+        background-color: purple;
+    }
+}
+
+
+.pokemons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ .pokemon-size{
+     width: 100px;
+     height: 100px;
+ }
+
+ .heading {
+     color: purple;
+ }
+ .div-size{
+     width: auto;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+    //  border: 1px solid black;
+     align-items: center;
+     justify-content: center;
+     
+ }
