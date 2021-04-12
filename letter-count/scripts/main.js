@@ -1,7 +1,7 @@
 function myFunction(){
     
     let textValue = document.getElementById('textareaID').value;
-    let textValueNoSpaces = textValue.replace(/[\s1234567890.,%:"'!-/.../'?;@ АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщьэюя]/g, '');
+    let textValueNoSpaces = textValue.replace(/[\s1234567890.,%:"'!`#$^&*()_+|',-/.../'?;@ АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщьэюя]/g, '');
     let textLength = textValueNoSpaces.length;
     let p = document.getElementById("result");
     let textResult = document.querySelector('#text-result');
