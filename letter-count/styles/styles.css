@@ -119,8 +119,12 @@ main {
   border-radius: 10px;
 }
 
+.second-section .h3-padding {
+  padding: 1rem 2rem;
+}
+
 .second-section #text-result {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   word-wrap: break-word;
 }
