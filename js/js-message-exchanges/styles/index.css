@@ -1,0 +1,149 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #fceade;
+  font-family: 'Roboto', Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  background-color: #0081a7;
+  width: 35%;
+  margin: 0 auto;
+  border-radius: 20px;
+  color: #242423;
+}
+
+header h1 {
+  padding: 5px;
+  font-weight: 600;
+}
+
+.form-section {
+  text-align: center;
+}
+
+.form-section input {
+  display: block;
+  margin: 10px;
+  height: 1.5rem;
+  border-radius: 5px;
+}
+
+.form-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-section button {
+  margin-top: 10px;
+  height: 1.5rem;
+  border-radius: 5px;
+  width: 8rem;
+  background-color: #a2d6f9;
+  font-weight: bold;
+  color: #242423;
+}
+
+.form-section button:hover {
+  opacity: 70%;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.messages-section {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.messages-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #242423;
+}
+
+.messages-section ul li {
+  display: block;
+  list-style-type: none;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.messages-section ul .delete-button {
+  margin-left: 20px;
+  background-color: #ef8354;
+  height: 1.5rem;
+  border-radius: 5px;
+  width: auto;
+  font-weight: bold;
+  color: #242423;
+}
+
+.messages-section h2 {
+  margin-top: 50px;
+  background-color: #0081a7;
+  width: 30%;
+  border-radius: 20px;
+  color: #242423;
+  padding: 5px;
+  font-weight: 500;
+}
+
+.aside-left {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-top-right-radius: 30%;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(100%, #003f88), to(#00d4ff));
+  background: linear-gradient(90deg, #020024 0%, #003f88 100%, #00d4ff 100%);
+}
+
+.aside-right {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-top-left-radius: 30%;
+  background: #00d4ff;
+  background: -webkit-gradient(linear, left top, right top, from(#00d4ff), color-stop(0%, #003f88), to(#020024));
+  background: linear-gradient(90deg, #00d4ff 0%, #003f88 0%, #020024 100%);
+}
+/*# sourceMappingURL=index.css.map */

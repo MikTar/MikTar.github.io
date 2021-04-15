@@ -1,0 +1,136 @@
+
+html{
+    height: 100%;
+}
+body{
+    background-color: #fceade;
+    font-family: 'Roboto', Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+
+header{
+    text-align: center;
+    background-color: #0081a7;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 20px;
+    color: #242423;
+    h1{
+        padding: 5px;
+        font-weight: 600;
+    }
+}
+
+
+.form-section{
+    input {
+        display: block;
+        margin: 10px;
+        height: 1.5rem;
+        border-radius: 5px;
+      }
+      
+      text-align: center;
+
+form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+button{
+    margin-top: 10px;
+    height: 1.5rem;
+    border-radius: 5px;
+    width: 8rem;
+    background-color: #a2d6f9;
+    font-weight: bold;
+    color: #242423;
+   
+}
+button:hover{
+    opacity: 70%;
+    transition-duration: 0.5s;
+}
+
+
+}
+
+
+
+
+
+
+.messages-section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ul{
+display: flex;
+align-items: center;
+justify-content: center;
+color: #242423;
+
+    li{
+        display: block;
+        list-style-type: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .delete-button{
+        margin-left: 20px;
+        background-color: #ef8354;
+        height: 1.5rem;
+        border-radius: 5px;
+        width: auto;
+        
+        font-weight: bold;
+        color: #242423;
+    }
+}
+h2{
+    margin-top: 50px;
+    background-color: #0081a7;
+    width: 30%;
+    border-radius: 20px;
+    color: #242423;
+    padding: 5px;
+    font-weight: 500;
+
+}
+
+}
+
+.aside-left{
+height: 100%;
+width: 15%;
+position: fixed;
+left: 0;
+top: 0;
+
+border-top-right-radius: 30%;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,63,136,1) 100%, rgba(0,212,255,1) 100%);
+    // border-bottom-right-radius: 30%;
+}
+
+.aside-right{
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+   
+    border-top-left-radius: 30%;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(0,63,136,1) 0%, rgba(2,0,36,1) 100%);
+    // border-bottom-left-radius: 30%;
+    }
+    
+
+
+
