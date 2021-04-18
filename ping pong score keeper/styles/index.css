@@ -1,0 +1,91 @@
+html {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.image-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+}
+
+.image-section #img-pp {
+  height: 350px;
+}
+
+.score-section {
+  text-align: center;
+}
+
+.score-section .winner {
+  color: #00cba9;
+}
+
+.score-section .looser {
+  color: #ee3d5e;
+}
+
+.score-section .inherit-color {
+  color: inherit;
+}
+
+.buttons-section {
+  text-align: center;
+}
+
+.buttons-section .ptOpText {
+  color: red;
+}
+
+.buttons-section .p {
+  font-weight: 700;
+}
+
+.buttons-section #btn-pl-one {
+  background-color: #00cba9;
+  border: 1px solid #9a8c98;
+}
+
+.buttons-section #btn-pl-two {
+  background-color: #2d8cd7;
+  border: 1px solid #9a8c98;
+}
+
+.buttons-section #btn-reset {
+  background-color: #ee3d5e;
+  border: 1px solid #9a8c98;
+}
+
+.buttons-section #btn-pl-one:disabled {
+  opacity: 65%;
+}
+
+.buttons-section #btn-pl-two:disabled {
+  opacity: 65%;
+}
+
+.buttons-section button {
+  height: 3.5rem;
+  width: 12rem;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=index.css.map */
