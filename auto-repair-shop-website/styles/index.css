@@ -115,7 +115,8 @@ header #header-about:hover {
           align-items: center;
 }
 
-#first-section h2, #first-section h3 {
+#first-section h2,
+#first-section h3 {
   font-size: 4rem;
   margin: 10px 0;
   color: white;
@@ -285,5 +286,144 @@ header #header-about:hover {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+#section-form {
+  width: 100%;
+  height: 90vh;
+  background-color: #252d45;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-form h4 {
+  color: white;
+  font-size: 2.3rem;
+  margin: 5rem 0;
+  font-weight: 200;
+}
+
+#section-form p {
+  color: white;
+  font-size: 1.9rem;
+  margin-bottom: 0;
+  display: block;
+  width: 50%;
+  text-align: left;
+}
+
+#section-form p span {
+  font-size: 1.5rem;
+}
+
+#section-form #first-hr {
+  width: 50%;
+  display: block;
+  border: 1px solid #6a6765;
+}
+
+#section-form #div-select {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#section-form #div-select select {
+  font-size: 1.3rem;
+  margin-top: 5rem;
+  display: block;
+  color: #9497a1;
+  background-color: #252d45;
+  width: 50%;
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+}
+
+#section-form #div-select select option {
+  background-color: #171820;
+  border: none;
+  outline: none;
+}
+
+#section-form #second-hr {
+  width: 25%;
+  margin-left: 25%;
+  display: block;
+  border: 1px solid #6a6765;
+  float: left;
+}
+
+#section-form #div-select-date {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #9497a1;
+}
+
+#section-form #div-select-date div {
+  text-align: center;
+  padding: 0 10px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  margin-bottom: 0;
+  width: 25%;
+}
+
+#section-form #div-select-date div:hover {
+  color: white;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+  border: 2px solid orangered;
+}
+
+#section-form #div-hours {
+  margin: 5rem 0;
+  height: 2rem;
+  width: 50%;
+  color: #9497a1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-form #div-hours span {
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+}
+
+#section-form #div-hours span:hover {
+  color: white;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  cursor: pointer;
+  border: 2px solid orangered;
 }
 /*# sourceMappingURL=index.css.map */
