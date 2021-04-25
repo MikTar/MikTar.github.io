@@ -115,7 +115,7 @@ header {
         text-align: center;
     }
     h2{
-        margin-top: 200px;
+        margin-top: 350px;
         font-weight: 300;
     }
     h3{
@@ -146,9 +146,74 @@ header {
         right: 20%;
        
     }
+//----------------------------------------------------------//
+div.at-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  margin-top: auto;
+}
+.at-item {
+  width: 2px;
+  height: 150px;
+  background-color:white;
+  animation-name: shake-vertical;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+@keyframes shake-vertical {
+  0%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10%{
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  20%{
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  30%{
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  40%{
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50%{
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  60%{
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  70%{
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  80%{
+    -webkit-transform: translateY(6.4px);
+    transform: translateY(6.4px);
+  }
+  90%{
+    -webkit-transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
+  }
+  100%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 
-
-
+//------------------------------------------------------------//
 
 
 
