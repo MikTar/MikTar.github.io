@@ -4,6 +4,32 @@
 let today = new Date();
 let dd =today.getDate();
 let mm =today.getMonth();
+let dayOfWeek = today.getDay();
+
+//--------------DAY TRADUCTION--/
+if(dayOfWeek ===0){
+  dayOfWeek = 'Вторник'
+}
+if(dayOfWeek ===1){
+  dayOfWeek = 'Среда'
+}
+if(dayOfWeek ===2){
+  dayOfWeek = 'Четверг'
+}
+if(dayOfWeek ===3){
+  dayOfWeek = 'Пятница'
+}
+if(dayOfWeek ===4){
+  dayOfWeek = 'Суббота'
+}
+if(dayOfWeek ===5){
+  dayOfWeek = 'Воскресенье'
+}
+if(dayOfWeek ===6){
+  dayOfWeek = 'Понедельник'
+}
+
+//--------------------------------------
 mm = mm + 1;
 mm = String(mm)
 
@@ -14,10 +40,12 @@ if(mm.length < 2){
 let divToday = document.querySelector('#date-today');
 let divTomorrow = document.querySelector('#date-tomorrow');
 let divAftTomorrow = document.querySelector('#date-after-tomorrow');
+let afterTomorrow = document.querySelector('#name-of-day'); //Chose span name of day
 
-divToday.innerText = `${dd}.${mm}`;
+divToday.innerText = `${dd}. ${mm}`;
 divTomorrow.innerText = `${dd+1}. ${mm}`;
 divAftTomorrow.innerText = `${dd+2}. ${mm}`;
+afterTomorrow.innerText = `${dayOfWeek}`
 
 let hoursDisplay = document.querySelector('#div-hours');
 
@@ -80,3 +108,4 @@ function changeBgColor(span) {
   selectedHour.classList.add('selected-hour'); // подсветить новый td
 }
 //-----------------------------------------------------------------------------------------------------------------//
+

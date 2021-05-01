@@ -7,16 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Billards Score Keepert</title>
 <link rel="stylesheet" href="styles/index.css">
-
+<script src="https://kit.fontawesome.com/9e9fe7acb9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <header> <h1>BestService</h1> <a id="a-city" href="cities">Киев</a>  <a id="a-tel"  href="tel:+3809954565887"> +38 (099) 45 65 887</a> <div id="header-about"> О BEST SERVICE</div> </header>
+   <header> <h1> <a href="">BestService</a> </h1> <a id="a-city" href="">Киев</a>  <a id="a-tel"  href="tel:+3809954565887"> +38 (099) 45 65 887</a> <div id="header-about"> <a href="">О BEST SERVICE</a></div> </header>
    <main>
    <section id="first-section"> 
        <img src="images/car-remove.png" id="img-car" alt="" srcset="">
        <h2>Диагностика ходовой части</h2>
         <h3>Бесплатно! </h3>
-        <button>Записаться!</button>
+         <a href="#section-form">Записаться!</a> 
         <div class='at-container'>
             <div class='at-item' >
             </div>
@@ -37,7 +37,7 @@
         <div id="div-select-date">
             <div class="first-date"> Сегодня <br> <span id="date-today"></span> </div>
             <div class="second-date">Завтра  <br> <span id="date-tomorrow"></span> </div>
-            <div class="third-date">После-завтра <br> <span id="date-after-tomorrow"></span></div>
+            <div class="third-date">  <span id="name-of-day">После-завтра </span>  <br> <span id="date-after-tomorrow"></span></div>
         </div>
     </div>
     <hr id="second-hr">
@@ -79,9 +79,40 @@
 </section>
 
 
+<footer>
+    <section class="first-footer"> 
+    <p> BESTSERVICE</p>
+    <p> <a href="tel:+3809954565887"> +38 (099) 45 65 887</a></p>  </section>
+    <section class="second-footer"> 
+    <div class="sec-f-first"> 
+    <p> Подписывайся на нас</p>
+    <p> Приложение BESTSERVICE</p> 
+</div>
+    <div class="sec-f-second">
+        <div class="fir-icons">
+            <a href=""><i class="fab fa-vk"></i></a>      
+            <a href=""><i class="fab fa-facebook-f"></i></a> 
+            <a href=""><i class="fab fa-instagram"></i></a> 
+            <a href=""><i class="fab fa-youtube"></i></a> 
+        </div>
+        <div class="sec-icons">
+            <a href=""><i class="fab fa-apple"></i></a> 
+            <a href=""><i class="fab fa-android"></i></a> 
+        </div>
+        
+    </div>    
+    </section>
+    <section class="third-footer">
+        <p>
+            © 2021 РАЗРАБОТКА САЙТА — <a href="https://github.com/MikTar/MikTar.github.io"> Taranenko Mykhailo</a> (GITHUB)
+        </p>
+    </section>
 
+
+
+</footer>
 </main>
-    <footer></footer>
+    
     <script src="scripts/main.js"></script>
 </body>
 </html>

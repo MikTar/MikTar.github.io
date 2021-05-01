@@ -2,12 +2,14 @@ html {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 @mixin gradient {
@@ -34,7 +36,7 @@ main {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 5000px;
+  height: auto;
 
 }
 
@@ -65,7 +67,7 @@ header {
   }
 
   #a-tel {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-right: 50px;
     word-break: normal;
   }
@@ -108,7 +110,8 @@ header {
 #first-section {
   @include gradient();
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,7 +136,9 @@ header {
     font-size: 900;
   }
 
-  button {
+  a{
+    text-decoration: none;
+    display: block;
     margin-top: 50px;
     background-color: transparent;
     padding: 15px 40px;
@@ -143,12 +148,19 @@ header {
     font-weight: 700;
     color: $main-color;
     z-index: 100;
+    margin-bottom: 5rem;
+    // a{
+    //   color: $main-color;
+    //   text-decoration: none;
+    //   height: 100%;
+    //   width: 100%;
+    // }
 
   }
 
-  button:hover {
+  a:hover {
     @include box-shadow();
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
   }
 
   #img-car {
@@ -165,6 +177,7 @@ header {
     justify-content: center;
     height: 180px;
     margin-top: auto;
+    margin-bottom: 1rem;
   }
 
   .at-item {
@@ -247,7 +260,7 @@ header {
 
 #section-form {
   width: 100%;
-  height: 90vh;
+  height: auto;
   background-color: #252d45;
 
   display: flex;
@@ -327,14 +340,16 @@ justify-content: space-evenly;
     background-color: orangered;
     color: white;
   }
-  
+  .first-date{
+    margin-left: 3rem;
+  }
   div{
     text-align: center;
     padding: 0 10px;
     border-radius: 50px;
     border: 2px solid transparent;
     margin-bottom: 0;
-    width: 25%;
+    width: auto;
   
   }
   div:hover{
@@ -357,6 +372,7 @@ justify-content: space-evenly;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   span{
     padding: 5px 10px;
     border-radius: 50px;
@@ -396,9 +412,12 @@ justify-content: space-evenly;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10%;
+    flex-wrap: wrap;
+  
     div{
-      width: 30%;
+      width: 300px;
       height: 400px;
+      margin-bottom: 2rem;
       border: 1px solid white;
       border-radius: 20px;
       position: relative;
@@ -446,4 +465,142 @@ justify-content: space-evenly;
 
 
 
+}
+
+footer{
+  background-color: #111525;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  color: $main-color;
+
+  .first-footer{
+    border-bottom: 1px solid #6a6765;
+    display: flex;
+    justify-content: space-between;
+    p{
+      font-size: 2rem;
+      padding: 2rem 5rem;
+    }
+    a{
+      color: $main-color;
+      display: block;
+      font-size: 1.8rem;
+      text-decoration: none;
+    }
+  }
+  .second-footer{
+    border-bottom: 1px solid #6a6765;
+    .sec-f-first{
+      display: flex;
+      justify-content: space-between;
+      p{
+        padding: 2rem 5rem 0.55rem 5rem;
+        font-size: 1rem;
+        color: #6a6765;
+        text-transform: uppercase;
+      }
+    }
+    .sec-f-second{
+      display: flex;
+      justify-content: space-between;
+
+    .fir-icons{
+      padding-left: 3rem;
+      margin-bottom: 3rem;
+      i{
+        padding: 2rem 2rem;
+        margin-right: 1rem;
+        font-size: 2.5rem;
+        color: #6a6765;
+        border: 1px solid #6a6765;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        
+        
+        
+      }
+      i:hover{
+        background-color: orangered;
+        border: 1px solid orangered;
+        color: $main-color;
+        transition-duration: 0.5s;
+      
+      }
+    }
+
+    .sec-icons{
+      padding-right: 3rem;
+      i{
+        padding: 2rem 2rem;
+        font-size: 2.5rem;
+        color: #6a6765;
+        border: 1px solid #6a6765;
+        border-radius: 50%;
+        margin-left: 1rem;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        
+      }
+      i:hover{
+        background-color: orangered;
+        border: 1px solid orangered;
+        color: $main-color;
+        transition-duration: 0.5s;
+      
+      }
+    }
+
+
+    }
+  }
+  .third-footer{
+    border-bottom: 1px solid #6a6765;
+    p{
+      padding-left: 5rem;
+      color: #6a6765;
+      font-size: 0.9rem;
+    }
+    a{
+      text-decoration: none;
+      color: greenyellow;
+    }
+  }
+
+
+
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 }
