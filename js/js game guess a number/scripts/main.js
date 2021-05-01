@@ -33,14 +33,13 @@ while (parseInt(guess) !== targetNum) {
    
 }
 
-if (guess = 'q'){
-   alert(`Ok...quit... You used ${attempts} guesses. The answer was ${targetNum}`)
-}
-else if (guess === targetNum) {
+if (guess = targetNum) {
+    
     alert(`You win! It took you ${attempts} guesses`)
 }
-
-
+else if (guess = 'q'){
+    alert(`Ok...quit... You used ${attempts} guesses. The answer was ${targetNum}`)
+ }
 
 
 
