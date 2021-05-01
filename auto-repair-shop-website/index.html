@@ -1,118 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <title>Billards Score Keepert</title>
-<link rel="stylesheet" href="styles/index.css">
-<script src="https://kit.fontawesome.com/9e9fe7acb9.js" crossorigin="anonymous"></script>
+    <title>BEST SERVICE</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/9e9fe7acb9.js" crossorigin="anonymous"></script>
+
+    <meta property="og:title" content="BEST SERVICE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://miktar.github.io/auto-repair-shop-website/" />
+    <meta property="og:image" content="images/car-remove.png" />
+    <meta property="og:description" content="ЛИДЕРЫ В ОБЛАСТИ РЕМОНТА АВТО" />
+    <meta property="og:site_name" content="Профессионалы" />
+
+    <link rel="icon" href="images/car-remove.png">
 </head>
+
 <body>
-   <header> <h1> <a href="">BestService</a> </h1> <a id="a-city" href="">Киев</a>  <a id="a-tel"  href="tel:+3809954565887"> +38 (099) 45 65 887</a> <div id="header-about"> <a href="">О BEST SERVICE</a></div> </header>
-   <main>
-   <section id="first-section"> 
-       <img src="images/car-remove.png" id="img-car" alt="" srcset="">
-       <h2>Диагностика ходовой части</h2>
-        <h3>Бесплатно! </h3>
-         <a href="#section-form">Записаться!</a> 
-        <div class='at-container'>
-            <div class='at-item' >
+    <header>
+        <h1> <a href="">BestService</a> </h1> <a id="a-city" href="">Киев</a> <a id="a-tel" href="tel:+3809954565887">
+            +38 (099) 45 65 887</a>
+        <div id="header-about"> <a href="">О BEST SERVICE</a></div>
+    </header>
+    <main>
+        <section id="first-section">
+            <img src="images/car-remove.png" id="img-car" alt="" srcset="">
+            <h2>Диагностика ходовой части</h2>
+            <h3>Бесплатно! </h3>
+            <a href="#section-form">Записаться!</a>
+            <div class='at-container'>
+                <div class='at-item'>
+                </div>
             </div>
-          </div>
-   </section>
-   <section id="section-form">
-        <h4>Записаться на проверку</h4>
-        <p>  <span>1/5</span>  Выберите место и время</p>
-        <hr id="first-hr">
-        <div id="div-select"><select name="select-station" id="select-station">  
-                                                            <option value="1">- Выберите станцию -</option>
-                                                            <option value="1">ул. Победы, 7</option>
-                                                            <option value="2">просп. Маляров, 8</option> 
-                                                            <option value="3">ул. героев Кола-Колы, 857</option> 
-                                                            <option value="4">бул. Мирный, 666</option> 
-        </select>
-        
-        <div id="div-select-date">
-            <div class="first-date"> Сегодня <br> <span id="date-today"></span> </div>
-            <div class="second-date">Завтра  <br> <span id="date-tomorrow"></span> </div>
-            <div class="third-date">  <span id="name-of-day">После-завтра </span>  <br> <span id="date-after-tomorrow"></span></div>
-        </div>
-    </div>
-    <hr id="second-hr">
-    <div id="div-hours">
-        <span class="hour" id="a">8:00</span>
-        <span class="hour" id="b">8:30</span>
-        <span class="hour" id="c">9:00</span>
-        <span class="hour" id="d">9:30</span>
-        <span class="hour" id="e">10:00</span>
-        <span class="hour" id="f">10:30</span>
-        <span class="hour" id="h">11:00</span>
-        <span class="hour" id="i">11:30</span>
-        <span class="hour" id="j">13:00</span>
-        <span class="hour" id="k">13:30</span>
-        <span class="hour" id="l">14:00</span>
-        <span class="hour" id="m">14:30</span>
-        <span class="hour" id="n">15:00</span>
-        <span class="hour" id="o">15:30</span>
-        <span class="hour" id="p">16:00</span>
-    </div>
-    
+        </section>
+        <section id="section-form">
+            <h4>Записаться на проверку</h4>
+            <p> <span>1/5</span> Выберите место и время</p>
+            <hr id="first-hr">
+            <div id="div-select"><select name="select-station" id="select-station">
+                    <option value="1">- Выберите станцию -</option>
+                    <option value="1">ул. Победы, 7</option>
+                    <option value="2">просп. Маляров, 8</option>
+                    <option value="3">ул. героев Кола-Колы, 857</option>
+                    <option value="4">бул. Мирный, 666</option>
+                </select>
+
+                <div id="div-select-date">
+                    <div class="first-date"> Сегодня <br> <span id="date-today"></span> </div>
+                    <div class="second-date">Завтра <br> <span id="date-tomorrow"></span> </div>
+                    <div class="third-date"> <span id="name-of-day">После-завтра </span> <br> <span
+                            id="date-after-tomorrow"></span></div>
+                </div>
+            </div>
+            <hr id="second-hr">
+            <div id="div-hours">
+                <span class="hour" id="a">8:00</span>
+                <span class="hour" id="b">8:30</span>
+                <span class="hour" id="c">9:00</span>
+                <span class="hour" id="d">9:30</span>
+                <span class="hour" id="e">10:00</span>
+                <span class="hour" id="f">10:30</span>
+                <span class="hour" id="h">11:00</span>
+                <span class="hour" id="i">11:30</span>
+                <span class="hour" id="j">13:00</span>
+                <span class="hour" id="k">13:30</span>
+                <span class="hour" id="l">14:00</span>
+                <span class="hour" id="m">14:30</span>
+                <span class="hour" id="n">15:00</span>
+                <span class="hour" id="o">15:30</span>
+                <span class="hour" id="p">16:00</span>
+            </div>
+        </section>
+
+        <section id="section-partenaires">
+            <h4>Другие акции BESTSERVICE</h4>
+            <div class="partenaires">
+                <div>
+                    <h5>CONDER</h5>
+                    <h6>Бесплатная диагностика кондиционеров</h6>
+                    <p>Подробнее</p>
+                </div>
+                <div>
+                    <h5>KYB</h5>
+                    <h6>Бесплатная замена амортизаторов KYB</h6>
+                    <p>Подробнее</p>
+                </div>
+                <div>
+                    <h5>VESNA</h5>
+                    <h6>Бесплатная замена любых технических жидкостей </h6>
+                    <p>Подробнее</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <section class="first-footer">
+                <p> BESTSERVICE</p>
+                <p> <a href="tel:+3809954565887"> +38 (099) 45 65 887</a></p>
+            </section>
+            <section class="second-footer">
+                <div class="sec-f-first">
+                    <p> Подписывайся на нас</p>
+                    <p class="apps"> Приложение BESTSERVICE</p>
+                </div>
+                <div class="sec-f-second">
+                    <div class="fir-icons">
+                        <a href=""><i class="fab fa-vk"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="sec-icons">
+                        <a href=""><i class="fab fa-apple"></i></a>
+                        <a href=""><i class="fab fa-android"></i></a>
+                    </div>
+
+                </div>
+            </section>
+            <section class="third-footer">
+                <p>
+                    © 2021 РАЗРАБОТКА САЙТА — <a href="https://github.com/MikTar/MikTar.github.io"> Taranenko
+                        Mykhailo</a> (GITHUB)
+                </p>
+            </section>
 
 
 
+        </footer>
+    </main>
 
-
-
-
-   </section>
-
-<section id="section-partenaires">
-    <h4>Другие акции BESTSERVICE</h4>
-    <div class="partenaires">
-        <div>  <h5>CONDER</h5> <h6>Бесплатная диагностика кондиционеров</h6> <p>Подробнее</p> </div>
-        <div>  <h5>KYB</h5>  <h6>Бесплатная замена амортизаторов KYB</h6>  <p>Подробнее</p> </div>
-        <div>  <h5>VESNA</h5> <h6>Бесплатная замена любых технических жидкостей  </h6> <p>Подробнее</p> </div>
-    </div>
-
-</section>
-
-
-<footer>
-    <section class="first-footer"> 
-    <p> BESTSERVICE</p>
-    <p> <a href="tel:+3809954565887"> +38 (099) 45 65 887</a></p>  </section>
-    <section class="second-footer"> 
-    <div class="sec-f-first"> 
-    <p> Подписывайся на нас</p>
-    <p class="apps"> Приложение BESTSERVICE</p> 
-</div>
-    <div class="sec-f-second">
-        <div class="fir-icons">
-            <a href=""><i class="fab fa-vk"></i></a>      
-            <a href=""><i class="fab fa-facebook-f"></i></a> 
-            <a href=""><i class="fab fa-instagram"></i></a> 
-            <a href=""><i class="fab fa-youtube"></i></a> 
-        </div>
-        <div class="sec-icons">
-            <a href=""><i class="fab fa-apple"></i></a> 
-            <a href=""><i class="fab fa-android"></i></a> 
-        </div>
-        
-    </div>    
-    </section>
-    <section class="third-footer">
-        <p>
-            © 2021 РАЗРАБОТКА САЙТА — <a href="https://github.com/MikTar/MikTar.github.io"> Taranenko Mykhailo</a> (GITHUB)
-        </p>
-    </section>
-
-
-
-</footer>
-</main>
-    
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
