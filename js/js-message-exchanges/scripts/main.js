@@ -168,6 +168,11 @@ let asideRight = document.querySelector('.aside-right');
 let submit = document.querySelector('#submit');
 
 form.addEventListener('submit', function(evt){
+    if(username.value===''){alert('Enter username'); return}
+    if(tweet.value===''){alert('Enter tweet'); return}
+
+
+
     evt.preventDefault();
     let ul = document.createElement('ul');
     h2.insertAdjacentElement("afterend",ul);
@@ -186,16 +191,6 @@ form.addEventListener('submit', function(evt){
     username.value = '';
     tweet.value = '';
 
-
-
-    // asideLeft.classList.add('asides');
-    // asideRight.classList.add('asides');
-
-
-    
-    // deleteBtn.addEventListener('click', function(){
-    //     newTweet.remove();
-    // })
 
     ul.addEventListener('click', function(e){
          e.target.nodeName === 'BUTTON' && newTweet.remove();
