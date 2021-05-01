@@ -39,7 +39,7 @@ if (guess = 'q'){
 else if (guess === targetNum) {
     alert(`You win! It took you ${attempts} guesses`)
 }
-console.log(`targetNum is ${targetNum}`)
+
 
 
 

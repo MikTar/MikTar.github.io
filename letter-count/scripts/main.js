@@ -4,7 +4,7 @@ function myFunction(){
     textValue = textValue.replace(/\s+/g, ' ');
     textValue = textValue.trim();
     let numSpaces = textValue.split(" ").length;
-    let textValueNoSpaces = textValue.replace(/[\s1234567890.,%:"'!`#$^&*()_+|',-/.../'?;@ АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщьэюя]/g, '');
+    let textValueNoSpaces = textValue.replace(/[\s1234567890.,%:"'!`#$^&*()_+|',-/.../'?;@ АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЭЫЮЯабвгдеёжзийклмнопрстуфхцчшщьыэюя]/g, '');
     let textLength = textValueNoSpaces.length;
     let p = document.getElementById("result");
     let textResult = document.querySelector('#text-result');
