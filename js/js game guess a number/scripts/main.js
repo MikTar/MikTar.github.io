@@ -37,7 +37,7 @@ if (guess = targetNum) {
     
     alert(`You win! It took you ${attempts} guesses`)
 }
-else if (guess = 'q'){
+else if (guess == 'q'){
     alert(`Ok...quit... You used ${attempts} guesses. The answer was ${targetNum}`)
  }
 
