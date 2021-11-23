@@ -103,7 +103,11 @@ header {
   border-bottom: 1px solid #bbb8b8;
 }
 
-.hrefs-hed {
+.third-hed .hrefs-hed:nth-child(1) {
+  border-left: none;
+}
+
+.third-hed .hrefs-hed {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1rem;
@@ -119,18 +123,20 @@ header {
       -ms-flex-align: center;
           align-items: center;
   border-left: 1px solid #bbb8b8;
-  border-right: 1px solid #bbb8b8;
   color: #0ea2cc;
 }
 
-.hrefs-hed:hover {
+.third-hed .hrefs-hed:hover {
   color: white;
   cursor: pointer;
   background-color: #8fd1e4;
   border-left: 1px solid #0ea2cc;
-  border-right: 1px solid #0ea2cc;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+}
+
+.third-hed .hrefs-hed:hover:nth-child(1) {
+  border-left: none;
 }
 
 article {
@@ -173,13 +179,18 @@ article .open-doors .open-doors-intro {
 
 article .open-doors .open-doors-intro p {
   display: block;
-  color: #bbb8b8;
+  color: #969696;
   font-size: 2.3rem;
   font-weight: 600;
   text-align: center;
-  border-top: 1px solid #bbb8b8;
-  border-bottom: 1px solid #bbb8b8;
-  padding: 1.8rem;
+  border-top: 1px solid #969696;
+  border-bottom: 1px solid #969696;
+  padding: 1.7rem;
+}
+
+article .open-doors .open-doors-intro img {
+  vertical-align: top;
+  overflow: hidden;
 }
 
 article .open-doors .open-doors-image {
@@ -212,15 +223,15 @@ article .large-choise {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: block;
   width: 100%;
   height: 80px;
   /* background-color: indigo; */
   font-size: 2.3rem;
   font-weight: 600;
   text-align: center;
-  border-top: 1px solid #bbb8b8;
-  border-bottom: 1px solid #bbb8b8;
+  color: #969696;
+  border-top: 1px solid #969696;
+  border-bottom: 1px solid #969696;
 }
 
 article .pub {
