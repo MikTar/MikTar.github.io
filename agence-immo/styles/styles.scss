@@ -217,7 +217,7 @@ article{
 
 
     .pub{
-        height: 800px;
+        height: 700px;
         display: grid;
         grid-template-columns: repeat(3 1fr);
   grid-template-rows: repeat(5 1fr);
@@ -228,29 +228,90 @@ article{
     "v v t"
     "v v t"
   ;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-bottom: 50px;
+  
 
   .pub-first{
       grid-area: f;
-      background-color: brown;
+      
+      width: 306px;
+      height: 400px;
+
+        .first-first{
+            max-width: 100%;
+            height: 50%; 
+            img{
+                width: 100%;
+                height: 100%;
+                
+            }
+            
+        }
+        .first-second{
+            max-width: 100%;
+            height: 50%;
+            color: $gray;
+        }
+
       
 
   }
  .pub-second{
     grid-area: s;
-    background-color: hotpink;
+   
+    width: 306px;
+    height: 400px;
+    
+    .second-first{
+        max-width: 100%;
+        height: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+       
+    }
+
+    .second-second{
+         max-width: 100%;
+        height: 50%;
+        color: $gray;
+
+    }
     
       
   }
   .pub-third{
     grid-area: t;
-    background-color: lightblue;
+    
+    width: 306px;
+    .third-first{
+        width: 100%;
+        height: 70%;
+        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .third-second{
+        width: 100%;
+        height: 30%;
+        color: $gray;
+    }
    
       
 }
 .pub-fourth{
     grid-area: v;
-    background-color: burlywood;
-  
+   
+    height: 280px;
+  img{
+      width: 100%;
+      height: 100%;
+  }
       
 }
 

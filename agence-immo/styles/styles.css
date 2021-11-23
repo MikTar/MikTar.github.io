@@ -233,7 +233,7 @@ article .large-choise {
 }
 
 article .pub {
-  height: 800px;
+  height: 700px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -241,6 +241,9 @@ article .pub {
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5 1fr);
       grid-template-areas: "f s t" "f s t" "f s t" "v v t" "v v t";
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-bottom: 50px;
 }
 
 article .pub .pub-first {
@@ -248,7 +251,24 @@ article .pub .pub-first {
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: f;
-  background-color: brown;
+  width: 306px;
+  height: 400px;
+}
+
+article .pub .pub-first .first-first {
+  max-width: 100%;
+  height: 50%;
+}
+
+article .pub .pub-first .first-first img {
+  width: 100%;
+  height: 100%;
+}
+
+article .pub .pub-first .first-second {
+  max-width: 100%;
+  height: 50%;
+  color: #969696;
 }
 
 article .pub .pub-second {
@@ -256,7 +276,24 @@ article .pub .pub-second {
   -ms-grid-row-span: 3;
   -ms-grid-column: 2;
   grid-area: s;
-  background-color: hotpink;
+  width: 306px;
+  height: 400px;
+}
+
+article .pub .pub-second .second-first {
+  max-width: 100%;
+  height: 50%;
+}
+
+article .pub .pub-second .second-first img {
+  width: 100%;
+  height: 100%;
+}
+
+article .pub .pub-second .second-second {
+  max-width: 100%;
+  height: 50%;
+  color: #969696;
 }
 
 article .pub .pub-third {
@@ -264,7 +301,23 @@ article .pub .pub-third {
   -ms-grid-row-span: 5;
   -ms-grid-column: 3;
   grid-area: t;
-  background-color: lightblue;
+  width: 306px;
+}
+
+article .pub .pub-third .third-first {
+  width: 100%;
+  height: 70%;
+}
+
+article .pub .pub-third .third-first img {
+  width: 100%;
+  height: 100%;
+}
+
+article .pub .pub-third .third-second {
+  width: 100%;
+  height: 30%;
+  color: #969696;
 }
 
 article .pub .pub-fourth {
@@ -273,7 +326,12 @@ article .pub .pub-fourth {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: v;
-  background-color: burlywood;
+  height: 280px;
+}
+
+article .pub .pub-fourth img {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
