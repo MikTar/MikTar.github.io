@@ -1,3 +1,33 @@
+@keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -306px;}
+    50% {margin-left: -306px;}
+    60% {margin-left: -612px;}
+    70% {margin-left: -612px;}
+    80% {margin-left: -918px;}
+    90% {margin-left: -918px;}
+  }
+  @keyframes slideFour {
+    20% {margin-left: 0px;}
+    30% {margin-left: -632px;}
+    50% {margin-left: -632px;}
+    60% {margin-left: -1264px;}
+    70% {margin-left: -1264px;}
+    80% {margin-left: -1896px;}
+    90% {margin-left: -1896px;}
+  }
+  @keyframes slideIntro {
+    20% {margin-top: 0px;}
+    30% {margin-top: -245px;}
+    50% {margin-top: -245px;}
+    60% {margin-top: -490px;}
+    70% {margin-top: -490px;}
+    80% {margin-top: -735px;}
+    90% {margin-top: -735px;}
+  }
+
+
+
 
 $gray: #969696;
 $gray-white: #bbb8b8;
@@ -159,22 +189,52 @@ article{
                 height:350px;
                 /* background-color: greenyellow; */
                 margin-right: 2%;
-                p{
-                    display: block;
-                    color: $gray;
-                    font-size: 2.3rem;
-                    font-weight: 600;
-                    text-align: center;
-                    border-top: 1px solid $gray;
-                    border-bottom: 1px solid $gray ;
-                    padding: 1.7rem;
-                   
+                overflow: hidden;
+                
+                
+                .open-doors-intro-p{
+                    height: 105px;
+                    width: 100%;
+                    background-color: white;
+                    z-index: 2;
+                    p{
+                        display: block;
+                        color: $gray;
+                        font-size: 2.3rem;
+                        font-weight: 600;
+                        text-align: center;
+                        border-top: 1px solid $gray;
+                        border-bottom: 1px solid $gray ;
+                        padding: 1.7rem;
+                        background-color: white;
+                        
+                        z-index: 2;
+                       
+                    }
                 }
-                img{
-                   vertical-align: top;
-                   overflow: hidden;
+                
+               
+
+                .open-doors-intro-wrapper{
                    
+                    height: 1400px;
+                    width: 100%;
+                    animation: slideIntro 10s ease infinite;
+                    z-index: 1;
+
+
+
+
+                    img{
+                        
+                        width: 100%;
+                        height: 245px;
+                        
+                     }
+
                 }
+
+               
                
             }
             .open-doors-image{
@@ -232,23 +292,34 @@ article{
   grid-row-gap: 20px;
   margin-bottom: 50px;
   
+  h3{
+      margin: 0.3rem;
+      margin-left: 0;
+  }
 
   .pub-first{
       grid-area: f;
-      
+      //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
       width: 306px;
       height: 400px;
+      overflow: hidden;
 
         .first-first{
-            max-width: 100%;
+            width: 1224px;
             height: 50%; 
-            img{
-                width: 100%;
-                height: 100%;
-                
-            }
+            animation: slide 20s ease infinite;
             
+            
+            
+            img{
+                float: left;
+                height: 200px;
+                width: 306px;
+            }
+    
+           
         }
+    
         .first-second{
             max-width: 100%;
             height: 50%;
@@ -306,12 +377,23 @@ article{
 }
 .pub-fourth{
     grid-area: v;
-   
+    width: 632px;
     height: 280px;
-  img{
-      width: 100%;
-      height: 100%;
-  }
+    overflow: hidden;
+
+    .fourth-first{
+        width: 2528px;
+        height: 100%;
+        animation: slideFour 10s ease infinite;
+
+
+        img{
+            float: left;
+            width: 632px;
+            height: 100%;
+        }
+    }
+ 
       
 }
 

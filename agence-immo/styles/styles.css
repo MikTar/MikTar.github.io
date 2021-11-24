@@ -1,3 +1,147 @@
+@-webkit-keyframes slide {
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -306px;
+  }
+  50% {
+    margin-left: -306px;
+  }
+  60% {
+    margin-left: -612px;
+  }
+  70% {
+    margin-left: -612px;
+  }
+  80% {
+    margin-left: -918px;
+  }
+  90% {
+    margin-left: -918px;
+  }
+}
+
+@keyframes slide {
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -306px;
+  }
+  50% {
+    margin-left: -306px;
+  }
+  60% {
+    margin-left: -612px;
+  }
+  70% {
+    margin-left: -612px;
+  }
+  80% {
+    margin-left: -918px;
+  }
+  90% {
+    margin-left: -918px;
+  }
+}
+
+@-webkit-keyframes slideFour {
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -632px;
+  }
+  50% {
+    margin-left: -632px;
+  }
+  60% {
+    margin-left: -1264px;
+  }
+  70% {
+    margin-left: -1264px;
+  }
+  80% {
+    margin-left: -1896px;
+  }
+  90% {
+    margin-left: -1896px;
+  }
+}
+
+@keyframes slideFour {
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -632px;
+  }
+  50% {
+    margin-left: -632px;
+  }
+  60% {
+    margin-left: -1264px;
+  }
+  70% {
+    margin-left: -1264px;
+  }
+  80% {
+    margin-left: -1896px;
+  }
+  90% {
+    margin-left: -1896px;
+  }
+}
+
+@-webkit-keyframes slideIntro {
+  20% {
+    margin-top: 0px;
+  }
+  30% {
+    margin-top: -245px;
+  }
+  50% {
+    margin-top: -245px;
+  }
+  60% {
+    margin-top: -490px;
+  }
+  70% {
+    margin-top: -490px;
+  }
+  80% {
+    margin-top: -735px;
+  }
+  90% {
+    margin-top: -735px;
+  }
+}
+
+@keyframes slideIntro {
+  20% {
+    margin-top: 0px;
+  }
+  30% {
+    margin-top: -245px;
+  }
+  50% {
+    margin-top: -245px;
+  }
+  60% {
+    margin-top: -490px;
+  }
+  70% {
+    margin-top: -490px;
+  }
+  80% {
+    margin-top: -735px;
+  }
+  90% {
+    margin-top: -735px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   padding: 0;
@@ -173,9 +317,17 @@ article .open-doors .open-doors-intro {
   height: 350px;
   /* background-color: greenyellow; */
   margin-right: 2%;
+  overflow: hidden;
 }
 
-article .open-doors .open-doors-intro p {
+article .open-doors .open-doors-intro .open-doors-intro-p {
+  height: 105px;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+}
+
+article .open-doors .open-doors-intro .open-doors-intro-p p {
   display: block;
   color: #969696;
   font-size: 2.3rem;
@@ -184,11 +336,21 @@ article .open-doors .open-doors-intro p {
   border-top: 1px solid #969696;
   border-bottom: 1px solid #969696;
   padding: 1.7rem;
+  background-color: white;
+  z-index: 2;
 }
 
-article .open-doors .open-doors-intro img {
-  vertical-align: top;
-  overflow: hidden;
+article .open-doors .open-doors-intro .open-doors-intro-wrapper {
+  height: 1400px;
+  width: 100%;
+  -webkit-animation: slideIntro 10s ease infinite;
+          animation: slideIntro 10s ease infinite;
+  z-index: 1;
+}
+
+article .open-doors .open-doors-intro .open-doors-intro-wrapper img {
+  width: 100%;
+  height: 245px;
 }
 
 article .open-doors .open-doors-image {
@@ -246,6 +408,11 @@ article .pub {
   margin-bottom: 50px;
 }
 
+article .pub h3 {
+  margin: 0.3rem;
+  margin-left: 0;
+}
+
 article .pub .pub-first {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
@@ -253,16 +420,20 @@ article .pub .pub-first {
   grid-area: f;
   width: 306px;
   height: 400px;
+  overflow: hidden;
 }
 
 article .pub .pub-first .first-first {
-  max-width: 100%;
+  width: 1224px;
   height: 50%;
+  -webkit-animation: slide 20s ease infinite;
+          animation: slide 20s ease infinite;
 }
 
 article .pub .pub-first .first-first img {
-  width: 100%;
-  height: 100%;
+  float: left;
+  height: 200px;
+  width: 306px;
 }
 
 article .pub .pub-first .first-second {
@@ -326,11 +497,21 @@ article .pub .pub-fourth {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: v;
+  width: 632px;
   height: 280px;
+  overflow: hidden;
 }
 
-article .pub .pub-fourth img {
-  width: 100%;
+article .pub .pub-fourth .fourth-first {
+  width: 2528px;
+  height: 100%;
+  -webkit-animation: slideFour 10s ease infinite;
+          animation: slideFour 10s ease infinite;
+}
+
+article .pub .pub-fourth .fourth-first img {
+  float: left;
+  width: 632px;
   height: 100%;
 }
 
