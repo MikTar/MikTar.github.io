@@ -423,9 +423,40 @@ article .pub .pub-first {
   overflow: hidden;
 }
 
+article .pub .pub-first .first-intro {
+  background-color: RGBA(14, 162, 204, 0.3);
+  width: 306px;
+  height: 50px;
+  position: absolute;
+  margin-top: 150px;
+}
+
+article .pub .pub-first .first-intro a {
+  cursor: pointer;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 100%;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+article .pub .pub-first .first-intro a:hover {
+  color: yellowgreen;
+}
+
 article .pub .pub-first .first-first {
   width: 1224px;
-  height: 50%;
+  height: 200px;
   -webkit-animation: slide 20s ease infinite;
           animation: slide 20s ease infinite;
 }
@@ -449,6 +480,37 @@ article .pub .pub-second {
   grid-area: s;
   width: 306px;
   height: 400px;
+}
+
+article .pub .pub-second .second-intro {
+  background-color: RGBA(150, 150, 150, 0.7);
+  width: 306px;
+  height: 50px;
+  position: absolute;
+  margin-top: 150px;
+}
+
+article .pub .pub-second .second-intro a {
+  cursor: pointer;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 100%;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+article .pub .pub-second .second-intro a:hover {
+  color: yellowgreen;
 }
 
 article .pub .pub-second .second-first {
@@ -502,6 +564,38 @@ article .pub .pub-fourth {
   overflow: hidden;
 }
 
+article .pub .pub-fourth .fourth-intro {
+  background-color: RGBA(150, 150, 150, 0.7);
+  width: 300px;
+  height: 80px;
+  position: absolute;
+  margin-top: 50px;
+}
+
+article .pub .pub-fourth .fourth-intro a {
+  cursor: pointer;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 100%;
+  font-size: 1.5rem;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+}
+
+article .pub .pub-fourth .fourth-intro a:hover {
+  color: yellowgreen;
+}
+
 article .pub .pub-fourth .fourth-first {
   width: 2528px;
   height: 100%;
@@ -547,5 +641,9 @@ footer .links {
 
 footer .links a {
   color: white;
+}
+
+footer .links a:hover {
+  color: #0ea2cc;
 }
 /*# sourceMappingURL=styles.css.map */

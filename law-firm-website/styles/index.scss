@@ -9,7 +9,7 @@ $third-color:rgb(3, 50, 93);
 @mixin hover-opacity {
     opacity: 50%;
     transition-duration: 0.5s;
-}
+} 
 
 @mixin hover-opacity-light {
     opacity: 80%;
