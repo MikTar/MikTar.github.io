@@ -1,0 +1,56 @@
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    } 
+
+
+$gray: #969696;
+$gray-white: #bbb8b8;
+
+
+
+html {
+
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+
+
+
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.contacts-first{
+    height: 500px;
+    width: 100%;
+    background-color: green;
+}
+
+
+.map{
+    height: 800px;
+    width: 100%;
+    background-color: hotpink;
+}
