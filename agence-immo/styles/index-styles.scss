@@ -1,0 +1,307 @@
+@keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+
+    30% {
+        margin-left: -306px;
+    }
+
+    50% {
+        margin-left: -306px;
+    }
+
+    60% {
+        margin-left: -612px;
+    }
+
+    70% {
+        margin-left: -612px;
+    }
+
+    80% {
+        margin-left: -918px;
+    }
+
+    90% {
+        margin-left: -918px;
+    }
+}
+
+@keyframes slideFour {
+    20% {
+        margin-left: 0px;
+    }
+
+    30% {
+        margin-left: -632px;
+    }
+
+    50% {
+        margin-left: -632px;
+    }
+
+    60% {
+        margin-left: -1264px;
+    }
+
+    70% {
+        margin-left: -1264px;
+    }
+
+    80% {
+        margin-left: -1896px;
+    }
+
+    90% {
+        margin-left: -1896px;
+    }
+}
+
+@keyframes slideIntro {
+    20% {
+        margin-top: 0px;
+    }
+
+    30% {
+        margin-top: -245px;
+    }
+
+    50% {
+        margin-top: -245px;
+    }
+
+    60% {
+        margin-top: -490px;
+    }
+
+    70% {
+        margin-top: -490px;
+    }
+
+    80% {
+        margin-top: -735px;
+    }
+
+    90% {
+        margin-top: -735px;
+    }
+}
+
+
+
+
+$gray: #969696;
+$gray-white: #bbb8b8;
+
+
+
+html {
+
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+
+
+
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+
+
+}
+
+
+
+header {
+    width: 100%;
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.image-hed {
+    width: 100%;
+    min-height: 200px;
+
+
+
+
+    img {
+        width: 40%;
+        max-height: 200px;
+        display: block;
+        margin: 0 auto;
+
+
+    }
+}
+
+.first-hed {
+    width: 100%;
+    min-height: 100px;
+
+    color: #0ea2cc;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    h1 {
+
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        padding-bottom: 0;
+    }
+
+}
+
+.second-hed {
+    width: 100%;
+    min-height: 50px;
+    color: #646464;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: -0.7rem;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+    }
+
+}
+
+.third-hed {
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    border-bottom: 1px solid $gray-white;
+
+    .hrefs-hed:nth-child(1) {
+        border-left: none;
+    }
+
+
+    .hrefs-hed {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1rem;
+        width: 12.5%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid $gray-white;
+        // border-right: 1px solid $gray-white;
+
+        
+        a{
+            color: #0ea2cc;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a:hover{
+            color: white;
+        }
+    }
+
+    .hrefs-hed:hover {
+        
+        cursor: pointer;
+        background-color: #8fd1e4;
+        border-left: 1px solid #0ea2cc;
+        // border-right: 1px solid #0ea2cc;
+        transition-duration: 0.3s;
+
+    }
+
+    .hrefs-hed:hover:nth-child(1) {
+        border-left: none;
+    }
+}
+
+
+ 
+ 
+
+main {
+              
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+    width: 960px;
+    height: 1300px;
+    margin: 0 auto;
+
+    iframe{
+        position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    
+    }
+}
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: $gray-white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .href-git {
+        justify-self: flex-start;
+        color: white;
+        font-size: 0.8rem;
+
+        a {
+            color: white;
+
+        }
+    }
+
+    .links {
+        justify-self: flex-end;
+        font-size: 2rem;
+
+        a {
+            color: white;
+            
+        }
+        a:hover{
+            color:#0ea2cc ;
+        }
+
+    }
+
+
+}
