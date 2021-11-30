@@ -1,0 +1,56 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+h1 {
+  font-size: 2.5rem;
+  border-top: 1px solid #969696;
+  border-bottom: 1px solid #969696;
+  color: #969696;
+  width: 50%;
+  height: 50px;
+  margin-top: 30px;
+}
+
+p {
+  color: #969696;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.for-sale {
+  background-color: green;
+}
+/*# sourceMappingURL=acheter-styles.css.map */
