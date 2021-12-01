@@ -50,19 +50,86 @@ p{
 }
 
 .for-sale{
-    background-color: green;
-    height: 1140px;
+    
+    height: 1110px;
     width: 100%;
     display: grid;
+    margin: 0;
 
     grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(2 1fr);
+    grid-template-rows: repeat(6 1fr);
     grid-template-areas:
         "a b c"
+        "a b c"
+        "a b f"
+        "d b f"
         "d e f"
+        ". e ."
         
     ;
-    // grid-column-gap: 20px;
-    // grid-row-gap: 20px;
-    // margin-bottom: 50px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    
+    h5{
+        color: $blue-white;
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 5px;
+    }
+    p{
+        color: $gray;
+        font-weight: 300;
+        font-size: 0.9rem;
+        margin: 5px;
+        margin-left: 0;
+    }
+    img{
+        width: 100%;
+    }
+        
+        .for-sale-first{
+            grid-area: a;
+            
+           
+            
+        }
+
+        .for-sale-second{
+            grid-area: b;
+           
+            
+           
+            
+        }
+
+        .for-sale-third{
+            grid-area: c;
+            
+          
+           
+        }
+
+        .for-sale-fourth{
+            grid-area: d;
+            border-top: 1px solid $gray;
+           
+        }
+
+        .for-sale-fifth {
+            grid-area: e;
+            border-top: 1px solid $gray;
+            
+        }
+
+        .for-sale-sixth{
+            grid-area: f;
+          margin-top: 100px;
+          border-top: 1px solid $gray;
+           
+        }
+
+
+
+
+
 }

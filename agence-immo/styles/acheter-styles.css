@@ -51,6 +51,82 @@ p {
 }
 
 .for-sale {
-  background-color: green;
+  height: 1110px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6 1fr);
+      grid-template-areas: "a b c" "a b c" "a b f" "d b f" "d e f" ". e .";
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.for-sale h5 {
+  color: #0ea2cc;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 5px;
+}
+
+.for-sale p {
+  color: #969696;
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin: 5px;
+  margin-left: 0;
+}
+
+.for-sale img {
+  width: 100%;
+}
+
+.for-sale .for-sale-first {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+.for-sale .for-sale-second {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  grid-area: b;
+}
+
+.for-sale .for-sale-third {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: c;
+}
+
+.for-sale .for-sale-fourth {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: d;
+  border-top: 1px solid #969696;
+}
+
+.for-sale .for-sale-fifth {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: e;
+  border-top: 1px solid #969696;
+}
+
+.for-sale .for-sale-sixth {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: f;
+  margin-top: 100px;
+  border-top: 1px solid #969696;
 }
 /*# sourceMappingURL=acheter-styles.css.map */
