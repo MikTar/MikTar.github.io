@@ -1,0 +1,137 @@
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    } 
+
+
+$gray: #969696;
+$gray-white: #bbb8b8;
+$blue-white: rgb(14, 162, 204);
+
+
+
+html {
+
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+
+
+
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+
+}
+
+
+h1{
+     font-size: 2.5rem;
+     border-top: 1px solid $gray;
+     border-bottom: 1px solid $gray;
+     color: $gray;
+     width: 50%;
+     height: 50px;
+     margin-top: 30px;
+}
+p{
+    color: $gray;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.for-rent{
+    
+    height: 1110px;
+    width: 100%;
+    display: grid;
+    margin: 0;
+
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas:
+        "a b c"
+        "a b c"
+        "d e f"
+        "d e f"
+        "d e f"
+        ". e ."
+        
+    ;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    
+    h5{
+        color: $blue-white;
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 5px;
+    }
+    p{
+        color: $gray;
+        font-weight: 300;
+        font-size: 0.9rem;
+        margin: 5px;
+        margin-left: 0;
+    }
+    img{
+        width: 100%;
+    }
+        
+        .for-rent-first{
+            grid-area: a;
+            
+           
+            
+        }
+
+        .for-rent-second{
+            grid-area: b;
+           
+           
+            
+           
+            
+        }
+
+        .for-rent-third{
+            grid-area: c;
+            
+          
+           
+        }
+
+        .for-rent-fourth{
+            grid-area: d;
+            border-top: 1px solid $gray;
+           
+        }
+
+        .for-rent-fifth {
+            grid-area: e;
+            border-top: 1px solid $gray;
+            
+            
+        }
+
+        .for-rent-sixth{
+            grid-area: f;
+          margin-top: 100px;
+          border-top: 1px solid $gray;
+           
+        }
+
+
+
+
+
+}
