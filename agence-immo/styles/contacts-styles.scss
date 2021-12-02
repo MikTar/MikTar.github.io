@@ -182,3 +182,195 @@ body {
     border: none;
     }
 }
+
+
+
+
+@media screen and (min-width: 1px) and (max-width: 1024px) {
+    html,body{
+      max-width: 100vw;
+    }
+
+    html {
+
+        scroll-behavior: smooth;
+        padding: 0;
+        margin: 0;
+    
+    
+    
+    }
+    
+    body {
+    
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+    
+    
+    }
+
+
+    .contacts-first{
+        height: 900px;//
+        width: 100vw;
+        display: flex;
+        flex-direction: column;//
+       
+    
+        .adress{
+            height: 600px;//
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+    
+            h4{
+                width: 100vw;////
+                text-align: center;////
+                color: $gray-white;
+                font-size: 2rem;//
+                font-weight: 300;
+                border-top: 1px solid $gray-white;
+                border-bottom: 1px solid $gray-white;
+                margin-bottom: 15px;
+                margin-top: 20px;
+            }
+            img{
+                display: block;
+                height: 80px;
+                width: 200px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            h1{
+                margin-top: 0;
+                color: $gray-white;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: $blue-white;
+               
+            }
+            .index{
+                background-color: $gray-white;
+                color: white;
+                width: 200px;
+                border-radius: 5px;
+                p{
+                    margin-left: 1rem;
+                    font-weight: 300;
+                    a{
+                        color: white;
+                        font-style: italic;
+                    }
+                }
+            }
+    
+    
+    
+    
+        }
+        .form{
+            height: 400px; //
+            width: 100vw;
+            
+            
+            form{
+                margin-top: 20px;//
+                
+                #name-contact{
+                    width: 95vw;
+                    font-size: 1rem;
+                    border: 1px solid $gray-white;
+                    border-radius: 2px;
+                }
+                #name-contact:hover{
+                    border: 2px solid $blue-white;
+                    transition-duration: 0.2s;
+                }
+                #contact{
+                    width: 95vw;
+                    font-size: 1rem;
+                    border: 1px solid $gray-white;
+                    border-radius: 2px;
+                }
+                #contact:hover{
+                    border: 2px solid $blue-white;
+                    transition-duration: 0.2s;
+                }
+                #comment{
+                    width: 95vw;
+                    font-size: 1rem;
+                    border: 1px solid $gray-white;
+                    border-radius: 2px;
+                }
+                #comment:hover{
+                    border: 2px solid $blue-white;
+                    transition-duration: 0.2s;
+                }
+    
+                textarea{
+                    resize: none;
+                }
+    
+                #submit{
+                    background-color: $blue-white;
+                    color: white;
+                    font-weight: 300;
+                    font-size: 1.2rem;
+                    padding: 7px;
+                    border:none;
+                    border-radius: 5px;
+                }
+    
+    
+    
+    
+    
+    
+    
+            }
+            
+        }
+    
+    
+    
+    }
+
+
+    .map{
+        height: 1350px;
+        width: 100vw;
+       
+        
+        iframe{
+        
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        border: none;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

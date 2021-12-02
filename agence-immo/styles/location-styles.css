@@ -129,4 +129,113 @@ p {
   margin-top: 100px;
   border-top: 1px solid #969696;
 }
+
+@media (min-width: 1px) and (max-width: 1030px) {
+  html, body {
+    max-width: 100vw;
+  }
+  html {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  h1 {
+    font-size: 2rem;
+    border-top: 1px solid #969696;
+    border-bottom: 1px solid #969696;
+    color: #969696;
+    width: 100vw;
+    height: 50px;
+    margin-top: 30px;
+  }
+  p {
+    color: #969696;
+    height: 80px;
+    margin-top: 30px;
+    width: 100vw;
+  }
+  .for-rent {
+    height: 2050px;
+    width: 100vw;
+    margin: 0;
+    margin-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6 1fr);
+        grid-template-areas: "a a a" "b b b" "c c c" "d d d" "e e e" "f f f";
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+  }
+  .for-rent h5 {
+    color: #0ea2cc;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 5px;
+  }
+  .for-rent p {
+    color: #969696;
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin: 5px;
+    margin-left: 0;
+    height: auto;
+  }
+  .for-rent img {
+    width: 100vw;
+  }
+  .for-rent .for-rent-first {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: a;
+  }
+  .for-rent .for-rent-second {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: b;
+  }
+  .for-rent .for-rent-third {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: c;
+  }
+  .for-rent .for-rent-fourth {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: d;
+    border-top: 1px solid #969696;
+  }
+  .for-rent .for-rent-fifth {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: e;
+    border-top: 1px solid #969696;
+  }
+  .for-rent .for-rent-sixth {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: f;
+    margin-top: 0px;
+    border-top: 1px solid #969696;
+  }
+}
 /*# sourceMappingURL=location-styles.css.map */
