@@ -1,7 +1,12 @@
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    } 
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 
 $gray: #969696;
@@ -25,7 +30,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    
+
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -43,13 +48,13 @@ body {
 
 
 
-.contacts-first{
+.contacts-first {
     height: 500px;
     width: 100%;
     display: flex;
     flex-direction: row;
 
-    .adress{
+    .adress {
         height: 100%;
         width: 35%;
         display: flex;
@@ -57,7 +62,7 @@ body {
         align-items: center;
 
 
-        h4{
+        h4 {
             color: $gray-white;
             font-size: 2.5rem;
             font-weight: 300;
@@ -66,30 +71,35 @@ body {
             margin-bottom: 15px;
             margin-top: 50px;
         }
-        img{
+
+        img {
             display: block;
             height: 80px;
             width: 200px;
             margin-top: 0;
             margin-bottom: 0;
         }
-        h1{
+
+        h1 {
             margin-top: 0;
             color: $gray-white;
             font-size: 1.5rem;
             font-weight: 500;
             color: $blue-white;
-           
+
         }
-        .index{
+
+        .index {
             background-color: $gray-white;
             color: white;
             width: 200px;
             border-radius: 5px;
-            p{
+
+            p {
                 margin-left: 1rem;
                 font-weight: 300;
-                a{
+
+                a {
                     color: white;
                     font-style: italic;
                 }
@@ -100,56 +110,62 @@ body {
 
 
     }
-    .form{
+
+    .form {
         height: 100%;
         width: 65%;
-        
-        
-        form{
+
+
+        form {
             margin-top: 50px;
-            
-            #name-contact{
+
+            #name-contact {
                 width: 60%;
                 font-size: 1rem;
                 border: 1px solid $gray-white;
                 border-radius: 2px;
             }
-            #name-contact:hover{
+
+            #name-contact:hover {
                 border: 2px solid $blue-white;
                 transition-duration: 0.2s;
             }
-            #contact{
+
+            #contact {
                 width: 60%;
                 font-size: 1rem;
                 border: 1px solid $gray-white;
                 border-radius: 2px;
             }
-            #contact:hover{
+
+            #contact:hover {
                 border: 2px solid $blue-white;
                 transition-duration: 0.2s;
             }
-            #comment{
+
+            #comment {
                 width: 65%;
                 font-size: 1rem;
                 border: 1px solid $gray-white;
                 border-radius: 2px;
             }
-            #comment:hover{
+
+            #comment:hover {
                 border: 2px solid $blue-white;
                 transition-duration: 0.2s;
             }
 
-            textarea{
+            textarea {
                 resize: none;
             }
 
-            #submit{
+            #submit {
                 background-color: $blue-white;
                 color: white;
                 font-weight: 300;
                 font-size: 1.2rem;
                 padding: 7px;
-                border:none;
+                border: none;
                 border-radius: 5px;
             }
 
@@ -160,7 +176,7 @@ body {
 
 
         }
-        
+
     }
 
 
@@ -168,18 +184,18 @@ body {
 }
 
 
-.map{
+.map {
     height: 800px;
     width: 100%;
-   
-    
-    iframe{
-    
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    border: none;
+
+
+    iframe {
+
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        border: none;
     }
 }
 
@@ -187,8 +203,10 @@ body {
 
 
 @media screen and (min-width: 1px) and (max-width: 600px) {
-    html,body{
-      max-width: 100vw;
+
+    html,
+    body {
+        max-width: 100vw;
     }
 
     html {
@@ -196,165 +214,176 @@ body {
         scroll-behavior: smooth;
         padding: 0;
         margin: 0;
-    
-    
-    
+
+
+
     }
-    
+
     body {
-    
+
         padding: 0;
         margin: 0;
         font-family: 'Roboto', sans-serif;
-        
+
         animation-name: fadeIn;
         animation-duration: 1s;
         animation-fill-mode: both;
-    
-    
+
+
     }
 
 
-    .contacts-first{
-        height: 900px;//
+    .contacts-first {
+        height: 900px; //
         width: 100vw;
         display: flex;
-        flex-direction: column;//
-       
-    
-        .adress{
-            height: 600px;//
+        flex-direction: column; //
+
+
+        .adress {
+            height: 600px; //
             width: 100vw;
             display: flex;
             flex-direction: column;
             align-items: center;
-    
-    
-            h4{
-                width: 100vw;////
-                text-align: center;////
+
+
+            h4 {
+                width: 100vw; ////
+                text-align: center; ////
                 color: $gray-white;
-                font-size: 2rem;//
+                font-size: 2rem; //
                 font-weight: 300;
                 border-top: 1px solid $gray-white;
                 border-bottom: 1px solid $gray-white;
                 margin-bottom: 15px;
                 margin-top: 20px;
             }
-            img{
+
+            img {
                 display: block;
                 height: 80px;
                 width: 200px;
                 margin-top: 0;
                 margin-bottom: 0;
             }
-            h1{
+
+            h1 {
                 margin-top: 0;
                 color: $gray-white;
                 font-size: 1.5rem;
                 font-weight: 500;
                 color: $blue-white;
-               
+
             }
-            .index{
+
+            .index {
                 background-color: $gray-white;
                 color: white;
                 width: 200px;
                 border-radius: 5px;
-                p{
+
+                p {
                     margin-left: 1rem;
                     font-weight: 300;
-                    a{
+
+                    a {
                         color: white;
                         font-style: italic;
                     }
                 }
             }
-    
-    
-    
-    
+
+
+
+
         }
-        .form{
+
+        .form {
             height: 400px; //
             width: 100vw;
-            
-            
-            form{
-                margin-top: 20px;//
-                
-                #name-contact{
+
+
+            form {
+                margin-top: 20px; //
+
+                #name-contact {
                     width: 95vw;
                     font-size: 1rem;
                     border: 1px solid $gray-white;
                     border-radius: 2px;
                 }
-                #name-contact:hover{
+
+                #name-contact:hover {
                     border: 2px solid $blue-white;
                     transition-duration: 0.2s;
                 }
-                #contact{
+
+                #contact {
                     width: 95vw;
                     font-size: 1rem;
                     border: 1px solid $gray-white;
                     border-radius: 2px;
                 }
-                #contact:hover{
+
+                #contact:hover {
                     border: 2px solid $blue-white;
                     transition-duration: 0.2s;
                 }
-                #comment{
+
+                #comment {
                     width: 95vw;
                     font-size: 1rem;
                     border: 1px solid $gray-white;
                     border-radius: 2px;
                 }
-                #comment:hover{
+
+                #comment:hover {
                     border: 2px solid $blue-white;
                     transition-duration: 0.2s;
                 }
-    
-                textarea{
+
+                textarea {
                     resize: none;
                 }
-    
-                #submit{
+
+                #submit {
                     background-color: $blue-white;
                     color: white;
                     font-weight: 300;
                     font-size: 1.2rem;
                     padding: 7px;
-                    border:none;
+                    border: none;
                     border-radius: 5px;
                 }
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
             }
-            
+
         }
-    
-    
-    
+
+
+
     }
 
 
-    .map{
+    .map {
         height: 1350px;
         width: 100vw;
-       
-        
-        iframe{
-        
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        border: none;
+
+
+        iframe {
+
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     }
 

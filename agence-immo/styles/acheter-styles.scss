@@ -1,7 +1,12 @@
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    } 
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 
 $gray: #969696;
@@ -25,7 +30,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    
+
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -34,23 +39,24 @@ body {
 }
 
 
-h1{
-     font-size: 2.5rem;
-     border-top: 1px solid $gray;
-     border-bottom: 1px solid $gray;
-     color: $gray;
-     width: 50%;
-     height: 50px;
-     margin-top: 30px;
+h1 {
+    font-size: 2.5rem;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    color: $gray;
+    width: 50%;
+    height: 50px;
+    margin-top: 30px;
 }
-p{
+
+p {
     color: $gray;
     height: 50px;
     margin-top: 30px;
 }
 
-.for-sale{
-    
+.for-sale {
+
     height: 1110px;
     width: 100%;
     display: grid;
@@ -65,68 +71,70 @@ p{
         "d b f"
         "d e f"
         ". e ."
-        
+
     ;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    
-    h5{
+
+    h5 {
         color: $blue-white;
         font-size: 2rem;
         font-weight: 400;
         margin: 5px;
     }
-    p{
+
+    p {
         color: $gray;
         font-weight: 300;
         font-size: 0.9rem;
         margin: 5px;
         margin-left: 0;
     }
-    img{
+
+    img {
         width: 100%;
     }
-        
-        .for-sale-first{
-            grid-area: a;
-            
-           
-            
-        }
 
-        .for-sale-second{
-            grid-area: b;
-           
-            
-           
-            
-        }
+    .for-sale-first {
+        grid-area: a;
 
-        .for-sale-third{
-            grid-area: c;
-            
-          
-           
-        }
 
-        .for-sale-fourth{
-            grid-area: d;
-            border-top: 1px solid $gray;
-           
-        }
 
-        .for-sale-fifth {
-            grid-area: e;
-            border-top: 1px solid $gray;
-            
-        }
+    }
 
-        .for-sale-sixth{
-            grid-area: f;
-          margin-top: 100px;
-          border-top: 1px solid $gray;
-           
-        }
+    .for-sale-second {
+        grid-area: b;
+
+
+
+
+    }
+
+    .for-sale-third {
+        grid-area: c;
+
+
+
+    }
+
+    .for-sale-fourth {
+        grid-area: d;
+        border-top: 1px solid $gray;
+
+    }
+
+    .for-sale-fifth {
+        grid-area: e;
+        border-top: 1px solid $gray;
+
+    }
+
+    .for-sale-sixth {
+        grid-area: f;
+        margin-top: 100px;
+        border-top: 1px solid $gray;
+
+    }
 
 
 
@@ -137,8 +145,10 @@ p{
 
 
 @media screen and (min-width: 1px) and (max-width: 600px) {
-    html,body{
-      max-width: 100vw;
+
+    html,
+    body {
+        max-width: 100vw;
     }
 
     html {
@@ -146,126 +156,129 @@ p{
         scroll-behavior: smooth;
         padding: 0;
         margin: 0;
-    
-    
-    
+
+
+
     }
-    
+
     body {
-    
+
         padding: 0;
         margin: 0;
         font-family: 'Roboto', sans-serif;
-        
+
         animation-name: fadeIn;
         animation-duration: 1s;
         animation-fill-mode: both;
-    
-    
+
+
     }
 
-    h1{
-        font-size: 2rem;//
+    h1 {
+        font-size: 2rem; //
         border-top: 1px solid $gray;
         border-bottom: 1px solid $gray;
         color: $gray;
-        width: 100vw;//
+        width: 100vw; //
         height: 50px;
         margin-top: 30px;
-   }
-   p{
-       color: $gray;
-       height: 80px;//
-       margin-top: 30px;
-       width: 100vw;//
-   }
-   
-   .for-sale{
-       
-       height: 2050px;//
-       width: 100vw;
-       display: grid;
-       margin: 0;
-   
-       grid-template-columns: repeat(3 1fr);
-       grid-template-rows: repeat(6 1fr);
-       grid-template-areas:
-           "a a a"
-           "b b b"
-           "c c c"
-           "d d d"
-           "e e e"
-           "f f f"
-           
-       ;
-       grid-column-gap: 20px;
-       grid-row-gap: 0px;//
-       
-       h5{
-           color: $blue-white;
-           font-size: 1.3rem;
-           font-weight: 400;
-           margin: 5px;
-       }
-       p{
-           color: $gray;
-           font-weight: 300;
-           font-size: 0.9rem;
-           margin: 5px;
-           margin-left: 0;
-           height: auto;
-       }
-       img{
-           width: 100vw;
-       }
-           
-           .for-sale-first{
-               grid-area: a;
-               
-              
-               
-           }
-   
-           .for-sale-second{
-               grid-area: b;
-              
-               
-              
-               
-           }
-   
-           .for-sale-third{
-               grid-area: c;
-               
-             
-              
-           }
-   
-           .for-sale-fourth{
-               grid-area: d;
-               border-top: 1px solid $gray;
-              
-           }
-   
-           .for-sale-fifth {
-               grid-area: e;
-               border-top: 1px solid $gray;
-               
-           }
-   
-           .for-sale-sixth{
-               grid-area: f;
-             margin-top: 100px;
-             border-top: 1px solid $gray;
-              
-           }
-   
-   
-   
-   
-   
-   }
-   
+    }
+
+    p {
+        color: $gray;
+        height: 80px; //
+        margin-top: 30px;
+        width: 100vw; //
+    }
+
+    .for-sale {
+
+        height: 2050px; //
+        width: 100vw;
+        display: grid;
+        margin: 0;
+
+        grid-template-columns: repeat(3 1fr);
+        grid-template-rows: repeat(6 1fr);
+        grid-template-areas:
+            "a a a"
+            "b b b"
+            "c c c"
+            "d d d"
+            "e e e"
+            "f f f"
+
+        ;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px; //
+
+        h5 {
+            color: $blue-white;
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin: 5px;
+        }
+
+        p {
+            color: $gray;
+            font-weight: 300;
+            font-size: 0.9rem;
+            margin: 5px;
+            margin-left: 0;
+            height: auto;
+        }
+
+        img {
+            width: 100vw;
+        }
+
+        .for-sale-first {
+            grid-area: a;
+
+
+
+        }
+
+        .for-sale-second {
+            grid-area: b;
+
+
+
+
+        }
+
+        .for-sale-third {
+            grid-area: c;
+
+
+
+        }
+
+        .for-sale-fourth {
+            grid-area: d;
+            border-top: 1px solid $gray;
+
+        }
+
+        .for-sale-fifth {
+            grid-area: e;
+            border-top: 1px solid $gray;
+
+        }
+
+        .for-sale-sixth {
+            grid-area: f;
+            margin-top: 100px;
+            border-top: 1px solid $gray;
+
+        }
+
+
+
+
+
+    }
+
 
 
 
