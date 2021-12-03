@@ -493,6 +493,144 @@ body {
 }
 
 @media screen and (min-width: 1px) and (max-width: 600px) {
+  @-webkit-keyframes slide {
+    20% {
+      margin-left: 0px;
+    }
+    30% {
+      margin-left: -100vw;
+    }
+    50% {
+      margin-left: -100vw;
+    }
+    60% {
+      margin-left: -200vw;
+    }
+    70% {
+      margin-left: -200vw;
+    }
+    80% {
+      margin-left: -300vw;
+    }
+    90% {
+      margin-left: -300vw;
+    }
+  }
+  @keyframes slide {
+    20% {
+      margin-left: 0px;
+    }
+    30% {
+      margin-left: -100vw;
+    }
+    50% {
+      margin-left: -100vw;
+    }
+    60% {
+      margin-left: -200vw;
+    }
+    70% {
+      margin-left: -200vw;
+    }
+    80% {
+      margin-left: -300vw;
+    }
+    90% {
+      margin-left: -300vw;
+    }
+  }
+  @-webkit-keyframes slideFour {
+    20% {
+      margin-left: 0px;
+    }
+    30% {
+      margin-left: -100vw;
+    }
+    50% {
+      margin-left: -100vw;
+    }
+    60% {
+      margin-left: -200vw;
+    }
+    70% {
+      margin-left: -200vw;
+    }
+    80% {
+      margin-left: -300vw;
+    }
+    90% {
+      margin-left: -300vw;
+    }
+  }
+  @keyframes slideFour {
+    20% {
+      margin-left: 0px;
+    }
+    30% {
+      margin-left: -100vw;
+    }
+    50% {
+      margin-left: -100vw;
+    }
+    60% {
+      margin-left: -200vw;
+    }
+    70% {
+      margin-left: -200vw;
+    }
+    80% {
+      margin-left: -300vw;
+    }
+    90% {
+      margin-left: -300vw;
+    }
+  }
+  @-webkit-keyframes slideIntro {
+    20% {
+      margin-top: 0px;
+    }
+    30% {
+      margin-top: -245px;
+    }
+    50% {
+      margin-top: -250px;
+    }
+    60% {
+      margin-top: -495px;
+    }
+    70% {
+      margin-top: -495px;
+    }
+    80% {
+      margin-top: -740px;
+    }
+    90% {
+      margin-top: -745px;
+    }
+  }
+  @keyframes slideIntro {
+    20% {
+      margin-top: 0px;
+    }
+    30% {
+      margin-top: -245px;
+    }
+    50% {
+      margin-top: -250px;
+    }
+    60% {
+      margin-top: -495px;
+    }
+    70% {
+      margin-top: -495px;
+    }
+    80% {
+      margin-top: -740px;
+    }
+    90% {
+      margin-top: -745px;
+    }
+  }
   html,
   body {
     max-width: 100vw;
@@ -555,8 +693,8 @@ body {
     z-index: 2;
   }
   .open-doors .open-doors-intro .open-doors-intro-wrapper {
-    height: 1400px;
-    width: 100%;
+    height: 980px;
+    width: 100vw;
     -webkit-animation: slideIntro 10s ease infinite;
             animation: slideIntro 10s ease infinite;
     z-index: 1;
@@ -564,6 +702,7 @@ body {
   .open-doors .open-doors-intro .open-doors-intro-wrapper img {
     width: 100%;
     height: 245px;
+    margin: 0;
   }
   .open-doors .open-doors-image {
     width: 100%;
@@ -785,14 +924,14 @@ body {
     color: yellowgreen;
   }
   .pub .pub-fourth .fourth-first {
-    width: 2528px;
+    width: 400vw;
     height: 100%;
     -webkit-animation: slideFour 10s ease infinite;
             animation: slideFour 10s ease infinite;
   }
   .pub .pub-fourth .fourth-first img {
     float: left;
-    width: 632px;
+    width: 100vw;
     height: 100%;
   }
 }
