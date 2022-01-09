@@ -111,12 +111,6 @@ body {
 
 
 
-
-
-    //!!!!!!!!!!!!!!!!!!!!
-    //!!!!!!!!!!
-
-
     .cloud {
         position: fixed;
         top: 20%;
@@ -993,3 +987,62 @@ body {
 }
 
 
+@media screen and (min-width: 1px) and (max-width: 1000px) {
+    .sky {
+        height: 74vh;
+        
+        .cloud {
+            top: 40%;
+            left: 75%;
+            height: 2%;
+        }
+        .cloud-2 {
+            top: 10%;
+            left: 45%;
+            height: 2%;
+        }
+        .cloud-3 {
+            top: 25%;
+            left: 25%;
+            height: 2%;
+        }
+        .city-back {
+            width: 90%;
+            height: 50%;
+        }
+        .sun-block {
+            height: 12%;
+            width: 25%;
+            top: 2vh;
+        }
+    }
+    .grass {
+        height: 5vh;
+
+        .trees-block { 
+          width: 10vw; 
+        }
+        .light-block {
+            height: 20vh;
+            width: 9vw;
+            margin-top: -15vh;
+           
+        }
+      
+    }
+    .border {
+    
+        
+        height: 1vh;
+        
+    }
+    .road {
+      
+       
+        height: 20vh;
+    }
+
+
+
+
+}

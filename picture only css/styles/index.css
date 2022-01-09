@@ -1189,4 +1189,51 @@ body {
 .road .crosswalk .lignes:nth-child(7) {
   width: 100%;
 }
+
+@media screen and (min-width: 1px) and (max-width: 1000px) {
+  .sky {
+    height: 74vh;
+  }
+  .sky .cloud {
+    top: 40%;
+    left: 75%;
+    height: 2%;
+  }
+  .sky .cloud-2 {
+    top: 10%;
+    left: 45%;
+    height: 2%;
+  }
+  .sky .cloud-3 {
+    top: 25%;
+    left: 25%;
+    height: 2%;
+  }
+  .sky .city-back {
+    width: 90%;
+    height: 50%;
+  }
+  .sky .sun-block {
+    height: 12%;
+    width: 25%;
+    top: 2vh;
+  }
+  .grass {
+    height: 5vh;
+  }
+  .grass .trees-block {
+    width: 10vw;
+  }
+  .grass .light-block {
+    height: 20vh;
+    width: 9vw;
+    margin-top: -15vh;
+  }
+  .border {
+    height: 1vh;
+  }
+  .road {
+    height: 20vh;
+  }
+}
 /*# sourceMappingURL=index.css.map */
