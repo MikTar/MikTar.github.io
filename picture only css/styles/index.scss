@@ -59,17 +59,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
 html {
     scroll-behavior: smooth;
     padding: 0;
@@ -83,12 +72,12 @@ body {
     font-family: 'Roboto', sans-serif;
     width: 100vw;
     height: 100vh;
-    // background-color: rgb(169, 221, 243);
+     background-color: rgb(206, 237, 252);
 
 }
 
 .sky {
-    // background-color: rgb(169, 221, 243);
+     
     background-color: transparent;
     width: 100vw;
     height: 52vh;
@@ -103,275 +92,491 @@ body {
         margin: 0 auto;
         display: flex;
         flex-direction: row;
-        
+
         align-items: flex-end;
 
         // .building{
-             
+
         //     //border: 1px solid black;
         // }
 
-        .building-1{
-            background-color: rgb(177,204,221);
+        .building-1 {
+            background-color: rgb(177, 204, 221);
             width: 8%;
             height: 35%;
+
+            .first-part{
+                background-color: rgb(177, 204, 221);
+                width: 80%;
+                height: 10%;
+                margin-top: -10%;
+                margin-left: 10%;
+                
+            }
+            .second-part{
+                background-color: rgb(177, 204, 221);
+                width: 70%;
+                height: 30%;
+                margin-top: -40%;
+                margin-left: 15%;
+                border-radius:50% 50% 50% 50% / 100% 100% 0% 0%;
+
+            }
+
+            .windows{
+                width: 50%;
+                height: 10%;
+                background-color: rgb(212, 222, 228);
+                margin: 5% auto;
+            }
+           
+
+
         }
-        .building-2{
+
+        .building-2 {
             background-color: rgb(207, 227, 243);
             width: 8%;
             height: 50%;
             margin-left: -2%;
             z-index: 5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .windows{
+                width: 80%;
+                height: 10%;
+                background-color: rgb(181, 211, 236);
+                margin: 0 auto;
+            }
         }
 
-        .building-3{
+        .building-3 {
             width: 8%;
             height: 45%;
             margin-left: -1%;
             z-index: 10;
             background-color: rgb(200, 218, 236);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+
+            .windows{
+                height: 5%;
+                width: 80%;
+                margin: 0 auto;
+                background-color: rgb(145, 189, 233);
+            }
         }
 
-        .building-4{
-            background-color: rgb(157,192,211);
-            width: 6%;
+        .building-4 {
+            background-color: rgb(157, 192, 211);
+            width: 8%;
             height: 66%;
             margin-left: -11%;
             z-index: 1;
+            border-radius: 0% 100% 0% 0% / 100% 100% 0% 0%;
         }
 
-        .building-5{
-            background-color: rgb(177,204,221);
+        .building-5 {
+            background-color: rgb(177, 204, 221);
             width: 13%;
             height: 60%;
             margin-left: 1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .block-1{
+                width: 90%;
+                height: 20%;
+                background-color: transparent;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .windows{
+                    height: 100%;
+                    width: 20%;
+                    background-color: rgb(122, 166, 194);
+                }
+            }
+            .block-2{
+                width: 90%;
+                height: 20%;
+                background-color: transparent;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .windows{
+                    width: 47%;
+                    height: 40%;
+                    background-color: rgb(122, 166, 194);
+                }
+            }
+            .block-3{
+                width: 90%;
+                height: 40%;
+                background-color: transparent;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .windows{
+                    height: 20%;
+                    width: 30%;
+                    background-color: rgb(122, 166, 194);
+                }
+            }
+
+
+
+
+
+
         }
 
-        .building-6{
+        .building-6 {
             background-color: rgb(204, 223, 238);
             width: 8%;
             height: 40%;
             margin-left: -2%;
             z-index: 10;
-            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-end;
+
+            .windows{
+                background-color: rgb(176, 215, 241);
+                width: 40%;
+                height: 15%;
+                border-radius: 50% 50% 100% 0% / 100% 100% 0% 0% ;
+               
+
+            }
+
         }
 
-        .building-7{
+        .building-7 {
             background-color: rgb(206, 225, 240);
             width: 8%;
             height: 40%;
             margin-left: 0.5%;
             z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .windows{
+                height: 10%;
+                width: 90%;
+                background-color: rgb(158, 188, 211);
+                margin: 0 auto;
+
+            }
+            .verticale-line{
+                background-color: black;
+                position: absolute;
+                height: 100%;
+                width: 15%;
+                
+            }
         }
 
-        .building-8{
-            background-color: rgb(157,192,211);
-            width: 6%;
+        .building-8 {
+            background-color: rgb(157, 192, 211);
+            width: 8%;
             height: 70%;
             margin-left: -15%;
             z-index: 1;
+            border-radius:100% 0% 55% 45% / 100% 100% 0% 0%;
         }
 
-        .building-9{
-            background-color:  rgb(176,205,221);
+        .building-9 {
+            background-color: rgb(176, 205, 221);
             width: 11%;
             height: 55%;
             margin-left: 4%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .first-part{
+                background-color: rgb(177, 204, 221);
+                width: 80%;
+                height: 10%;
+                margin-top: -10%;
+                
+                
+            }
+            .second-part{
+                background-color: rgb(177, 204, 221);
+                width: 70%;
+                height: 30%;
+                margin-top: -50%;
+                
+                border-radius:50% 
+
+            }
+            .block-1{
+                margin-top: -20%;
+                width: 90%;
+                height: 20%;
+                background-color: transparent;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .windows{
+                    width: 47%;
+                    height: 40%;
+                    background-color: rgb(122, 166, 194);
+                }
+            }
+            .block-2{
+               
+                
+                width: 90%;
+                height: 20%;
+                background-color: transparent;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .windows{
+                    height: 100%;
+                    width: 20%;
+                    background-color: rgb(122, 166, 194);
+                }
+            }
+            .block-3{
+                width: 90%;
+                height: 40%;
+                background-color: transparent;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .windows{
+                    height: 20%;
+                    width: 30%;
+                    background-color: rgb(122, 166, 194);
+                }
+            }
+            
         }
 
-        .building-10{
-            background-color: rgb(157,192,211);
+        .building-10 {
+            background-color: rgb(168, 209, 231);
             width: 8%;
             height: 45%;
             margin-left: 0.1%;
             z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            .windows{
+                height: 5%;
+                width: 90%;
+                background-color:rgb(142, 185, 209) ;
+                border-radius: 20%;
+            }
         }
 
-        .building-11{
-            background-color: rgb(157,192,211);
+        .building-11 {
+            background-color: rgb(157, 192, 211);
             width: 6%;
             height: 66%;
             margin-left: -5%;
             z-index: 1;
+            // border-radius:50% 50% 50% 50% / 100% 100% 0% 0%;
+            
+            .up-part{
+                width: 100%;
+                height: 20%;
+                background-color: rgb(157, 192, 211);
+                border-radius:50% 50% 50% 50% / 100% 100% 0% 0%;
+                margin-top: -30%;
+            }
+
+
+
         }
 
-        .building-12{
-            background-color:  rgb(195, 223, 240);
+        .building-12 {
+            background-color: rgb(195, 223, 240);
             width: 8%;
             height: 27%;
             margin-left: -2%;
             z-index: 10;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            .windows{
+                height: 12%;
+                width: 22%;
+                background-color:rgb(150, 180, 199) ;
+                border-radius: 10%;
+            }
         }
-        .building-13{
-            background-color:  rgb(181, 215, 233);
-            width: 8%;
+
+        .building-13 {
+            background-color: rgb(157,192,211);
+            width: 7%;
             height: 55%;
             margin-left: -3%;
-            
+            .first-part{
+                margin: 0 auto;
+                height: 20%;
+                width: 80%;
+                background-color: rgb(157,192,211);
+                margin-top: -15%;
+            }
+            .second-part{
+                margin: 0 auto;
+                height: 20%;
+                width: 40%;
+                background-color: rgb(157,192,211);
+                margin-top: -100%;
+            }
+
         }
-        .building-14{
-            background-color:  rgb(163, 210, 235);
+
+        .building-14 {
+            background-color: rgb(163, 210, 235);
             width: 8%;
             height: 40%;
             margin-left: -3%;
-            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            .windows{
+                height: 15%;
+                width: 40%;
+                background-color: rgb(93, 151, 182);
+                border-radius: 50% 50% 100% 0% / 100% 100% 0% 0% ;
+            }
+
         }
-        .building-15{
-            background-color:  rgb(168, 198, 214);
+
+        .building-15 {
+            background-color: rgb(168, 198, 214);
             width: 8%;
             height: 25%;
             margin-left: -3%;
             z-index: 10;
-            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            .windows{
+                height: 10%;
+                width: 90%;
+                background-color:rgb(201, 213, 219) ;
+            }
+
         }
-        .building-16{
-            background-color:  rgb(196, 224, 240);
-            width: 8%;
+
+        .building-16 {
+            background-color: rgb(157,192,211);
+            width: 7%;
             height: 60%;
             margin-left: -3%;
-            
+            .first-part{
+               margin: 0 auto;
+                height: 20%;
+                width: 80%;
+                background-color: rgb(157,192,211);
+                margin-top: -15%;
+               
+            }
+           
+
         }
-        .building-17{
-            background-color:  rgb(178, 225, 250);
+
+        .building-17 {
+            background-color: rgb(178, 225, 250);
             width: 8%;
             height: 40%;
             margin-left: -3%;
             z-index: 10;
-            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            .block-1{
+                width: 90%;
+                height: 40%;
+                background-color: transparent;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .windows{
+                    height: 20%;
+                    width: 30%;
+                    background-color: rgb(122, 166, 194);
+                }
+            }
+            .block-2{
+                width: 90%;
+                height: 20%;
+                background-color: transparent;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .windows{
+                    width: 47%;
+                    height: 40%;
+                    background-color: rgb(122, 166, 194);
+                }
+            }
+            .block-3{
+              
+                width: 90%;
+                height: 20%;
+                background-color: transparent;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .windows{
+                    height: 100%;
+                    width: 20%;
+                    background-color: rgb(122, 166, 194);
+                }
+            }
+
         }
-        .building-18{
-            background-color:  rgb(146, 192, 216);
+
+        .building-18 {
+            background-color: rgb(146, 192, 216);
             width: 8%;
             height: 43%;
             margin-left: -3%;
-            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .windows{
+                height: 15%;
+                width: 40%;
+                background-color: rgb(192, 206, 214);
+            }
+
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     .sun-block {
@@ -390,19 +595,24 @@ body {
             animation: color-change-sun 5s infinite;
         }
     }
-
-
-
-
-
 }
 
-.trottoir {
-    background-color: rgb(184, 193, 199);
+.grass {
+    background-color: rgb(83, 190, 33);
     width: 100vw;
     height: 5vh;
     display: flex;
     justify-content: space-between;
+
+   
+
+
+
+
+
+
+
+
 
     .trees-block {
         z-index: 1000;
@@ -439,6 +649,12 @@ body {
             height: 50%;
             margin: 0 auto;
             z-index: 2;
+            .trunck-down{
+                background-color: rgb(85, 76, 7);
+                width: 100%;
+                height: 100%;
+                margin-top: 200%;
+            }
         }
 
 
@@ -471,12 +687,12 @@ body {
         display: flex;
         flex-direction: column;
         z-index: 1000;
-        
+
 
         .light-part-one {
             width: 60%;
             height: 45%;
-            background-color: rgb(78, 78, 78);
+            background-color: rgb(37, 53, 78);
             margin: 0 auto;
             border-radius: 30%;
             display: flex;
@@ -512,14 +728,14 @@ body {
         .light-part-two {
             width: 10%;
             height: 50%;
-            background-color: rgb(78, 78, 78);
+            background-color: rgb(37, 53, 78);
             margin: 0 auto;
         }
 
         .light-part-three {
             width: 40%;
             height: 5%;
-            background-color: rgb(78, 78, 78);
+            background-color: rgb(37, 53, 78);
             margin: 0 auto;
             border-radius: 10%;
         }
