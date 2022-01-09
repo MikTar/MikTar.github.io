@@ -107,25 +107,181 @@ body {
   font-family: 'Roboto', sans-serif;
   width: 100vw;
   height: 100vh;
-  background-color: #a9ddf3;
 }
 
 .sky {
-  background-color: #a9ddf3;
+  background-color: transparent;
   width: 100vw;
   height: 52vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .sky .city-back {
-  background-color: turquoise;
-  width: 90%;
+  background-color: transparent;
+  width: 70%;
   height: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.sky .city-back .building-1 {
+  background-color: #b1ccdd;
+  width: 8%;
+  height: 35%;
+}
+
+.sky .city-back .building-2 {
+  background-color: #cfe3f3;
+  width: 8%;
+  height: 50%;
+  margin-left: -2%;
+  z-index: 5;
+}
+
+.sky .city-back .building-3 {
+  width: 8%;
+  height: 45%;
+  margin-left: -1%;
+  z-index: 10;
+  background-color: #c8daec;
+}
+
+.sky .city-back .building-4 {
+  background-color: #9dc0d3;
+  width: 6%;
+  height: 66%;
+  margin-left: -11%;
+  z-index: 1;
+}
+
+.sky .city-back .building-5 {
+  background-color: #b1ccdd;
+  width: 13%;
+  height: 60%;
+  margin-left: 1%;
+}
+
+.sky .city-back .building-6 {
+  background-color: #ccdfee;
+  width: 8%;
+  height: 40%;
+  margin-left: -2%;
+  z-index: 10;
+}
+
+.sky .city-back .building-7 {
+  background-color: #cee1f0;
+  width: 8%;
+  height: 40%;
+  margin-left: 0.5%;
+  z-index: 10;
+}
+
+.sky .city-back .building-8 {
+  background-color: #9dc0d3;
+  width: 6%;
+  height: 70%;
+  margin-left: -15%;
+  z-index: 1;
+}
+
+.sky .city-back .building-9 {
+  background-color: #b0cddd;
+  width: 11%;
+  height: 55%;
+  margin-left: 4%;
+}
+
+.sky .city-back .building-10 {
+  background-color: #9dc0d3;
+  width: 8%;
+  height: 45%;
+  margin-left: 0.1%;
+  z-index: 10;
+}
+
+.sky .city-back .building-11 {
+  background-color: #9dc0d3;
+  width: 6%;
+  height: 66%;
+  margin-left: -5%;
+  z-index: 1;
+}
+
+.sky .city-back .building-12 {
+  background-color: #c3dff0;
+  width: 8%;
+  height: 27%;
+  margin-left: -2%;
+  z-index: 10;
+}
+
+.sky .city-back .building-13 {
+  background-color: #b5d7e9;
+  width: 8%;
+  height: 55%;
+  margin-left: -3%;
+}
+
+.sky .city-back .building-14 {
+  background-color: #a3d2eb;
+  width: 8%;
+  height: 40%;
+  margin-left: -3%;
+}
+
+.sky .city-back .building-15 {
+  background-color: #a8c6d6;
+  width: 8%;
+  height: 25%;
+  margin-left: -3%;
+  z-index: 10;
+}
+
+.sky .city-back .building-16 {
+  background-color: #c4e0f0;
+  width: 8%;
+  height: 60%;
+  margin-left: -3%;
+}
+
+.sky .city-back .building-17 {
+  background-color: #b2e1fa;
+  width: 8%;
+  height: 40%;
+  margin-left: -3%;
+  z-index: 10;
+}
+
+.sky .city-back .building-18 {
+  background-color: #92c0d8;
+  width: 8%;
+  height: 43%;
+  margin-left: -3%;
 }
 
 .sky .sun-block {
   background-color: transparent;
   height: 16%;
-  width: 11%;
+  width: 10%;
   position: fixed;
   right: 5vw;
   top: 0;
@@ -152,6 +308,7 @@ body {
 }
 
 .trottoir .trees-block {
+  z-index: 1000;
   width: 4vw;
   height: 12vh;
   background-color: transparent;
@@ -221,6 +378,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 1000;
 }
 
 .trottoir .light-block .light-part-one {
@@ -247,8 +405,8 @@ body {
   border-radius: 50%;
   border: 1px solid black;
   margin: 0 auto;
-  -webkit-animation: color-change-first  8s  infinite;
-          animation: color-change-first  8s  infinite;
+  -webkit-animation: color-change-first 8s infinite;
+          animation: color-change-first 8s infinite;
 }
 
 .trottoir .light-block .light-part-one .green-light {
