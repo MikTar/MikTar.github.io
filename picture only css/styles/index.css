@@ -58,6 +58,42 @@
   }
 }
 
+@-webkit-keyframes color-change-sun {
+  0% {
+    background-color: #ffd900;
+  }
+  25% {
+    background-color: #e9c705;
+  }
+  50% {
+    background-color: #ebc803;
+  }
+  75% {
+    background-color: #d8b802;
+  }
+  100% {
+    background-color: #ffd900;
+  }
+}
+
+@keyframes color-change-sun {
+  0% {
+    background-color: #ffd900;
+  }
+  25% {
+    background-color: #e9c705;
+  }
+  50% {
+    background-color: #ebc803;
+  }
+  75% {
+    background-color: #d8b802;
+  }
+  100% {
+    background-color: #ffd900;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   padding: 0;
@@ -74,16 +110,101 @@ body {
   background-color: #a9ddf3;
 }
 
-.city-back {
+.sky {
   background-color: #a9ddf3;
   width: 100vw;
   height: 52vh;
+}
+
+.sky .city-back {
+  background-color: turquoise;
+  width: 90%;
+  height: 90%;
+}
+
+.sky .sun-block {
+  background-color: transparent;
+  height: 16%;
+  width: 11%;
+  position: fixed;
+  right: 5vw;
+  top: 0;
+}
+
+.sky .sun-block .sun {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-animation: color-change-sun 5s infinite;
+          animation: color-change-sun 5s infinite;
 }
 
 .trottoir {
   background-color: #b8c1c7;
   width: 100vw;
   height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.trottoir .trees-block {
+  width: 4vw;
+  height: 12vh;
+  background-color: transparent;
+  position: relative;
+  margin-top: -12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.trottoir .trees-block .tree-top {
+  background-color: #9eb92a;
+  width: 100%;
+  height: 150%;
+  z-index: 1;
+  border-radius: 48% 52% 51% 49% / 79% 78% 22% 21%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.trottoir .trees-block .tree-top .trunck {
+  background-color: #554c07;
+  width: 7%;
+  height: 30%;
+  margin: 0 auto;
+}
+
+.trottoir .trees-block .tree-down {
+  background-color: #554c07;
+  width: 7%;
+  height: 50%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.trottoir .trees-block:nth-child(1) {
+  margin-left: 2vw;
+}
+
+.trottoir .trees-block:nth-child(4) {
+  margin-right: 2vw;
 }
 
 .trottoir .light-block {
