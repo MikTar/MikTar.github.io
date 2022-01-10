@@ -63,9 +63,11 @@
     0% {
         background-color: rgb(122, 166, 194);
     }
-    48%{
+
+    48% {
         background-color: rgb(122, 166, 194);
     }
+
     50% {
         background-color: rgb(235, 200, 3);
     }
@@ -79,6 +81,54 @@
     }
 
 }
+
+@keyframes cloud-move{
+    0%{
+        margin-left: -10%;
+    }
+   
+    100%{
+        margin-left: 120%;
+    }
+}
+// @keyframes cloud-move-20{
+//     0%{
+//         margin-left: -20%;
+//     }
+    
+//     100%{
+//         margin-left: 120%;
+//     }
+// }
+// @keyframes cloud-move-30{
+//     0%{
+//         margin-left: -30%;
+//     }
+    
+//     100%{
+//         margin-left: 130%;
+//     }
+// }
+// @keyframes cloud-move-40{
+//     0%{
+//         margin-left: -40%;
+//     }
+    
+//     100%{
+//         margin-left: 140%;
+//     }
+// }
+// @keyframes cloud-move-50{
+//     0%{
+//         margin-left: -50%;
+//     }
+    
+//     100%{
+//         margin-left: 150%;
+//     }
+// }
+
+
 
 
 
@@ -109,17 +159,23 @@ body {
     flex-direction: column;
     justify-content: flex-end;
 
+    .cloud{
+        box-shadow: 0px 0px 8px 2px rgb(158, 210, 255);
+    }
 
-
-    .cloud {
+    .cloud-1 {
         position: fixed;
         top: 20%;
-        left: 75%;
+        left: -20%;
+       
 
         background: rgb(255, 255, 255);
         border-radius: 100px;
-        height: 5%;
-        width: 10%;
+        height: 4%;
+        width: 8%;
+        animation: cloud-move 60s linear 1s infinite;
+        // animation: name duration timing-function delay iteration-count direction fill-mode;
+        z-index: 2;
     }
 
     .cloud:after,
@@ -148,13 +204,16 @@ body {
 
     .cloud-2 {
         position: fixed;
-        top: 10%;
-        left: 45%;
+        top: 15%;
+        left: -20%;
+        
 
         background: rgb(255, 255, 255);
         border-radius: 100px;
         height: 5%;
         width: 10%;
+        animation: cloud-move 65s linear 5s infinite;
+        z-index: 2;
     }
 
     .cloud-2:after,
@@ -184,12 +243,15 @@ body {
     .cloud-3 {
         position: fixed;
         top: 12%;
-        left: 25%;
+        left: -20%;
+        
 
         background: rgb(255, 255, 255);
         border-radius: 100px;
-        height: 5%;
-        width: 10%;
+        height: 4%;
+        width: 9%;
+        animation: cloud-move 70s linear 20s infinite;
+        z-index: 2;
     }
 
     .cloud-3:after,
@@ -216,6 +278,85 @@ body {
         top: -100%;
     }
 
+    .cloud-4 {
+        position: fixed;
+        top: 20%;
+        left: -20%;
+        
+
+        background: rgb(255, 255, 255);
+        border-radius: 100px;
+        height: 5%;
+        width: 8%;
+        animation: cloud-move 75s linear 15s infinite;
+        z-index: 2;
+    }
+
+    .cloud-4:after,
+    .cloud-4:before {
+        background: #fff;
+        content: '';
+        position: absolute;
+        z-indeX: -1;
+    }
+
+    .cloud-4:after {
+        border-radius: 100%;
+        height: 100%;
+        left: 15%;
+        top: -50%;
+        width: 40%;
+    }
+
+    .cloud-4:before {
+        border-radius: 150%;
+        width: 40%;
+        height: 200%;
+        left: 45%;
+        top: -100%;
+    }
+    .cloud-5 {
+        position: fixed;
+        top: 30%;
+        left: -20%;
+        
+
+        background: rgb(255, 255, 255);
+        border-radius: 100px;
+        height: 3%;
+        width: 6%;
+        animation: cloud-move 80s infinite;
+        animation-delay: 20s;
+        animation-timing-function: linear;
+        animation: cloud-move 80s linear 25s infinite;
+        
+        z-index: 2;
+    }
+
+    .cloud-5:after,
+    .cloud-5:before {
+        background: #fff;
+        content: '';
+        position: absolute;
+        z-indeX: -1;
+    }
+
+    .cloud-5:after {
+        border-radius: 100%;
+        height: 100%;
+        left: 15%;
+        top: -50%;
+        width: 40%;
+    }
+
+    .cloud-5:before {
+        border-radius: 150%;
+        width: 40%;
+        height: 200%;
+        left: 45%;
+        top: -100%;
+    }
+
 
     .city-back {
         background-color: transparent;
@@ -227,11 +368,13 @@ body {
 
         align-items: flex-end;
 
-    
+
         .building-1 {
             background-color: rgb(177, 204, 221);
             width: 8%;
             height: 35%;
+            z-index: 3;
+            
 
             .first-part {
                 background-color: rgb(177, 204, 221);
@@ -306,7 +449,7 @@ body {
             width: 8%;
             height: 66%;
             margin-left: -11%;
-            z-index: 1;
+            z-index: 3;
             border-radius: 0% 100% 0% 0% / 100% 100% 0% 0%;
         }
 
@@ -319,6 +462,7 @@ body {
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+            z-index: 3;
 
             .block-1 {
                 width: 90%;
@@ -333,7 +477,8 @@ body {
                     width: 20%;
                     background-color: rgb(122, 166, 194);
                 }
-                .windows:nth-child(1){
+
+                .windows:nth-child(1) {
                     animation: color-change-windows 10s infinite;
                 }
             }
@@ -428,7 +573,7 @@ body {
             width: 8%;
             height: 70%;
             margin-left: -15%;
-            z-index: 1;
+            z-index: 3;
             border-radius: 100% 0% 55% 45% / 100% 100% 0% 0%;
         }
 
@@ -441,6 +586,7 @@ body {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            z-index: 3;
 
             .first-part {
                 background-color: rgb(177, 204, 221);
@@ -536,7 +682,7 @@ body {
             width: 6%;
             height: 66%;
             margin-left: -5%;
-            z-index: 1;
+            z-index: 3;
             // border-radius:50% 50% 50% 50% / 100% 100% 0% 0%;
 
             .up-part {
@@ -576,6 +722,7 @@ body {
             width: 7%;
             height: 55%;
             margin-left: -3%;
+            z-index: 3;
 
             .first-part {
                 margin: 0 auto;
@@ -605,6 +752,7 @@ body {
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
+            z-index: 10;
 
             .windows {
                 height: 15%;
@@ -639,6 +787,7 @@ body {
             width: 7%;
             height: 60%;
             margin-left: -3%;
+            z-index: 3;
 
             .first-part {
                 margin: 0 auto;
@@ -723,6 +872,7 @@ body {
             align-items: center;
             justify-content: space-around;
             flex-wrap: wrap;
+            z-index: 3;
 
             .windows {
                 height: 15%;
@@ -742,9 +892,10 @@ body {
         position: fixed;
         right: 5vw;
         top: 0;
+        z-index: 1;
 
         .sun {
-            z-index: 1000;
+            z-index: -1;
             width: 100%;
             height: 100%;
             border-radius: 50%;
@@ -990,55 +1141,63 @@ body {
 @media screen and (min-width: 1px) and (max-width: 1000px) {
     .sky {
         height: 74vh;
-        
+
         .cloud {
             top: 40%;
             left: 75%;
             height: 2%;
         }
+
         .cloud-2 {
             top: 10%;
             left: 45%;
             height: 2%;
         }
+
         .cloud-3 {
             top: 25%;
             left: 25%;
             height: 2%;
         }
+
         .city-back {
             width: 90%;
             height: 50%;
         }
+
         .sun-block {
             height: 12%;
             width: 25%;
             top: 2vh;
         }
     }
+
     .grass {
         height: 5vh;
 
-        .trees-block { 
-          width: 10vw; 
+        .trees-block {
+            width: 10vw;
         }
+
         .light-block {
             height: 20vh;
             width: 9vw;
             margin-top: -15vh;
-           
+
         }
-      
+
     }
+
     .border {
-    
-        
+
+
         height: 1vh;
-        
+
     }
+
     .road {
-      
-       
+
+
         height: 20vh;
     }
 
