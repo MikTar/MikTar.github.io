@@ -130,6 +130,42 @@
   }
 }
 
+@-webkit-keyframes color-change-windows-9 {
+  0% {
+    background-color: #5d97b6;
+  }
+  48% {
+    background-color: #5d97b6;
+  }
+  50% {
+    background-color: #ebc803;
+  }
+  98% {
+    background-color: #ebc803;
+  }
+  100% {
+    background-color: #5d97b6;
+  }
+}
+
+@keyframes color-change-windows-9 {
+  0% {
+    background-color: #5d97b6;
+  }
+  48% {
+    background-color: #5d97b6;
+  }
+  50% {
+    background-color: #ebc803;
+  }
+  98% {
+    background-color: #ebc803;
+  }
+  100% {
+    background-color: #5d97b6;
+  }
+}
+
 @-webkit-keyframes cloud-move {
   0% {
     margin-left: -10%;
@@ -267,8 +303,8 @@ body {
   border-radius: 100px;
   height: 4%;
   width: 9%;
-  -webkit-animation: cloud-move 70s linear 20s infinite;
-          animation: cloud-move 70s linear 20s infinite;
+  -webkit-animation: cloud-move 70s linear 10s infinite;
+          animation: cloud-move 70s linear 10s infinite;
   z-index: 2;
 }
 
@@ -347,8 +383,8 @@ body {
           animation-delay: 20s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation: cloud-move 80s linear 25s infinite;
-          animation: cloud-move 80s linear 25s infinite;
+  -webkit-animation: cloud-move 80s linear 20s infinite;
+          animation: cloud-move 80s linear 20s infinite;
   z-index: 2;
 }
 
@@ -727,7 +763,7 @@ body {
 .sky .city-back .building-9 .block-2 .windows {
   height: 100%;
   width: 20%;
-  background-color: #7aa6c2;
+  background-color: #ebc803;
 }
 
 .sky .city-back .building-9 .block-3 {
@@ -876,7 +912,21 @@ body {
   height: 15%;
   width: 40%;
   background-color: #5d97b6;
-  border-radius: 50% 50% 100% 0% / 100% 100% 0% 0%;
+  border-radius: 45% 55% 50% 50% / 0% 0% 100% 100%;
+}
+
+.sky .city-back .building-14 .windows:nth-child(2) {
+  background-color: #ebc803;
+}
+
+.sky .city-back .building-14 .windows:nth-child(4) {
+  -webkit-animation: color-change-windows-9 15s infinite;
+          animation: color-change-windows-9 15s infinite;
+}
+
+.sky .city-back .building-14 .windows:nth-child(6) {
+  -webkit-animation: color-change-windows-9 12s infinite;
+          animation: color-change-windows-9 12s infinite;
 }
 
 .sky .city-back .building-15 {
@@ -1041,7 +1091,7 @@ body {
 .sky .sun-block {
   background-color: transparent;
   height: 16%;
-  width: 10%;
+  width: 8.5%;
   position: fixed;
   right: 5vw;
   top: 0;
@@ -1058,7 +1108,9 @@ body {
 }
 
 .grass {
-  background-color: #53be21;
+  background: #53BE21;
+  background: -webkit-gradient(linear, left top, right top, from(#53BE21), color-stop(47%, #53BE21), to(#62E127));
+  background: linear-gradient(to right, #53BE21 0%, #53BE21 47%, #62E127 100%);
   width: 100vw;
   height: 5vh;
   display: -webkit-box;

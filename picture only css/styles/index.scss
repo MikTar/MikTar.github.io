@@ -82,51 +82,40 @@
 
 }
 
-@keyframes cloud-move{
-    0%{
+@keyframes color-change-windows-9 {
+    0% {
+        background-color: rgb(93, 151, 182);
+    }
+
+    48% {
+        background-color: rgb(93, 151, 182);
+    }
+
+    50% {
+        background-color: rgb(235, 200, 3);
+    }
+
+    98% {
+        background-color: rgb(235, 200, 3);
+    }
+
+    100% {
+        background-color: rgb(93, 151, 182);
+    }
+
+}
+
+@keyframes cloud-move {
+    0% {
         margin-left: -10%;
     }
-   
-    100%{
+
+    100% {
         margin-left: 120%;
     }
 }
-// @keyframes cloud-move-20{
-//     0%{
-//         margin-left: -20%;
-//     }
-    
-//     100%{
-//         margin-left: 120%;
-//     }
-// }
-// @keyframes cloud-move-30{
-//     0%{
-//         margin-left: -30%;
-//     }
-    
-//     100%{
-//         margin-left: 130%;
-//     }
-// }
-// @keyframes cloud-move-40{
-//     0%{
-//         margin-left: -40%;
-//     }
-    
-//     100%{
-//         margin-left: 140%;
-//     }
-// }
-// @keyframes cloud-move-50{
-//     0%{
-//         margin-left: -50%;
-//     }
-    
-//     100%{
-//         margin-left: 150%;
-//     }
-// }
+
+
 
 
 
@@ -159,7 +148,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
 
-    .cloud{
+    .cloud {
         box-shadow: 0px 0px 8px 2px rgb(158, 210, 255);
     }
 
@@ -167,7 +156,7 @@ body {
         position: fixed;
         top: 20%;
         left: -20%;
-       
+
 
         background: rgb(255, 255, 255);
         border-radius: 100px;
@@ -206,7 +195,7 @@ body {
         position: fixed;
         top: 15%;
         left: -20%;
-        
+
 
         background: rgb(255, 255, 255);
         border-radius: 100px;
@@ -244,13 +233,13 @@ body {
         position: fixed;
         top: 12%;
         left: -20%;
-        
+
 
         background: rgb(255, 255, 255);
         border-radius: 100px;
         height: 4%;
         width: 9%;
-        animation: cloud-move 70s linear 20s infinite;
+        animation: cloud-move 70s linear 10s infinite;
         z-index: 2;
     }
 
@@ -282,7 +271,7 @@ body {
         position: fixed;
         top: 20%;
         left: -20%;
-        
+
 
         background: rgb(255, 255, 255);
         border-radius: 100px;
@@ -315,11 +304,12 @@ body {
         left: 45%;
         top: -100%;
     }
+
     .cloud-5 {
         position: fixed;
         top: 30%;
         left: -20%;
-        
+
 
         background: rgb(255, 255, 255);
         border-radius: 100px;
@@ -328,8 +318,8 @@ body {
         animation: cloud-move 80s infinite;
         animation-delay: 20s;
         animation-timing-function: linear;
-        animation: cloud-move 80s linear 25s infinite;
-        
+        animation: cloud-move 80s linear 20s infinite;
+
         z-index: 2;
     }
 
@@ -374,7 +364,7 @@ body {
             width: 8%;
             height: 35%;
             z-index: 3;
-            
+
 
             .first-part {
                 background-color: rgb(177, 204, 221);
@@ -636,7 +626,7 @@ body {
                 .windows {
                     height: 100%;
                     width: 20%;
-                    background-color: rgb(122, 166, 194);
+                    background-color: rgb(235, 200, 3);
                 }
             }
 
@@ -758,7 +748,16 @@ body {
                 height: 15%;
                 width: 40%;
                 background-color: rgb(93, 151, 182);
-                border-radius: 50% 50% 100% 0% / 100% 100% 0% 0%;
+                border-radius: 45% 55% 50% 50% / 0% 0% 100% 100%;
+            }
+            .windows:nth-child(2){
+                background-color: rgb(235, 200, 3);
+            }
+            .windows:nth-child(4){
+                animation: color-change-windows-9 15s infinite;
+            }
+            .windows:nth-child(6){
+                animation: color-change-windows-9 12s infinite;
             }
 
         }
@@ -888,7 +887,7 @@ body {
     .sun-block {
         background-color: transparent;
         height: 16%;
-        width: 10%;
+        width: 8.5%;
         position: fixed;
         right: 5vw;
         top: 0;
@@ -906,7 +905,8 @@ body {
 }
 
 .grass {
-    background-color: rgb(83, 190, 33);
+    background: #53BE21;
+    background: linear-gradient(to right, #53BE21 0%, #53BE21 47%, #62E127 100%);
     width: 100vw;
     height: 5vh;
     display: flex;
