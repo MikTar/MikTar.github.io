@@ -2,10 +2,10 @@
   0% {
     background-color: red;
   }
-  50% {
+  70% {
     background-color: red;
   }
-  55% {
+  71% {
     background-color: black;
   }
   100% {
@@ -17,10 +17,10 @@
   0% {
     background-color: red;
   }
-  50% {
+  70% {
     background-color: red;
   }
-  55% {
+  71% {
     background-color: black;
   }
   100% {
@@ -32,10 +32,10 @@
   0% {
     background-color: black;
   }
-  50% {
+  70% {
     background-color: black;
   }
-  55% {
+  71% {
     background-color: lime;
   }
   100% {
@@ -47,10 +47,10 @@
   0% {
     background-color: black;
   }
-  50% {
+  70% {
     background-color: black;
   }
-  55% {
+  71% {
     background-color: lime;
   }
   100% {
@@ -168,7 +168,7 @@
 
 @-webkit-keyframes cloud-move {
   0% {
-    margin-left: -10%;
+    margin-left: 0%;
   }
   100% {
     margin-left: 120%;
@@ -177,10 +177,40 @@
 
 @keyframes cloud-move {
   0% {
-    margin-left: -10%;
+    margin-left: 0%;
   }
   100% {
     margin-left: 120%;
+  }
+}
+
+@-webkit-keyframes car-move {
+  0% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: 35%;
+  }
+  60% {
+    margin-left: 35%;
+  }
+  100% {
+    margin-left: 150%;
+  }
+}
+
+@keyframes car-move {
+  0% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: 35%;
+  }
+  60% {
+    margin-left: 35%;
+  }
+  100% {
+    margin-left: 150%;
   }
 }
 
@@ -189,6 +219,7 @@ html {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  max-width: 100vw;
 }
 
 body {
@@ -196,6 +227,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   background-color: #9ed2ff;
 }
@@ -224,7 +256,7 @@ body {
 .sky .cloud-1 {
   position: fixed;
   top: 20%;
-  left: -20%;
+  left: -10%;
   background: white;
   border-radius: 100px;
   height: 4%;
@@ -261,7 +293,7 @@ body {
 .sky .cloud-2 {
   position: fixed;
   top: 15%;
-  left: -20%;
+  left: -10%;
   background: white;
   border-radius: 100px;
   height: 5%;
@@ -298,7 +330,7 @@ body {
 .sky .cloud-3 {
   position: fixed;
   top: 12%;
-  left: -20%;
+  left: -10%;
   background: white;
   border-radius: 100px;
   height: 4%;
@@ -335,7 +367,7 @@ body {
 .sky .cloud-4 {
   position: fixed;
   top: 20%;
-  left: -20%;
+  left: -10%;
   background: white;
   border-radius: 100px;
   height: 5%;
@@ -372,7 +404,7 @@ body {
 .sky .cloud-5 {
   position: fixed;
   top: 30%;
-  left: -20%;
+  left: -10%;
   background: white;
   border-radius: 100px;
   height: 3%;
@@ -1226,8 +1258,8 @@ body {
   border-radius: 50%;
   border: 1px solid black;
   margin: 0 auto;
-  -webkit-animation: color-change-first 8s infinite;
-          animation: color-change-first 8s infinite;
+  -webkit-animation: color-change-first 13s infinite;
+          animation: color-change-first 13s infinite;
 }
 
 .grass .light-block .light-part-one .green-light {
@@ -1236,8 +1268,8 @@ body {
   border-radius: 50%;
   border: 1px solid black;
   margin: 0 auto;
-  -webkit-animation: color-change-second 8s infinite;
-          animation: color-change-second 8s infinite;
+  -webkit-animation: color-change-second 13s infinite;
+          animation: color-change-second 13s infinite;
 }
 
 .grass .light-block .light-part-two {
@@ -1278,9 +1310,115 @@ body {
 }
 
 .road {
+  position: relative;
   background-color: #777578;
   width: 100vw;
   height: 40vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.road .car-block {
+  position: absolute;
+  bottom: 10%;
+  height: 70%;
+  width: 40%;
+  bottom: 15%;
+  left: -50%;
+  z-index: 3000;
+  -webkit-animation: car-move linear 13s infinite;
+          animation: car-move linear 13s infinite;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.road .car-block .car {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.road .car-block .rect {
+  position: relative;
+  width: 75%;
+  height: 100%;
+  background: #9c9a9a;
+}
+
+.road .car-block .front {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  background: #ee0707;
+  width: 24%;
+  height: 85%;
+  border-radius: 0 50% 0 0;
+}
+
+.road .car-block .front .window {
+  position: absolute;
+  background: #cdecff;
+  width: 50%;
+  height: 30%;
+  border-radius: 0 50% 0 0;
+  padding-bottom: 10px;
+  top: 10%;
+  left: 30%;
+}
+
+.road .car-block .hood {
+  width: 103%;
+  background: #ee0707;
+  height: 5%;
+  position: absolute;
+  left: -1.5%;
+  bottom: -1%;
+  border-radius: 20%;
+}
+
+.road .car-block .b-tyres,
+.road .car-block .f-tyres,
+.road .car-block .bb-tyres {
+  width: 10%;
+  height: 30%;
+  background: black;
+  border-radius: 100%;
+  position: absolute;
+  border: 2px solid #9e9c9c;
+  bottom: -15%;
+  z-index: 1;
+}
+
+.road .car-block .b-tyres {
+  left: 5%;
+}
+
+.road .car-block .bb-tyres {
+  left: 20%;
+}
+
+.road .car-block .f-tyres {
+  right: 5%;
+}
+
+.road .car-block .tyres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.road .car-block .tyres .circle {
+  background-color: white;
+  border-radius: 100%;
+  width: 50%;
+  height: 50%;
 }
 
 .road .road-line {
@@ -1366,20 +1504,60 @@ body {
   .sky {
     height: 74vh;
   }
-  .sky .cloud {
-    top: 40%;
-    left: 75%;
-    height: 2%;
+  .sky .cloud-1 {
+    top: 10%;
+  }
+  .sky .cloud-1:before {
+    height: 120%;
+    top: -60%;
+  }
+  .sky .cloud-1:after {
+    height: 60%;
+    top: -25%;
   }
   .sky .cloud-2 {
-    top: 10%;
-    left: 45%;
-    height: 2%;
+    top: 25%;
+  }
+  .sky .cloud-2:before {
+    height: 120%;
+    top: -60%;
+  }
+  .sky .cloud-2:after {
+    height: 60%;
+    top: -25%;
   }
   .sky .cloud-3 {
-    top: 25%;
-    left: 25%;
-    height: 2%;
+    top: 22%;
+  }
+  .sky .cloud-3:before {
+    height: 120%;
+    top: -60%;
+  }
+  .sky .cloud-3:after {
+    height: 60%;
+    top: -25%;
+  }
+  .sky .cloud-4 {
+    top: 15%;
+  }
+  .sky .cloud-4:before {
+    height: 120%;
+    top: -60%;
+  }
+  .sky .cloud-4:after {
+    height: 60%;
+    top: -25%;
+  }
+  .sky .cloud-5 {
+    top: 30%;
+  }
+  .sky .cloud-5:before {
+    height: 120%;
+    top: -60%;
+  }
+  .sky .cloud-5:after {
+    height: 60%;
+    top: -25%;
   }
   .sky .city-back {
     width: 90%;
@@ -1406,6 +1584,10 @@ body {
   }
   .road {
     height: 20vh;
+  }
+  .road .car-block {
+    height: 60%;
+    width: 40%;
   }
 }
 /*# sourceMappingURL=index.css.map */

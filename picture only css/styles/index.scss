@@ -3,11 +3,11 @@
         background-color: rgb(255, 0, 0);
     }
 
-    50% {
+    70% {
         background-color: rgb(255, 0, 0);
     }
 
-    55% {
+    71% {
         background-color: rgb(0, 0, 0);
     }
 
@@ -22,11 +22,11 @@
         background-color: rgb(0, 0, 0);
     }
 
-    50% {
+    70% {
         background-color: rgb(0, 0, 0);
     }
 
-    55% {
+    71% {
         background-color: rgb(0, 255, 0);
     }
 
@@ -107,11 +107,29 @@
 
 @keyframes cloud-move {
     0% {
-        margin-left: -10%;
+        margin-left: 0%;
     }
 
     100% {
         margin-left: 120%;
+    }
+}
+
+@keyframes car-move {
+    0% {
+        margin-left: 0%;
+    }
+
+    25% {
+        margin-left: 35%;
+    }
+
+    60% {
+        margin-left: 35%;
+    }
+
+    100% {
+        margin-left: 150%;
     }
 }
 
@@ -127,6 +145,7 @@ html {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    max-width: 100vw;
 }
 
 body {
@@ -134,6 +153,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     background-color: rgb(158, 210, 255);
 
@@ -155,7 +175,7 @@ body {
     .cloud-1 {
         position: fixed;
         top: 20%;
-        left: -20%;
+        left: -10%;
 
 
         background: rgb(255, 255, 255);
@@ -194,7 +214,7 @@ body {
     .cloud-2 {
         position: fixed;
         top: 15%;
-        left: -20%;
+        left: -10%;
 
 
         background: rgb(255, 255, 255);
@@ -232,7 +252,7 @@ body {
     .cloud-3 {
         position: fixed;
         top: 12%;
-        left: -20%;
+        left: -10%;
 
 
         background: rgb(255, 255, 255);
@@ -270,7 +290,7 @@ body {
     .cloud-4 {
         position: fixed;
         top: 20%;
-        left: -20%;
+        left: -10%;
 
 
         background: rgb(255, 255, 255);
@@ -308,7 +328,7 @@ body {
     .cloud-5 {
         position: fixed;
         top: 30%;
-        left: -20%;
+        left: -10%;
 
 
         background: rgb(255, 255, 255);
@@ -750,13 +770,16 @@ body {
                 background-color: rgb(93, 151, 182);
                 border-radius: 45% 55% 50% 50% / 0% 0% 100% 100%;
             }
-            .windows:nth-child(2){
+
+            .windows:nth-child(2) {
                 background-color: rgb(235, 200, 3);
             }
-            .windows:nth-child(4){
+
+            .windows:nth-child(4) {
                 animation: color-change-windows-9 15s infinite;
             }
-            .windows:nth-child(6){
+
+            .windows:nth-child(6) {
                 animation: color-change-windows-9 12s infinite;
             }
 
@@ -1004,9 +1027,8 @@ body {
                 width: 50%;
                 border-radius: 50%;
                 border: 1px solid black;
-                // background-color: rgb(255, 0, 0);
                 margin: 0 auto;
-                animation: color-change-first 8s infinite;
+                animation: color-change-first 13s infinite;
             }
 
             .green-light {
@@ -1015,9 +1037,9 @@ body {
                 border-radius: 50%;
                 border: 1px solid black;
 
-                // background-color: rgb(0, 255, 0);
+
                 margin: 0 auto;
-                animation: color-change-second 8s infinite;
+                animation: color-change-second 13s infinite;
             }
 
 
@@ -1061,10 +1083,118 @@ body {
 }
 
 .road {
+    position: relative;
     background-color: rgb(119, 117, 120);
     width: 100vw;
     height: 40vh;
+    max-width: 100vw;
+    overflow: hidden;
 
+    .car-block {
+        position: absolute;
+        bottom: 10%;
+        height: 70%;
+        width: 40%;
+        bottom: 15%;
+        left: -50%;
+        z-index: 3000;
+        animation: car-move linear 13s infinite;
+        animation-delay: 6s;
+
+
+
+        .car {
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+
+        }
+
+        .rect {
+            position: relative;
+
+            width: 75%;
+
+            height: 100%;
+
+            background: rgb(156, 154, 154);
+
+        }
+
+        .front {
+            position: absolute;
+            top: 15%;
+            right: 0;
+            background: rgb(238, 7, 7);
+            width: 24%;
+            height: 85%;
+            border-radius: 0 50% 0 0;
+
+            .window {
+                position: absolute;
+                background: rgb(205, 236, 255);
+                width: 50%;
+                height: 30%;
+                border-radius: 0 50% 0 0;
+                padding-bottom: 10px;
+                top: 10%;
+                left: 30%;
+            }
+        }
+
+        .hood {
+            width: 103%;
+            background: rgb(238, 7, 7);
+            height: 5%;
+            position: absolute;
+            left: -1.5%;
+            bottom: -1%;
+            border-radius: 20%;
+        }
+
+
+        .b-tyres,
+        .f-tyres,
+        .bb-tyres {
+            width: 10%;
+            height: 30%;
+            background: black;
+            border-radius: 100%;
+            position: absolute;
+            border: 2px solid rgb(158, 156, 156);
+            bottom: -15%;
+            z-index: 1;
+
+        }
+
+        .b-tyres {
+            left: 5%;
+        }
+
+        .bb-tyres {
+            left: 20%;
+        }
+
+        .f-tyres {
+            right: 5%;
+        }
+
+        .tyres {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .circle {
+                background-color: white;
+                border-radius: 100%;
+                width: 50%;
+                height: 50%;
+            }
+        }
+
+    }
 
     .road-line {
         background-color: transparent;
@@ -1142,23 +1272,74 @@ body {
     .sky {
         height: 74vh;
 
-        .cloud {
-            top: 40%;
-            left: 75%;
-            height: 2%;
+        .cloud-1 {
+      top: 10%;
         }
 
-        .cloud-2 {
-            top: 10%;
-            left: 45%;
-            height: 2%;
+        .cloud-1:before {
+            height: 120%;
+            top: -60%;
         }
+        .cloud-1:after {      
+            height: 60%;
+            top: -25%;  
+        }
+        .cloud-2 {
+            top: 25%;
+        }
+
+        .cloud-2:before {
+            height: 120%;
+            top: -60%;
+        }
+        .cloud-2:after {      
+            height: 60%;
+            top: -25%;  
+        }
+
 
         .cloud-3 {
-            top: 25%;
-            left: 25%;
-            height: 2%;
+            top: 22%;
         }
+
+        .cloud-3:before {
+            height: 120%;
+            top: -60%;
+        }
+        .cloud-3:after {      
+            height: 60%;
+            top: -25%;  
+        }
+
+        .cloud-4 {
+            top: 15%;
+        }
+
+        .cloud-4:before {
+            height: 120%;
+            top: -60%;
+        }
+        .cloud-4:after {      
+            height: 60%;
+            top: -25%;  
+        }
+
+        .cloud-5 {
+            top: 30%;
+        }
+
+        .cloud-5:before {
+            height: 120%;
+            top: -60%;
+        }
+        .cloud-5:after {      
+            height: 60%;
+            top: -25%;  
+        }
+    
+
+
+
 
         .city-back {
             width: 90%;
@@ -1199,8 +1380,14 @@ body {
 
 
         height: 20vh;
-    }
 
+        .car-block {
+
+            height: 60%;
+            width: 40%;
+
+        }
+    }
 
 
 
